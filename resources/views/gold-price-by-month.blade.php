@@ -1,0 +1,123 @@
+@extends('layouts.main')
+
+@section('css')
+
+        <title>Gold Price History by Month | Silvergoldrate.pk </title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+        <link rel="canonical" href="{{  Request::fullUrl() }}"/>
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Gold Price History by Month | Silvergoldrate.pk " />
+        <meta property="og:url" content="{{  Request::fullUrl() }}" />
+        <meta property="og:site_name" content="Gold and Silver Rate in Pakistan" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Gold Price History by Month | Silvergoldrate.pk" />
+        <meta name="twitter:label1" content="Posts" />
+        <meta name="twitter:data1" content="8" />
+            
+        <script type="application/ld+json" >
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    { "@type": "Person", "@id": "{{ url('/#person') }}", "name": "Staff" },
+                    {
+                        "@type": "WebSite",
+                        "@id": "{{ url('/#website') }}",
+                        "url": "{{ url('/') }}",
+                        "name": "Gold and Silver Rate in Pakistan",
+                        "alternateName": "Gold Price in Pakistan",
+                        "publisher": { "@id": "{{ url('/#person') }}" },
+                        "inLanguage": "en-US"
+                    },
+                    {
+                        "@type": "CollectionPage",
+                        "@id": "{{ url('/category/gold-price-history-by-month/#webpage') }}",
+                        "url": "{{ url('/category/gold-price-history-by-month/') }}",
+                        "name": "Gold Price History by Month | Silvergoldrate.pk",
+                        "isPartOf": { "@id": "{{ url('/#website') }}" },
+                        "inLanguage": "en-US"
+                    }
+                ]
+            }
+        </script>
+
+@endsection
+
+@section('main')
+  
+ <!-- Main Content -->
+<div class="container mt-3 bg-white">
+    <div class="row">
+        <div class="col-md-9" style="border-right: 5px solid #e7ecef;">
+            <div class="p-4" style="border-bottom: 10px solid #e7ecef;">
+                <h1 class="h1-size">Gold Price History by Month</h1>
+            </div>
+
+           @foreach($GoldRateByMonth as $GoldRateByMonth)
+
+            <div style="border-bottom: 10px solid #e7ecef;" class="mt-5">
+                <div class="text-center mt-5">
+                    <h2 class="h2-size">{{ $GoldRateByMonth->title;  }}</h2>
+                </div>
+                <hr class="first" />
+
+                <div class="updatSetting">
+                    <hr />
+                    By Staff ⏰ Updated <strong>{{ \Carbon\Carbon::parse($GoldRateByMonth->updated_at)->format('F j, Y') }}</strong>
+                    <hr />
+                </div>
+
+                <div class="updateSetting pt-3">
+                    <div>
+                        <img src="{{ asset($GoldRateByMonth->img) }}" class="img-fluid" />
+                        <p class="mt-4">{{ $GoldRateByMonth->description_short;  }} </p>
+                        <a href="{{ url($GoldRateByMonth->slug) }}" class="btn btn-success">Read More</a>
+                        <p class="mt-3">
+                        <a href="{{ url('category/gold-price-history-by-month') }}">Gold Price History by Month</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+           @endforeach
+
+        </div>
+
+        <div class="col-md-3" style="border-left: 5px solid #e7ecef;">
+            <div class="container">
+                <div class="row">
+                    <h6 class="col-12 text-center mt-5 mb-4"><strong>Latest Posts</strong></h6>
+
+                    @php
+                        $results = DB::table('gold_rates_by_day')->orderBy('created_at', 'desc')->take(7)->get();
+                    @endphp
+
+                    <div class="col-12 mb-2">
+                        @foreach($results as $result)
+                            <div class="lastestNews" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);border-radius:10px">
+                            <a href="{{ url($result->slug) }}"> 
+                                 <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
+                                 <h6 class="mt-3 p-2">{{ $result->title }}</h6>
+                               </a>
+                            </div>
+                        @endforeach
+                    </div>
+
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+@endsection
+
+@section('js')
+
+@endsection
+
+
+
+
