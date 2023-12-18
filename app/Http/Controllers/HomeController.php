@@ -141,5 +141,14 @@ class HomeController extends Controller
         return view('today-gold-price',['HomePageGoldRate'=>$HomePageGoldRate,'GoldRateByDay'=>$GoldRateByDay]);
      }
      
+        
+    //    contact us controller
+    
+    public function ContactUs()
+    {
+        dd('hello');
+        return view('contact-us');
+    }
+    
 
 }

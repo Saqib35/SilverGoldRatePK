@@ -21,7 +21,7 @@
                   <a class="nav-link" href="{{ url('category/gold-price-history-by-week/') }}">Gold Price History by Week</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ url('gold-rate-in-pakistan/') }}">Gold Price in Pakistan Today - 7 December 2023</a>
+                  <a class="nav-link" href="{{ url('gold-rate-in-pakistan/') }}">Gold Price in Pakistan Today - {{ \Carbon\Carbon::now()->format('F j, Y') }}</a>
                 </li>
               </ul>
             </div>

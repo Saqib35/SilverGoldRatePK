@@ -28,6 +28,9 @@ Route::get('author/staff/', [HomeController::class, 'ShowAuthor']);
 
 Route::get('{slug}', [HomeController::class, 'GoldPriceByMonthDetail']);
 Route::get('feed', [HomeController::class, 'ShowFeed']);
+Route::get('contact', [HomeController::class, 'ContactUs']);
+
+
 Route::fallback(function () { return view('errors.404');});
 
 

@@ -255,9 +255,9 @@ class AdminController extends Controller
             $imagePath = $publicPath . $GoldRateByMonth->img;
 
             // Delete the image
-            if (File::exists($imagePath)) {
-                File::delete($imagePath);
-            }
+            // if (File::exists($imagePath)) {
+            //     File::delete($imagePath);
+            // }
             $GoldRateByMonth->delete();
             // Check if the model instance no longer exists in the database after deletion
             if (!$GoldRateByMonth->exists) {
@@ -448,9 +448,9 @@ class AdminController extends Controller
             $imagePath = $publicPath . $GoldRateByWeek->img;
 
             // Delete the image
-            if (File::exists($imagePath)) {
-                File::delete($imagePath);
-            }
+            // if (File::exists($imagePath)) {
+            //     File::delete($imagePath);
+            // }
             $GoldRateByWeek->delete();
             // Check if the model instance no longer exists in the database after deletion
             if (!$GoldRateByWeek->exists) {
@@ -645,9 +645,9 @@ class AdminController extends Controller
            $imagePath = $publicPath . $GoldRateByDay->img;
 
            // Delete the image
-           if (File::exists($imagePath)) {
-               File::delete($imagePath);
-           }
+        //    if (File::exists($imagePath)) {
+        //        File::delete($imagePath);
+        //    }
            $GoldRateByDay->delete();
            // Check if the model instance no longer exists in the database after deletion
            if (!$GoldRateByDay->exists) {
@@ -789,5 +789,7 @@ class AdminController extends Controller
     }
 
    // indexing api end 
-           
+    
+
+
 }

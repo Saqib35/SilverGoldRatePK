@@ -11,7 +11,7 @@
           <a class="nav-link" href="#">Terms of Service</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" href="{{ url('contact-us') }}">Contact Us</a>
         </li>
       </ul>
       <p>&copy; 2023 Gold Price Tracker. All rights reserved.</p>

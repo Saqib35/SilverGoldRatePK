@@ -32,11 +32,7 @@
         <meta name="twitter:label1" content="Time to read" />
         <meta name="twitter:data1" content="5 minutes" />
 
-
-        <!--  romove this and add FAQ Schma  -->
-        <!-- {!!  $HomePageGoldRate->schmea_today !!} -->
-
-
+        
         <script type="application/ld+json" >
             {
                 "@context": "https://schema.org",
