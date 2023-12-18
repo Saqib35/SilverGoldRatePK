@@ -26,11 +26,12 @@ Route::get('category/gold-price-history-by-month/', [HomeController::class, 'Gol
 Route::get('category/gold-price-history-by-week/', [HomeController::class, 'GoldPriceByWeek']);
 Route::get('author/staff/', [HomeController::class, 'ShowAuthor']);
 
-Route::get('{slug}', [HomeController::class, 'GoldPriceByMonthDetail']);
+
+Route::get('contact-us', [HomeController::class, 'contact']);
+Route::get('privacy-policy-for-silver-rate-in-pakistan', [HomeController::class, 'privacyPolicy']);
+
 Route::get('feed', [HomeController::class, 'ShowFeed']);
-Route::get('contact', [HomeController::class, 'ContactUs']);
-
-
+Route::get('{slug}', [HomeController::class, 'GoldPriceByMonthDetail']);
 Route::fallback(function () { return view('errors.404');});
 
 

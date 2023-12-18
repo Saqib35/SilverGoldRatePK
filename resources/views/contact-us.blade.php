@@ -1,99 +1,83 @@
 @extends('layouts.main')
 
 @section('css')
-    <meta charset="UTF-8" />
+
+        <title>Contact Us</title>
+        <meta name="description" content="Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverRate.pk understand how crucial" />
         <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="{{  Request::fullUrl() }}"/>  
-        <title>{{  $home_content->meta_title }}</title>
-        <meta name="description" content="{{  $home_content->meta_description }}"/>
+        <link rel="canonical" href="https://silverrate.pk/contact-us/" />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="{{  $home_content->meta_title }}" />
-        <meta property="og:description" content="{{  $home_content->meta_description }}" />
-        <meta property="og:url" content="{{  Request::fullUrl() }}" />
-        <meta property="og:site_name" content="Gold and Silver Rate in Pakistan" />
-        <meta property="og:updated_time" content="{{  $home_content->updated_at }}" />
-        <meta property="og:image" content="{{  $home_content->updated_at  }}" />
-        <meta property="og:image:secure_url" content="{{  asset($home_content->img)  }}" />
-        <meta property="og:image:width" content="1280" />
-        <meta property="og:image:height" content="720" />
-        <meta property="og:image:alt" content="Today silver rate in pakistan" />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="article:published_time" content="{{  $home_content->created_at }}" />
-        <meta property="article:modified_time" content="{{  $home_content->updated_at }}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Contact Us" />
+        <meta property="og:description" content="Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverRate.pk understand how crucial" />
+        <meta property="og:url" content="https://silverrate.pk/contact-us/" />
+        <meta property="og:site_name" content="SilverRate.pk" />
+        <meta property="article:author" content="#" />
+        <meta property="og:updated_time" content="2023-08-02T11:59:31+05:00" />
+        <meta property="article:published_time" content="2023-08-02T11:59:29+05:00" />
+        <meta property="article:modified_time" content="2023-08-02T11:59:31+05:00" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="{{  $home_content->meta_title }}" />
-        <meta name="twitter:description" content="{{  $home_content->meta_description }}" />
-        <meta name="twitter:image" content="{{  asset($home_content->img)  }}" />
-        <meta name="twitter:label1" content="Written by" />
-        <meta name="twitter:data1" content="Staff" />
-        <meta name="twitter:label2" content="Time to read" />
-        <meta name="twitter:data2" content="2 minutes" />
-
-
+        <meta name="twitter:title" content="Contact Us" />
+        <meta name="twitter:description" content="Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverRate.pk understand how crucial" />
+        <meta name="twitter:label1" content="Time to read" />
+        <meta name="twitter:data1" content="1 minute" />
+        
         <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@graph": [
-                { "@type": ["Person", "Organization"], "@id": "{{ url('/#person') }}", "name": "Staff" },
-                {
-                    "@type": "WebSite",
-                    "@id": "{{ url('/#website')}}",
-                    "url": "{{ url('/')}}",
-                    "name": "Gold and Silver Rate in Pakistan",
-                    "alternateName": "Gold Price in Pakistan",
-                    "publisher": { "@id": "{{ url('/#person')}}" },
-                    "inLanguage": "en-US",
-                    "potentialAction": { "@type": "SearchAction", "target": "https://silvergoldrate.pk/?s={search_term_string}", "query-input": "required name=search_term_string" }
-                },
-                {
-                    "@type": "ImageObject",
-                    "@id": "{{ asset('images/today-silver-rate-in-pakistan.webp') }}",
-                    "url": "{{ asset('images/today-silver-rate-in-pakistan.webp') }}",
-                    "width": "1280",
-                    "height": "720",
-                    "caption": "Today silver rate in pakistan",
-                    "inLanguage": "en-US"
-                },
-                {
-                    "@type": "Person",
-                    "@id": "{{ url('/author/staff/') }}",
-                    "name": "Staff",
-                    "url": "{{ url('/author/staff/') }}",
-                    "image": {
-                        "@type": "ImageObject",
-                        "@id": "{{ asset('assets/staff.webp') }}",
-                        "url": "{{ asset('assets/staff.webp') }}",
-                        "caption": "Staff",
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    { "@type": "Organization", "@id": "https://silverrate.pk/#organization", "name": "SilverRate" },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://silverrate.pk/#website",
+                        "url": "https://silverrate.pk",
+                        "name": "SilverRate.pk",
+                        "alternateName": "Gold and Silver Rate in Pakistan",
+                        "publisher": { "@id": "https://silverrate.pk/#organization" },
                         "inLanguage": "en-US"
                     },
-                    "sameAs": ["{{ url('/')}}", "#", "https://twitter.com/#"]
-                },
-                {
-                    "@type": "NewsArticle",
-                    "headline": "{{ $home_content->meta_title }}",
-                    "keywords": "Silver rate in pakistan",
-                    "datePublished": "{{ $home_content->created_at }}",
-                    "dateModified": "{{ $home_content->updated_at }}",
-                    "author": { "@id": "{{ url('/author/staff/') }}", "name": "Staff" },
-                    "publisher": { "@id": "{{ url('/#person') }}" },
-                    "description": "{{ $home_content->meta_description }}",
-                    "name": "{{ $home_content->meta_title }}",
-                    "@id": "{{ url('/#richSnippet') }}",
-                    "isPartOf": { "@id": "{{ url('/#webpage') }}" },
-                    "image": { "@id": "{{ asset('images/today-silver-rate-in-pakistan.webp') }}" },
-                    "inLanguage": "en-US",
-                    "mainEntityOfPage": { "@id": "{{ url('/#webpage') }}" }
-                }
-            ]
-        }
-    </script>
-
-    {!! $home_content->home_schema !!}
-
-
-
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://silverrate.pk/contact-us/#webpage",
+                        "url": "https://silverrate.pk/contact-us/",
+                        "name": "Contact Us",
+                        "datePublished": "2023-08-02T11:59:29+05:00",
+                        "dateModified": "2023-08-02T11:59:31+05:00",
+                        "isPartOf": { "@id": "https://silverrate.pk/#website" },
+                        "inLanguage": "en-US"
+                    },
+                    {
+                        "@type": "Person",
+                        "@id": "https://silverrate.pk/author/staff/",
+                        "name": "Staff",
+                        "url": "https://silverrate.pk/author/staff/",
+                        "image": {
+                            "@type": "ImageObject",
+                            "@id": "https://silverrate.pk/wp-content/litespeed/avatar/6680d1529f831ca8b9805a104f888d29.jpg?ver=1702535596",
+                            "url": "https://silverrate.pk/wp-content/litespeed/avatar/6680d1529f831ca8b9805a104f888d29.jpg?ver=1702535596",
+                            "caption": "Staff",
+                            "inLanguage": "en-US"
+                        },
+                        "sameAs": ["http://silverrate.pk", "#", "https://twitter.com/#"],
+                        "worksFor": { "@id": "https://silverrate.pk/#organization" }
+                    },
+                    {
+                        "@type": "NewsArticle",
+                        "headline": "Contact Us",
+                        "datePublished": "2023-08-02T11:59:29+05:00",
+                        "dateModified": "2023-08-02T11:59:31+05:00",
+                        "author": { "@id": "https://silverrate.pk/author/staff/", "name": "Staff" },
+                        "publisher": { "@id": "https://silverrate.pk/#organization" },
+                        "description": "Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverRate.pk understand how crucial",
+                        "name": "Contact Us",
+                        "@id": "https://silverrate.pk/contact-us/#richSnippet",
+                        "isPartOf": { "@id": "https://silverrate.pk/contact-us/#webpage" },
+                        "inLanguage": "en-US",
+                        "mainEntityOfPage": { "@id": "https://silverrate.pk/contact-us/#webpage" }
+                    }
+                ]
+            }
+        </script>
 
 
 @endsection
@@ -105,15 +89,18 @@
     <div class="row">
         <div class="col-md-9" style="border-right: 5px solid #e7ecef;">
             <div class="text-center mt-5">
-                <h1 class="h1-size text-capitalize">52 Tola Chandi Price In Pakistan- Silver Rate In Pakistan</h1>
+                <h1 class="h1-size">Contact Us</h1>
             </div>
             <hr class="first" />
             <div>
-                @if($home_content)
-                {!! $home_content->content !!}
-                @else
-                    <p>No content available</p>
-                @endif
+            <div class="updatSetting">
+            <hr>By Staff ⏰ Updated <strong> 19 December 2023</strong>
+            <hr>
+              <p>Thank you for coming to our website, we are here to give you the latest updates on gold and silver rates in Pakistan. We know how interesting it is for you to keep in touch with the variated rates of precious metals in Pakistan.</p>
+              <p>Your interest in our platform is appreciated, and we need to hear from you. We will be more than happy to assist you with any questions, concerns, or suggestions concerning the price of gold and silver on our website. You will always be assisted by our expert team, making sure that you get a rapid and accurate response.</p>
+              <p>We will be there to guide you through the complex world of gold and silver rates in Pakistan, whether you are a trader or an experienced investor looking for clues about metal prices. We are committed to making sure that your satisfaction is our main concern, and we will constantly improve the quality of our services to satisfy your needs.</p>
+              <p>You can reach out to us through the contact form on our website or by emailing us at <a href="mailto:silvergoldrate@gmail.com">silvergoldrate@gmail.com</a>. We're grateful to you for choosing us as your trusted source of gold and silver prices in Pakistan. We're looking forward to serving you with dedication and excellence.</p>
+            </div>            
             </div>
             <div class="mb-5"></div>
         </div>
@@ -129,7 +116,7 @@
                     <div class="col-12 mb-2">
                         @foreach($results as $result)
                             <div class="lastestNews" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);border-radius:10px">
-                               <a href="{{ url($result->slug) }}"> 
+                              <a href="{{ url($result->slug) }}"> 
                                  <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
                                  <h6 class="mt-3 p-2">{{ $result->title }}</h6>
                                </a>
@@ -144,6 +131,7 @@
     </div>
 </div>
 
+    
 @endsection
 
 @section('js')

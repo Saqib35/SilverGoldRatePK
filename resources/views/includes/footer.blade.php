@@ -5,7 +5,7 @@
     <div class="container">
       <ul class="nav footer-nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" href="#">Privacy Policy</a>
+          <a class="nav-link" href="{{ url('privacy-policy-for-silver-rate-in-pakistan') }}">Privacy Policy</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Terms of Service</a>
@@ -14,6 +14,6 @@
           <a class="nav-link" href="{{ url('contact-us') }}">Contact Us</a>
         </li>
       </ul>
-      <p>&copy; 2023 Gold Price Tracker. All rights reserved.</p>
+      <p>&copy; 2023 SilverGoldRate.PK. All rights reserved.</p>
     </div>
   </footer>

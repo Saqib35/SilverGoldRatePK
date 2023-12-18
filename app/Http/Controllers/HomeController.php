@@ -48,6 +48,21 @@ class HomeController extends Controller
 
 
 
+     public function contact()
+     {
+         
+         return view('contact-us');
+         
+ 
+     }
+
+     public function privacyPolicy()
+     {
+         
+        return view('privacy-policy');
+
+     }
+
 
      public function ShowAuthor()
      {
@@ -66,6 +81,7 @@ class HomeController extends Controller
 
     public function index()
     {
+        
         $home_content=HomePage::first();
         return view('index',['home_content' => $home_content]);
         
@@ -144,11 +160,6 @@ class HomeController extends Controller
         
     //    contact us controller
     
-    public function ContactUs()
-    {
-        dd('hello');
-        return view('contact-us');
-    }
-    
+  
 
 }
