@@ -173,33 +173,34 @@ class AdminController extends Controller
           $goldRateByMonth->save();
     
             
-            // $apiKey = 'MjYzZTM0MWMtMjliNC00MTZiLTg1MzktMjU1MWI2YjY4MDE5';
-            // $appId = '524c15cf-c4d6-4482-9fd0-3d2e7a9133f1';
-            // $apiEndpoint = 'https://onesignal.com/api/v1/notifications';
-            // $data = [
-            //     'app_id' => $appId,
-            //     'contents' => [
-            //         'en' => $request->scholarName
-            //     ],
-            //     'included_segments' => ['All'] , // Send to all subscribed users 
-            //     // 'icon' => '', // Image URL
-            //     'chrome_web_image' => asset($logos1),
-            //     'url' =>url($request->scholarSlug), // URL link
-    
-            // ];
-            // $payload = json_encode($data);
-            // $ch = curl_init($apiEndpoint);
-            // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            // curl_setopt($ch, CURLOPT_HEADER, false);
-            // curl_setopt($ch, CURLOPT_POST, true);
-            // curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
-            // curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            //     'Content-Type: application/json',
-            //     'Authorization: Basic ' . $apiKey
-            // ]);
-            // $response = curl_exec($ch);
-            // echo $response;
-            // curl_close($ch);
+          $apiKey = 'NGFiZTZjNTYtZTVhZS00OTZmLTk0ZGEtYzc0ZDdkOTJhN2Fk';
+          $appId = '9d827635-a865-4c6f-8e68-1fdd56cbada6';
+          $apiEndpoint = 'https://onesignal.com/api/v1/notifications';
+          $data = [
+              'app_id' => $appId,
+              'contents' => [
+                  'en' => $request->title
+              ],
+              'included_segments' => ['All'] , // Send to all subscribed users 
+              // 'icon' => '', // Image URL
+              'chrome_web_image' => asset('images/today-gold-rate-in-pakistan.webp'),
+              'url' =>url($request->slug), // URL link
+  
+          ];
+          $payload = json_encode($data);
+          $ch = curl_init($apiEndpoint);
+          curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+          curl_setopt($ch, CURLOPT_HEADER, false);
+          curl_setopt($ch, CURLOPT_POST, true);
+          curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+          curl_setopt($ch, CURLOPT_HTTPHEADER, [
+              'Content-Type: application/json',
+              'Authorization: Basic ' . $apiKey
+          ]);
+          $response = curl_exec($ch);
+          echo $response;
+          curl_close($ch);
+  
     
     
         return redirect()->back()->with('success', 'Rate Added successfully.');
@@ -367,33 +368,34 @@ class AdminController extends Controller
           $GoldRateByWeek->save();
     
             
-            // $apiKey = 'MjYzZTM0MWMtMjliNC00MTZiLTg1MzktMjU1MWI2YjY4MDE5';
-            // $appId = '524c15cf-c4d6-4482-9fd0-3d2e7a9133f1';
-            // $apiEndpoint = 'https://onesignal.com/api/v1/notifications';
-            // $data = [
-            //     'app_id' => $appId,
-            //     'contents' => [
-            //         'en' => $request->scholarName
-            //     ],
-            //     'included_segments' => ['All'] , // Send to all subscribed users 
-            //     // 'icon' => '', // Image URL
-            //     'chrome_web_image' => asset($logos1),
-            //     'url' =>url($request->scholarSlug), // URL link
-    
-            // ];
-            // $payload = json_encode($data);
-            // $ch = curl_init($apiEndpoint);
-            // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            // curl_setopt($ch, CURLOPT_HEADER, false);
-            // curl_setopt($ch, CURLOPT_POST, true);
-            // curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
-            // curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            //     'Content-Type: application/json',
-            //     'Authorization: Basic ' . $apiKey
-            // ]);
-            // $response = curl_exec($ch);
-            // echo $response;
-            // curl_close($ch);
+          $apiKey = 'NGFiZTZjNTYtZTVhZS00OTZmLTk0ZGEtYzc0ZDdkOTJhN2Fk';
+          $appId = '9d827635-a865-4c6f-8e68-1fdd56cbada6';
+          $apiEndpoint = 'https://onesignal.com/api/v1/notifications';
+          $data = [
+              'app_id' => $appId,
+              'contents' => [
+                  'en' => $request->title
+              ],
+              'included_segments' => ['All'] , // Send to all subscribed users 
+              // 'icon' => '', // Image URL
+              'chrome_web_image' => asset('images/today-gold-rate-in-pakistan.webp'),
+              'url' =>url($request->slug), // URL link
+  
+          ];
+          $payload = json_encode($data);
+          $ch = curl_init($apiEndpoint);
+          curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+          curl_setopt($ch, CURLOPT_HEADER, false);
+          curl_setopt($ch, CURLOPT_POST, true);
+          curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+          curl_setopt($ch, CURLOPT_HTTPHEADER, [
+              'Content-Type: application/json',
+              'Authorization: Basic ' . $apiKey
+          ]);
+          $response = curl_exec($ch);
+          echo $response;
+          curl_close($ch);
+  
     
     
         return redirect()->back()->with('success', 'Rate Added successfully.');
@@ -563,33 +565,33 @@ class AdminController extends Controller
          $GoldRateByDay->save();
    
            
-           // $apiKey = 'MjYzZTM0MWMtMjliNC00MTZiLTg1MzktMjU1MWI2YjY4MDE5';
-           // $appId = '524c15cf-c4d6-4482-9fd0-3d2e7a9133f1';
-           // $apiEndpoint = 'https://onesignal.com/api/v1/notifications';
-           // $data = [
-           //     'app_id' => $appId,
-           //     'contents' => [
-           //         'en' => $request->scholarName
-           //     ],
-           //     'included_segments' => ['All'] , // Send to all subscribed users 
-           //     // 'icon' => '', // Image URL
-           //     'chrome_web_image' => asset($logos1),
-           //     'url' =>url($request->scholarSlug), // URL link
+           $apiKey = 'NGFiZTZjNTYtZTVhZS00OTZmLTk0ZGEtYzc0ZDdkOTJhN2Fk';
+           $appId = '9d827635-a865-4c6f-8e68-1fdd56cbada6';
+           $apiEndpoint = 'https://onesignal.com/api/v1/notifications';
+           $data = [
+               'app_id' => $appId,
+               'contents' => [
+                   'en' => $request->title
+               ],
+               'included_segments' => ['All'] , // Send to all subscribed users 
+               // 'icon' => '', // Image URL
+               'chrome_web_image' => asset('images/today-gold-rate-in-pakistan.webp'),
+               'url' =>url($request->slug), // URL link
    
-           // ];
-           // $payload = json_encode($data);
-           // $ch = curl_init($apiEndpoint);
-           // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-           // curl_setopt($ch, CURLOPT_HEADER, false);
-           // curl_setopt($ch, CURLOPT_POST, true);
-           // curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
-           // curl_setopt($ch, CURLOPT_HTTPHEADER, [
-           //     'Content-Type: application/json',
-           //     'Authorization: Basic ' . $apiKey
-           // ]);
-           // $response = curl_exec($ch);
-           // echo $response;
-           // curl_close($ch);
+           ];
+           $payload = json_encode($data);
+           $ch = curl_init($apiEndpoint);
+           curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+           curl_setopt($ch, CURLOPT_HEADER, false);
+           curl_setopt($ch, CURLOPT_POST, true);
+           curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+           curl_setopt($ch, CURLOPT_HTTPHEADER, [
+               'Content-Type: application/json',
+               'Authorization: Basic ' . $apiKey
+           ]);
+           $response = curl_exec($ch);
+           echo $response;
+           curl_close($ch);
    
    
        return redirect()->back()->with('success', 'Rate Added successfully.');
