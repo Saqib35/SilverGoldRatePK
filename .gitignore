@@ -14,3 +14,4 @@ yarn-error.log
 /.idea
 /.vscode
 app/Http/index-api/service_account_key.json
+.env
