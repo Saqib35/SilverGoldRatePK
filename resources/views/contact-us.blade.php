@@ -3,22 +3,22 @@
 @section('css')
 
         <title>Contact Us</title>
-        <meta name="description" content="Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverRate.pk understand how crucial" />
+        <meta name="description" content="Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverGoldRate.pk understand how crucial" />
         <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-        <link rel="canonical" href="https://silverrate.pk/contact-us/" />
+        <link rel="canonical" href="https://silvergoldrate.pk/contact-us/" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Contact Us" />
-        <meta property="og:description" content="Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverRate.pk understand how crucial" />
-        <meta property="og:url" content="https://silverrate.pk/contact-us/" />
-        <meta property="og:site_name" content="SilverRate.pk" />
+        <meta property="og:description" content="Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverGoldRate.pk understand how crucial" />
+        <meta property="og:url" content="https://silvergoldrate.pk/contact-us/" />
+        <meta property="og:site_name" content="SilverGoldRate.pk" />
         <meta property="article:author" content="#" />
-        <meta property="og:updated_time" content="2023-08-02T11:59:31+05:00" />
-        <meta property="article:published_time" content="2023-08-02T11:59:29+05:00" />
-        <meta property="article:modified_time" content="2023-08-02T11:59:31+05:00" />
+        <meta property="og:updated_time" content="2023-12-18T11:59:31+05:00" />
+        <meta property="article:published_time" content="2023-12-18T11:59:29+05:00" />
+        <meta property="article:modified_time" content="2023-12-18T11:59:31+05:00" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Us" />
-        <meta name="twitter:description" content="Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverRate.pk understand how crucial" />
+        <meta name="twitter:description" content="Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverGoldRate.pk understand how crucial" />
         <meta name="twitter:label1" content="Time to read" />
         <meta name="twitter:data1" content="1 minute" />
         
@@ -26,54 +26,54 @@
             {
                 "@context": "https://schema.org",
                 "@graph": [
-                    { "@type": "Organization", "@id": "https://silverrate.pk/#organization", "name": "SilverRate" },
+                    { "@type": "Organization", "@id": "https://silvergoldrate.pk/#organization", "name": "SilverGoldRate" },
                     {
                         "@type": "WebSite",
-                        "@id": "https://silverrate.pk/#website",
-                        "url": "https://silverrate.pk",
-                        "name": "SilverRate.pk",
+                        "@id": "https://silvergoldrate.pk/#website",
+                        "url": "https://silvergoldrate.pk",
+                        "name": "SilverGoldRate.pk",
                         "alternateName": "Gold and Silver Rate in Pakistan",
-                        "publisher": { "@id": "https://silverrate.pk/#organization" },
+                        "publisher": { "@id": "https://silvergoldrate.pk/#organization" },
                         "inLanguage": "en-US"
                     },
                     {
                         "@type": "WebPage",
-                        "@id": "https://silverrate.pk/contact-us/#webpage",
-                        "url": "https://silverrate.pk/contact-us/",
+                        "@id": "https://silvergoldrate.pk/contact-us/#webpage",
+                        "url": "https://silvergoldrate.pk/contact-us/",
                         "name": "Contact Us",
-                        "datePublished": "2023-08-02T11:59:29+05:00",
-                        "dateModified": "2023-08-02T11:59:31+05:00",
-                        "isPartOf": { "@id": "https://silverrate.pk/#website" },
+                        "datePublished": "2023-12-18T11:59:29+05:00",
+                        "dateModified": "2023-12-18T11:59:31+05:00",
+                        "isPartOf": { "@id": "https://silvergoldrate.pk/#website" },
                         "inLanguage": "en-US"
                     },
                     {
                         "@type": "Person",
-                        "@id": "https://silverrate.pk/author/staff/",
+                        "@id": "https://silvergoldrate.pk/author/staff/",
                         "name": "Staff",
-                        "url": "https://silverrate.pk/author/staff/",
+                        "url": "https://silvergoldrate.pk/author/staff/",
                         "image": {
                             "@type": "ImageObject",
-                            "@id": "https://silverrate.pk/wp-content/litespeed/avatar/6680d1529f831ca8b9805a104f888d29.jpg?ver=1702535596",
-                            "url": "https://silverrate.pk/wp-content/litespeed/avatar/6680d1529f831ca8b9805a104f888d29.jpg?ver=1702535596",
+                            "@id": "{{ asset('assets/staff.webp') }}",
+                            "url": "{{ asset('assets/staff.webp') }}",
                             "caption": "Staff",
                             "inLanguage": "en-US"
                         },
-                        "sameAs": ["http://silverrate.pk", "#", "https://twitter.com/#"],
-                        "worksFor": { "@id": "https://silverrate.pk/#organization" }
+                        "sameAs": ["https://silvergoldrate.pk", "#", "https://twitter.com/#"],
+                        "worksFor": { "@id": "https://silvergoldrate.pk/#organization" }
                     },
                     {
                         "@type": "NewsArticle",
                         "headline": "Contact Us",
-                        "datePublished": "2023-08-02T11:59:29+05:00",
-                        "dateModified": "2023-08-02T11:59:31+05:00",
-                        "author": { "@id": "https://silverrate.pk/author/staff/", "name": "Staff" },
-                        "publisher": { "@id": "https://silverrate.pk/#organization" },
-                        "description": "Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverRate.pk understand how crucial",
+                        "datePublished": "2023-12-18T11:59:29+05:00",
+                        "dateModified": "2023-12-18T11:59:31+05:00",
+                        "author": { "@id": "https://silvergoldrate.pk/author/staff/", "name": "Staff" },
+                        "publisher": { "@id": "https://silvergoldrate.pk/#organization" },
+                        "description": "Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverGoldRate.pk understand how crucial",
                         "name": "Contact Us",
-                        "@id": "https://silverrate.pk/contact-us/#richSnippet",
-                        "isPartOf": { "@id": "https://silverrate.pk/contact-us/#webpage" },
+                        "@id": "https://silvergoldrate.pk/contact-us/#richSnippet",
+                        "isPartOf": { "@id": "https://silvergoldrate.pk/contact-us/#webpage" },
                         "inLanguage": "en-US",
-                        "mainEntityOfPage": { "@id": "https://silverrate.pk/contact-us/#webpage" }
+                        "mainEntityOfPage": { "@id": "https://silvergoldrate.pk/contact-us/#webpage" }
                     }
                 ]
             }

@@ -29,6 +29,7 @@ Route::get('author/staff/', [HomeController::class, 'ShowAuthor']);
 
 Route::get('contact-us', [HomeController::class, 'contact']);
 Route::get('privacy-policy-for-silver-rate-in-pakistan', [HomeController::class, 'privacyPolicy']);
+// Route::get('terms-and-conditions', [HomeController::class, 'termCondition']);
 
 Route::get('feed', [HomeController::class, 'ShowFeed']);
 Route::get('{slug}', [HomeController::class, 'GoldPriceByMonthDetail']);

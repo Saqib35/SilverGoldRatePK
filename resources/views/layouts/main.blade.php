@@ -3,10 +3,22 @@
 <head>
    
         <meta name="csrf-token" content="{{ csrf_token() }}">
-    @include('includes.cssLinks')
-    @yield('css')
+        @include('includes.cssLinks')
+        @yield('css')
 
-  
+
+
+        <meta name="google-site-verification" content="rXNpjPFtZBL_yr43w2b2bSLBPG-C44nLkoFcdI_fuAU" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2KJQMJ6GT"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-P2KJQMJ6GT');
+        </script>
+
     
     <style>
 

@@ -63,6 +63,10 @@ class HomeController extends Controller
 
      }
 
+     public function termCondition()
+     {
+        return view('terms-and-conditions');
+     }
 
      public function ShowAuthor()
      {
