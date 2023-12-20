@@ -9,6 +9,7 @@ use App\Models\HomePage;
 use App\Models\GoldRateByMonth;
 use App\Models\GoldRateByWeek;
 use App\Models\GoldRateByDay;
+use App\Models\WebStory;
 use App\Models\HomePageGoldRate;
 use Carbon\Carbon;
 
@@ -90,6 +91,18 @@ class HomeController extends Controller
          ])->header('Content-Type', 'text/xml');
 
 
+    }
+
+    public function WebStories(REQUEST $request)
+    {
+        if(!empty($request->slug))
+        {
+            $webStory=WebStory::where('slug', $request->slug)->first();
+            return view('web-stories-details',['webStory'=>$webStory]);
+        }
+
+        $webStory=WebStory::orderBy('created_at', 'desc')->get();
+        return view('web-stories',['webStory'=>$webStory]);
     }
 
     public function GoldPriceByMonth()

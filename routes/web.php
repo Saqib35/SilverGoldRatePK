@@ -33,6 +33,8 @@ Route::get('privacy-policy-for-silver-rate-in-pakistan', [HomeController::class,
 // Route::get('terms-and-conditions', [HomeController::class, 'termCondition']);
 
 Route::get('feed', [HomeController::class, 'ShowFeed']);
+Route::get('web-stories/{slug?}', [HomeController::class, 'WebStories']);
+
 Route::get('{slug}', [HomeController::class, 'GoldPriceByMonthDetail']);
 Route::fallback(function () { return view('errors.404');});
 
