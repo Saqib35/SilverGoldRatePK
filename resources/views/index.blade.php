@@ -14,7 +14,7 @@
         <meta property="og:url" content="{{  Request::fullUrl() }}" />
         <meta property="og:site_name" content="Gold and Silver Rate in Pakistan" />
         <meta property="og:updated_time" content="{{  $home_content->updated_at }}" />
-        <meta property="og:image" content="{{  $home_content->updated_at  }}" />
+        <meta property="og:image" content="{{  asset($home_content->img)  }}" />
         <meta property="og:image:secure_url" content="{{  asset($home_content->img)  }}" />
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="720" />

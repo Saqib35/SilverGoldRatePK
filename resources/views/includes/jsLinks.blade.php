@@ -39,6 +39,23 @@
             });
 
 
+
+
+
+        }
+
+        loadScript("{{ asset('assets/jquery-3.6.4.min.js')}}", true, true);
+        loadScript("{{ asset('assets/popper.min.js')}}", true, true);
+        loadScript("{{ asset('assets/bootstrap.min.js')}}", true, true);
+     
+
+        window.onload = loadYourScript;
+    </script>
+    
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script> 
+    <script>
+        
+        
                   var OneSignal = window.OneSignal || [];
                     OneSignal.push(function() {
                       // Initialize OneSignal
@@ -119,17 +136,7 @@
                     console.error('Error:', error);
                   }
                 }
-
-
-
-        }
-
-        loadScript("{{ asset('assets/jquery-3.6.4.min.js')}}", true, true);
-        loadScript("{{ asset('assets/popper.min.js')}}", true, true);
-        loadScript("{{ asset('assets/bootstrap.min.js')}}", true, true);
-        loadScript("https://cdn.onesignal.com/sdks/OneSignalSDK.js", true, true);
-
-        window.onload = loadYourScript;
+        
     </script>
 
   
