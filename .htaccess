@@ -1,7 +1,7 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteRule ^index\.php$ / [L,R=301]
-    RewriteCond %{HTTP_HOST} ^www\.mfhscholarship\.com [NC]
-    RewriteRule ^(.*)$ https://mfhscholarship.com/$1 [L,R=301]
+    RewriteCond %{HTTP_HOST} ^www\.silvergoldrate\.pk [NC]
+    RewriteRule ^(.*)$ https://silvergoldrate.pk/$1 [L,R=301]
     RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>

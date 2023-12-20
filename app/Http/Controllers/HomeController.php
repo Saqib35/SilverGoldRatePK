@@ -33,21 +33,6 @@ class HomeController extends Controller
 
    
 
-     public function ShowFeed()
-     {
-           
-          
-          $posts =GoldRateByDay::orderBy('created_at', 'desc')->get();
-         
-          return response()->view('rss', [
-              'posts' => $posts
-          ])->header('Content-Type', 'text/xml');
- 
- 
-     }
-
-
-
      public function contact()
      {
          
@@ -80,15 +65,30 @@ class HomeController extends Controller
      }
 
 
-
-     
-
-    public function index()
+    public function index(REQUEST $request)
     {
-        
+        if($request->s)
+        {
+            $posts =GoldRateByDay::where('title', 'LIKE', "%$request->s%")->orderBy('created_at', 'desc')->get();
+            return view('search-page' ,['posts'=>$posts]);
+        }
+
         $home_content=HomePage::first();
         return view('index',['home_content' => $home_content]);
         
+       
+    }
+
+    public function ShowFeed()
+    {
+          
+         
+         $posts =GoldRateByDay::orderBy('created_at', 'desc')->get();
+        
+         return response()->view('rss', [
+             'posts' => $posts
+         ])->header('Content-Type', 'text/xml');
+
 
     }
 

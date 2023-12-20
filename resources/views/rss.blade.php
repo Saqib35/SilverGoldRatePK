@@ -3,25 +3,23 @@
 ?>
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
     <channel>
-        <title><![CDATA[ https://mfhscholarship.com/ ]]></title>
-        <link><![CDATA[ https://mfhscholarship.com/feed ]]></link>
-        <description><![CDATA[ Explore a world of scholarship opportunities to fund your education. Discover various scholarships, grants, and financial aids to pursue your academic dreams and shape a brighter future. ]]></description>
+        <title><![CDATA[ https://silvergoldrate.pk/ ]]></title>
+        <link><![CDATA[ https://silvergoldrate.pk/feed ]]></link>
+        <description><![CDATA[ Gold Rate in Pakistan Today ]]></description>
         <language>en</language>
         <pubDate>{{ now() }}</pubDate>
   
         @foreach($posts as $post)
             <item>
-                <title><![CDATA[{{ $post->scholarship_name }}]]></title>
-                <link>{{ url($post->scholarship_slug) }}</link>
-                <description><![CDATA[{!! $post->scholarship_description !!}]]></description>
+                <title><![CDATA[{{ $post->title }}]]></title>
+                <link>{{ url($post->slug) }}</link>
+                <description><![CDATA[{!! $post->description_short !!}]]></description>
                 <author><![CDATA[Staff]]></author>
                 <guid>{{ $post->id }}</guid>
                 <pubDate>{{ $post->updated_at->toRssString() }}</pubDate>
-
-                <!-- Add the enclosure element with image attributes -->
-                <media:content url="{{ asset($post->scholarship_university_logo) }}" medium="image">
-                    <media:description><![CDATA[{{ $post->university_logo_alt_tag }}]]></media:description>
-                    <media:credit><![CDATA[Image courtesy of mfh scholarship]]></media:credit>
+                <media:content url="{{ asset($post->img) }}" medium="image">
+                    <media:description><![CDATA[{{ $post->alt_tag }}]]></media:description>
+                    <media:credit><![CDATA[Gold Rate In pakistan]]></media:credit>
                 </media:content>
             </item>
         @endforeach
