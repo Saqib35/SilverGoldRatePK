@@ -127,7 +127,7 @@
                     <tbody>
                         @foreach($GoldRateByDay as $GoldRateByDay)
                         <tr>
-                            <td style="text-align:center"><a href="{{  url($GoldRateByDay->slug); }}">{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->format('d M Y') }}</a></td>
+                            <td style="text-align:center"><a href="{{  url($GoldRateByDay->slug); }}">{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->format('d M Y') }}</a></td>
                             <td style="text-align:center">{{  $GoldRateByDay->First_rate }}</td>
                             <td style="text-align:center">{{  $GoldRateByDay->Second_rate }}</td>
                         </tr>

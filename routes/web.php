@@ -27,13 +27,17 @@ Route::get('category/gold-price-history-by-week/', [HomeController::class, 'Gold
 Route::get('author/staff/', [HomeController::class, 'ShowAuthor']);
 
 
+
 Route::get('contact-us', [HomeController::class, 'contact']);
 Route::get('privacy-policy-for-silver-rate-in-pakistan', [HomeController::class, 'privacyPolicy']);
 
 // Route::get('terms-and-conditions', [HomeController::class, 'termCondition']);
-
 Route::get('feed', [HomeController::class, 'ShowFeed']);
-Route::get('web-stories/{slug?}', [HomeController::class, 'WebStories']);
+Route::get('web-storie/{slug?}', [HomeController::class, 'WebStories']);
+Route::get('gold-calcultor/', [HomeController::class, 'GoldCalculator']);
+Route::get('historial-gold-rate/', [HomeController::class, 'HistorialGoldRate']);
+
+
 
 Route::get('{slug}', [HomeController::class, 'GoldPriceByMonthDetail']);
 Route::fallback(function () { return view('errors.404');});
@@ -78,6 +82,14 @@ Route::get('panel/admin/show-rate-by-day', [AdminController::class, 'ShowReportB
 Route::get('panel/admin/del-report-by-day', [AdminController::class, 'delReportByDay'])->name('del-report-by-day');
 Route::get('panel/admin/edit-day/{id}', [AdminController::class, 'EditRportDay']);
 Route::post('add-rate-report-by-day-update', [AdminController::class, 'EditDayReports']);
+
+Route::get('panel/admin/add-web-stories', [AdminController::class, 'addWebStories']);
+Route::post('add-web-stories', [AdminController::class, 'AddWebStoriesInsert']);
+Route::get('panel/admin/show-web-stories', [AdminController::class, 'ShowWebStories'])->name('show-web-stories');
+Route::get('panel/admin/del-web-stories', [AdminController::class, 'delWebStory'])->name('del-web-stories');
+
+              
+
 
 // ck editor 
 Route::post('upload', [AdminController::class, 'upload'])->name('upload');

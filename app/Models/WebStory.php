@@ -10,6 +10,6 @@ class WebStory extends Model
     use HasFactory;
     protected $table = 'web_stories'; 
 
-    protected $fillable = ['image_path_one', 'image_path_two', 'image_path_three'];
+    protected $fillable = ['image_path_one', 'image_path_two', 'image_path_three','title','slug','description'];
 
 }

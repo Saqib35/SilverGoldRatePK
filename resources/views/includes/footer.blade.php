@@ -11,6 +11,16 @@
         <li class="nav-item">
           <a class="nav-link" href="{{ url('contact-us') }}">Contact Us</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('web-storie') }}">Web Stories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('gold-calcultor/') }}">Gold Calcultor In Pakistan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('historial-gold-rate/') }}">Historial Gold Rate</a>
+        </li>
+        
       </ul>
       <p>&copy; 2023 SilverGoldRate.PK. All rights reserved.</p>
     </div>

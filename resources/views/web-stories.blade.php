@@ -3,22 +3,57 @@
 @section('css')
 
 
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Staff | Silvergoldrate.pk</title>
-        <meta name="robots" content="follow, noindex" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="profile" />
-        <meta property="og:title" content="Staff - Silvergoldrate.pk" />
-        <meta property="og:url" content="https://silvergoldrate.pk/author/staff/" />
-        <meta property="og:site_name" content="Gold and Silver Rate in Pakistan" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Staff - Silvergoldrate.pk" />
-        <meta name="twitter:label1" content="Name" />
-        <meta name="twitter:data1" content="Staff" />
-        <meta name="twitter:label2" content="Posts" />
-        <meta name="twitter:data2" content="103" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Stories | SilverGoldRate.PK</title>
+    <meta name="description" content="Web Stories Archive - SilverGoldRate.PK" />
+    <meta name="robots" content="follow, index" />
+    <link rel="canonical" href="{{  Request::fullUrl() }}"/>  
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Web Stories - SilverGoldRate.PK" />
+    <meta property="og:description" content="Stories Archive - SilverGoldRate.PK" />
+    <meta property="og:url" content="{{ url('/web-storie/') }}" />
+    <meta property="og:site_name" content="SilverGoldRate.pk" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Web Stories - SilverGoldRate.PK" />
+    <meta name="twitter:description" content="Web Stories Archive - SilverGoldRate.PK" />
 
+      <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                { "@type": "Organization", "@id": "{{ url('/#organization') }}", "name": "SilverGoldRate" },
+                {
+                    "@type": "WebSite",
+                    "@id": "{{ url('/#website') }}",
+                    "url": "{{ url('/') }}",
+                    "name": "SilverGoldRate.pk",
+                    "alternateName": "Gold and Silver Rate in Pakistan",
+                    "publisher": { "@id": "{{ url('/#organization') }}" },
+                    "inLanguage": "en-US"
+                },
+                {
+                    "@type": "CollectionPage",
+                    "@id": "{{ url('/web-storie/#webpage') }}",
+                    "url": "{{ url('/web-storie/') }}",
+                    "name": "Web Stories - SilverGoldRate.PK",
+                    "isPartOf": { "@id": "{{ url('/#website') }}" },
+                    "inLanguage": "en-US"
+                }
+            ]
+        }
+       </script>
 
+       
+            <style>
+                .col-md-4 {
+                    transition: box-shadow 0.3s ease-in-out;
+                    margin:20px;
+                    border-radius:10px;
+                    box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+                 }
+         </style>
 @endsection
 
 @section('main')
@@ -71,8 +106,8 @@
             </html>"
         ></iframe>
           <div class="text-center">
-            <h2>{{ $webStory->title }}</h2>
-            <a href="{{ url('web-stories/'.$webStory->slug) }}" class="text-black font-bold" style="font-weight:bold">View Story</a>
+            <a href="{{ url('web-storie/'.$webStory->slug) }}" class="text-black font-bold" style="font-weight:bold">
+            <h2>{{ $webStory->title }}</h2></a>
         </div>
        
         </div>

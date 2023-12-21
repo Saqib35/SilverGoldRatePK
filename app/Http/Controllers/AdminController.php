@@ -8,6 +8,7 @@ use App\Models\HomePageGoldRate;
 use App\Models\GoldRateByMonth;
 use App\Models\GoldRateByWeek;
 use App\Models\GoldRateByDay;
+use App\Models\WebStory;
 use Yajra\DataTables\DataTables;
 use DB;
 require base_path('app/Http/index-api/vendors/autoload.php');
@@ -792,6 +793,150 @@ class AdminController extends Controller
 
    // indexing api end 
     
+
+    //    web storiess
+    public function addWebStories()
+    {
+        return view('admin.add-web-stories');
+    }
+    
+    public function AddWebStoriesInsert(REQUEST $request)
+    {
+        
+        $WebStory = new WebStory();
+        $WebStory->title =  $request->title;
+        $WebStory->slug =  $request->slug;
+        $WebStory->description =  $request->Description;
+        
+
+        if($request->hasFile('Img1'))
+        {
+              $dir =  public_path('web-stories/');
+              $dir1 = 'web-stories/';            
+              $extension = strtolower($request['Img1']->getClientOriginalExtension()); // get image extension
+              $fileName = bin2hex(random_bytes(20)).'.'. $extension; // rename image
+              $request['Img1']->move($dir, $fileName);
+              $logos1 ="{$dir1}{$fileName}";
+              $WebStory->image_path_one = $logos1;
+                
+        }
+
+        if($request->hasFile('Img2'))
+        {
+              $dir =  public_path('web-stories/');
+              $dir1 = 'web-stories/';            
+              $extension = strtolower($request['Img2']->getClientOriginalExtension()); // get image extension
+              $fileName = bin2hex(random_bytes(20)).'.'. $extension; // rename image
+              $request['Img2']->move($dir, $fileName);
+              $logos1 ="{$dir1}{$fileName}";
+              $WebStory->image_path_two = $logos1;
+                
+        }
+    
+        if($request->hasFile('Img3'))
+        {
+              $dir =  public_path('web-stories/');
+              $dir1 = 'web-stories/';            
+              $extension = strtolower($request['Img3']->getClientOriginalExtension()); // get image extension
+              $fileName = bin2hex(random_bytes(20)).'.'. $extension; // rename image
+              $request['Img3']->move($dir, $fileName);
+              $logos1 ="{$dir1}{$fileName}";
+              $WebStory->image_path_three = $logos1;
+                
+        }
+    
+          $WebStory->save();
+    
+         
+    
+    
+        return redirect()->back()->with('success', 'Web Stories Added successfully.');
+    }
+
+   
+    public function ShowWebStories(REQUEST $request)
+    {
+      
+        if (request()->ajax()) {
+            
+            
+            $WebStory = WebStory::select('*');
+    
+            return DataTables::of($WebStory)
+                ->addColumn('action', function ($row) {
+                    return '<button class="btn btn-danger" id="delscholarship' . $row->id . '" onclick="delscholarship(' . $row->id . ')"><i class="fa fa-trash"></i></button>';
+                })
+                ->editColumn('image_path_one', function ($row) {
+                    $logoUrl = asset($row->image_path_one);
+                    return '<img src="' . $logoUrl . '" alt="gold rate Pakistan" width="100px" height="100px">';
+                })
+                ->editColumn('image_path_two', function ($row) {
+                    $logoUrl = asset($row->image_path_two);
+                    return '<img src="' . $logoUrl . '" alt="gold rate Pakistan" width="100px" height="100px">';
+                })
+                ->editColumn('image_path_three', function ($row) {
+                    $logoUrl = asset($row->image_path_three);
+                    return '<img src="' . $logoUrl . '" alt="gold rate Pakistan" width="100px" height="100px">';
+                })
+                ->rawColumns(['image_path_one','image_path_two','image_path_three','action'])
+                ->make(true);
+            
+        }
+    
+ 
+      return view('admin.show-web-stories');
+
+
+
+
+
+    }
+
+
+    
+    public function delWebStory(REQUEST $request)
+    {
+
+        $WebStory = WebStory::find($request->id);
+
+        if ($WebStory) {
+           
+            // Get the full path to the public directory
+            $publicPath = public_path('/');
+            
+
+            // Construct the full path to the image using the 'img' attribute
+            $imagePath1 = $publicPath . $WebStory->image_path_one;
+            $imagePath2 = $publicPath . $WebStory->image_path_two;
+            $imagePath3 = $publicPath . $WebStory->image_path_three;
+            
+
+            // Delete the image
+            if (File::exists($imagePath1)) {
+                File::delete($imagePath1);
+            }
+            if (File::exists($imagePath2)) {
+                File::delete($imagePath2);
+            }
+            if (File::exists($imagePath3)) {
+                File::delete($imagePath3);
+            }
+            
+
+            $WebStory->delete();
+            // Check if the model instance no longer exists in the database after deletion
+            if (!$WebStory->exists) {
+                return response()->json(['success' => true]);
+            } else {
+                return response()->json(['success' => false]);
+            }
+        } else {
+            return response()->json(['success' => false]);
+        }
+
+
+    }
+
 
 
 }

@@ -95,8 +95,10 @@ class HomeController extends Controller
 
     public function WebStories(REQUEST $request)
     {
+      
         if(!empty($request->slug))
         {
+            
             $webStory=WebStory::where('slug', $request->slug)->first();
             return view('web-stories-details',['webStory'=>$webStory]);
         }
@@ -104,6 +106,22 @@ class HomeController extends Controller
         $webStory=WebStory::orderBy('created_at', 'desc')->get();
         return view('web-stories',['webStory'=>$webStory]);
     }
+
+    public function HistorialGoldRate(){
+
+        $posts =GoldRateByDay::orderBy('created_at', 'desc')->get();
+        return view('historial-gold-rate',['posts'=>$posts]);
+
+    }
+
+
+    public function GoldCalculator()
+    {
+        
+        return view('gold-calculator');
+     
+    }
+
 
     public function GoldPriceByMonth()
     {

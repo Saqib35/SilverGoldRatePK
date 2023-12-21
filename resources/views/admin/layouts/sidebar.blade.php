@@ -72,6 +72,20 @@
                             </a>
                         </li>
 
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow">
+                            <i class="fa fa-bomb" style="font-size:17px"></i>
+                                <span data-key="t-ecommerce">Web Stories Manage...</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="{{  url('panel/admin/add-web-stories') }}" key="t-products">Add Web Story</a></li>
+                                <li><a href="{{ url('panel/admin/show-web-stories') }}" key="t-products">Show Web Story</a></li>
+                            </ul>
+                        </li>
+
+
+
                         <li>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();

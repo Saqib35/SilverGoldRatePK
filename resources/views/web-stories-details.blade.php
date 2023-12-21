@@ -1,23 +1,35 @@
 @extends('layouts.main')
 
 @section('css')
+<title>{{ $webStory->title }}</title>
+<meta name="amp-story-generator-name" content="Web Stories for Silver Gold Rate In Pakistan" />
+<meta name="amp-story-generator-version" content="1.35.0" />
+<meta name="description" content="{{  $webStory->description }}" />
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{ $webStory->title }} - SilverGoldRate.PK" />
+<meta property="og:description" content="{{ $webStory->description }}"/>
+<meta property="og:url" content="{{  Request::fullUrl() }}" />
+<meta property="og:site_name" content="SilverGoldRate.pk" />
+<meta property="article:author" content="#" />
+<meta property="og:updated_time" content="{{ $webStory->updated_at }}" />
+<meta property="og:image" content="{{ asset('images/today-gold-rate-in-pakistan.webp') }}" />
+<meta property="og:image:secure_url" content="{{ asset('images/today-gold-rate-in-pakistan.webp') }}" />
+<meta property="og:image:width" content="640" />
+<meta property="og:image:height" content="853" />
+<meta property="og:image:alt" content="gold rate in pakistan today story cover" />
+<meta property="og:image:type" content="image/webp" />
+<meta property="article:published_time" content="{{ $webStory->created_at }}" />
+<meta property="article:modified_time" content="{{ $webStory->updated_at }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $webStory->title }} - SilverGoldRate.PK" />
+<meta name="twitter:description" content="{{ $webStory->description }}"/>
+<meta name="twitter:image" content="{{ asset('images/today-gold-rate-in-pakistan.webp') }}" />
+<meta name="msapplication-TileImage" content="{{ asset('assets/favicon.png') }}" />
 
 
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Staff | Silvergoldrate.pk</title>
-        <meta name="robots" content="follow, noindex" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="profile" />
-        <meta property="og:title" content="Staff - Silvergoldrate.pk" />
-        <meta property="og:url" content="https://silvergoldrate.pk/author/staff/" />
-        <meta property="og:site_name" content="Gold and Silver Rate in Pakistan" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Staff - Silvergoldrate.pk" />
-        <meta name="twitter:label1" content="Name" />
-        <meta name="twitter:data1" content="Staff" />
-        <meta name="twitter:label2" content="Posts" />
-        <meta name="twitter:data2" content="103" />
-        <style amp-boilerplate>
+     <style amp-boilerplate>
     body {
       -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
       -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -94,17 +106,29 @@
 @section('main')
 <div class="container mt-3 bg-white">
     <div class="row">
-        <h1 class="col-12 text-center mt-5 mb-4"><strong>Web stories Gold Rate In Pakistan</strong></h1>
+        <h1 class="col-12 text-center mt-5 mb-4"><strong>{{  $webStory->title }}</strong></h1>
             <amp-story standalone
-                        title="Silver Gold Rate Pakistan"
+                        title="{{ $webStory->title }}"
                         publisher="Staff"
                         publisher-logo-src="{{ asset('assets/logo.png')}}"
                         poster-portrait-src="{{asset('assets/logo.png')}}">
                 <amp-story-page id="page1" auto-advance-after="4s">
-                    <amp-img src="{{asset('images/today-gold-rate-in-pakistan.webp')}}" width="720" height="1280" layout="responsive" alt="Gold Rate In Pakistan"></amp-img>
+                    <amp-img src="{{asset( $webStory->image_path_one )}}" width="720" height="1280" layout="responsive" alt="Gold Rate In Pakistan"></amp-img>
                     <amp-story-cta-layer>
                         <a href="{{ url('gold-rate-in-pakistan') }}">Continue to Next Section</a>
                     </amp-story-cta-layer>
+                <amp-story-page id="page1" auto-advance-after="4s">
+                    <amp-img src="{{asset( $webStory->image_path_two )}}" width="720" height="1280" layout="responsive" alt="Gold Rate In Pakistan"></amp-img>
+                    <amp-story-cta-layer>
+                        <a href="{{ url('gold-rate-in-pakistan') }}">Continue to Next Section</a>
+                    </amp-story-cta-layer>
+                </amp-story-page>
+                <amp-story-page id="page1" auto-advance-after="4s">
+                    <amp-img src="{{asset( $webStory->image_path_three )}}" width="720" height="1280" layout="responsive" alt="Gold Rate In Pakistan"></amp-img>
+                    <amp-story-cta-layer>
+                        <a href="{{ url('gold-rate-in-pakistan') }}">Continue to Next Section</a>
+                    </amp-story-cta-layer>
+                </amp-story-page>
                 </amp-story-page>
             </amp-story>
     </div>
