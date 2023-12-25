@@ -52,7 +52,8 @@ Route::group(['middleware'=>['IsLogin']],function () {
 
 
 Route::get('panel/admin/login', function () {return view('admin.login');})->name('panel.admin.login');
-Route::get('panel/admin/home', function () {return view('admin.index');})->name('panel.admin.home');
+Route::get('panel/admin/home', [AdminController::class, 'indexAdmin'])->name('panel.admin.home');
+
 // home page content update 
 Route::get('panel/admin/home-content-update', [AdminController::class, 'HomeUpdate']);
 Route::post('update-home-page-content', [AdminController::class, 'UpdateHomePageContent']);

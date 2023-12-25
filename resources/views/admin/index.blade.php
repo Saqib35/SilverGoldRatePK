@@ -25,28 +25,70 @@
                 @include ('admin.layouts.breadcrumb')
                
               
-                <!-- <div class="row">
-                    <div class="col-md-3">
-                       
-                        <div class="card card-h-100">
-                         
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <span class="text-muted mb-3 lh-1 d-block text-truncate">Total Degree</span>
-                                        <h4 class="mb-3">
-                                              <span class="counter-value" data-target="100">
-                                             100
-                                              </span>
-                                        </h4>
-                              
-                                    </div>
-
-                              
-                                </div>
+                <div class="row">
+                    <div class="col-12">
+                        @if(session('success'))
+                            <div class="alert alert-success">
+                                {{ session('success') }}
                             </div>
-                        </div>
-                    </div> -->
+                        @endif
+
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title mb-0">Upload Gold Rate</h4>
+                            </div>
+                            <div class="card-body">
+                                <form action="{{ url('add-rate-report-by-day-update') }}" enctype='multipart/form-data' method="post" id="myForm" class="drozone">
+                                 @csrf
+                                    
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="kerat24k">24k Rate</label>
+                                                <input id="kerat24k" value="{{ $updatedPrice->kerat24k }}" required="" name="kerat24k" type="text" class="form-control">
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="kerat22k">22k Rate</label>
+                                                <input id="kerat22k" value="{{ $updatedPrice->kerat22k }}" required="" name="kerat22k" type="text" class="form-control">
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="kerat21k">21k Rate</label>
+                                                <input id="kerat21k" value="{{ $updatedPrice->kerat21k }}" required="" name="kerat21k" type="text" class="form-control">
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="kerat20k">20k Rate</label>
+                                                <input id="kerat20k" value="{{ $updatedPrice->kerat20k }}" required="" name="kerat20k" type="text" class="form-control">
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="kerat18k">18k Rate</label>
+                                                <input id="kerat18k" value="{{ $updatedPrice->kerat18k }}" required="" name="kerat18k" type="text" class="form-control">
+                                            </div>
+                                            
+                                        </div>
+                                        
+
+                                    <br>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <button type="submit" name="add-category" class="btn btn-primary waves-effect waves-light">Save Changes</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> <!-- end card-->
+                    </div>
+                </div>
 
 
 

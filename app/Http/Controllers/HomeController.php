@@ -9,6 +9,7 @@ use App\Models\HomePage;
 use App\Models\GoldRateByMonth;
 use App\Models\GoldRateByWeek;
 use App\Models\GoldRateByDay;
+use App\Models\UpdatedPrice;
 use App\Models\WebStory;
 use App\Models\HomePageGoldRate;
 use Carbon\Carbon;
@@ -180,7 +181,8 @@ class HomeController extends Controller
 
      public function calculateRates()
      {
-        $pricePerTola = 218000; // Rate for one tola in Rupees
+        $price=UpdatedPrice::first();
+        $pricePerTola =$price->kerat24k; // Rate for one tola in Rupees
         $gramsPerTola = 11.66; // Grams in one tola
         $gramsPerTroyOunce = 31.1035; // Grams in one Troy ounce
         $gramsPerKilogram = 1000; // Grams in one kilogram
@@ -205,7 +207,8 @@ class HomeController extends Controller
 
      public function calculateRates22K()
      {
-        $pricePerTola = 201536; // Rate for one tola in Rupees
+        $price=UpdatedPrice::first();
+        $pricePerTola =$price->kerat22k; // Rate for one tola in Rupees
         $gramsPerTola = 11.66; // Grams in one tola
         $gramsPerTroyOunce = 31.1035; // Grams in one Troy ounce
         $gramsPerKilogram = 1000; // Grams in one kilogram
@@ -230,7 +233,8 @@ class HomeController extends Controller
 
      public function calculateRates21K()
      {
-        $pricePerTola = 192374; // Rate for one tola in Rupees
+        $price=UpdatedPrice::first();
+        $pricePerTola =$price->kerat21k; // Rate for one tola in Rupees
         $gramsPerTola = 11.66; // Grams in one tola
         $gramsPerTroyOunce = 31.1035; // Grams in one Troy ounce
         $gramsPerKilogram = 1000; // Grams in one kilogram
@@ -254,7 +258,8 @@ class HomeController extends Controller
 
      public function calculateRates20K()
      {
-        $pricePerTola = 183214; // Rate for one tola in Rupees
+        $price=UpdatedPrice::first();
+        $pricePerTola =$price->kerat20k; // Rate for one tola in Rupees
         $gramsPerTola = 11.66; // Grams in one tola
         $gramsPerTroyOunce = 31.1035; // Grams in one Troy ounce
         $gramsPerKilogram = 1000; // Grams in one kilogram
@@ -278,7 +283,8 @@ class HomeController extends Controller
 
      public function calculateRates18K()
      {
-        $pricePerTola = 164892; // Rate for one tola in Rupees
+        $price=UpdatedPrice::first();
+        $pricePerTola =$price->kerat18k; // Rate for one tola in Rupees
         $gramsPerTola = 11.66; // Grams in one tola
         $gramsPerTroyOunce = 31.1035; // Grams in one Troy ounce
         $gramsPerKilogram = 1000; // Grams in one kilogram

@@ -57,7 +57,7 @@
     <div class="row">
         <div class="col-12">
             <h2 class="title_color colr">Calculate Gold Rate in Gram</h2>
-            <span style="font-weight: normal;">As on {{ now()->format('d F Y') }} ({{ now()->formatLocalized('%A') }})</span><br />
+            <span style="font-weight: normal;">{{ now()->format('d F Y') }} ({{ now()->formatLocalized('%A') }})</span><br />
             <br />
             Type the number of Tola in the text box to calculate today's gold rates in different purity standards. You can easily calculate gold rates by using our Gold conversion tool.
             <p align="center" class="goldratehome">
@@ -97,25 +97,14 @@
                         <p>18 Karat Gold Rate</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="single-defination section-leftright-border text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 2px dashed #2c2c2c; padding: 15px;">
-                        <p class="goldratehome" style="font-weight: bold; color: #333;">Rs. <span id="RATE16">12432</span></p>
-                        <p style="font-weight: bold; color: #333;">16 Karat Gold Rate</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-defination section-leftright-border text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 2px dashed #2c2c2c; padding: 15px;">
-                        <p class="goldratehome" style="color:#2c2c2c; !important;font-weight:bold">Rs. <span id="RATE12">9320</span></p>
-                        <p style="font-weight: bold; color: #333;">12 Karat Gold Rate</p>
-                    </div>
-                </div>
+              
             </div>
         </div>
         <!-- second calucltor -->
         <div class="col-12 mt-5">
             <div class="section-top-border">
                 <h2 class="title_color">Calculate Gold Rate in Tola</h2>
-                <span style="font-weight: normal;">As on {{ now()->format('d F Y') }} ({{ now()->formatLocalized('%A') }})</span><br />
+                <span style="font-weight: normal;">{{ now()->format('d F Y') }} ({{ now()->formatLocalized('%A') }})</span><br />
                 <br />
 
                 Type the number of Tola in the text box to calculate today's gold rates in different purity standards. You can easily calculate gold rates using our Gold conversion tool.
@@ -156,25 +145,14 @@
                             <p>18 Karat Gold Rate</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="single-defination section-leftright-border text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 2px dashed #2c2c2c; padding: 15px;">
-                            <p class="goldratehome" style="color:#2c2c2c; !important;font-weight:bold">Rs. <span id="TOLA16">145006</span></p>
-                            <p>16 Karat Gold Rate</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-defination section-leftright-border text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 2px dashed #2c2c2c; padding: 15px;">
-                            <p class="goldratehome" style="color:#2c2c2c; !important;font-weight:bold">Rs. <span id="TOLA12">108700</span></p>
-                            <p>12 Karat Gold Rate</p>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
 
             <div class="col-12 mt-5">
                 <div class="section-top-border">
                     <h2 class="title_color">Calculate Gold Rate in Ounce</h2>
-                    <span style="font-weight: normal;">As on {{ now()->format('d F Y') }} ({{ now()->formatLocalized('%A') }})</span><br />
+                    <span style="font-weight: normal;">{{ now()->format('d F Y') }} ({{ now()->formatLocalized('%A') }})</span><br />
                     <br />
                     Type the number of Ounce in the text box to calculate today's gold rates in different purity standards. You can easily calculate gold rates by using our Gold conversion tool.
 
@@ -214,18 +192,7 @@
                                 <p>18 Karat Gold Rate</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="single-defination section-leftright-border text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 2px dashed #2c2c2c; padding: 15px;">
-                                <p class="goldratehome" style="color:#2c2c2c; !important;font-weight:bold">Rs. <span id="OUNCE16">352449</span></p>
-                                <p>16 Karat Gold Rate</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="single-defination section-leftright-border text-center" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 2px dashed #2c2c2c; padding: 15px;">
-                                <p class="goldratehome" style="color:#2c2c2c; !important;font-weight:bold">Rs. <span id="OUNCE12">264205</span></p>
-                                <p>12 Karat Gold Rate</p>
-                            </div>
-                        </div>
+                    
                     </div>
                 </div>
             </div>

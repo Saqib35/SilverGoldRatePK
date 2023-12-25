@@ -10,6 +10,7 @@ use App\Models\GoldRateByWeek;
 use App\Models\GoldRateByDay;
 use App\Models\WebStory;
 use Yajra\DataTables\DataTables;
+use App\Models\UpdatedPrice;
 use DB;
 require base_path('app/Http/index-api/vendors/autoload.php');
 use Google;
@@ -20,6 +21,13 @@ use File;
 class AdminController extends Controller
 {
    
+
+
+    public function indexAdmin()
+    {
+        $updatedPrice=UpdatedPrice::first();
+        return view('admin.index',['updatedPrice'=>$updatedPrice]);
+    }
 
     // start home page content update
     
