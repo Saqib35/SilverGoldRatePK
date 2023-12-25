@@ -32,7 +32,7 @@
         <meta name="twitter:label1" content="Time to read" />
         <meta name="twitter:data1" content="5 minutes" />
 
-        
+<!--         
         <script type="application/ld+json" >
             {
                 "@context": "https://schema.org",
@@ -89,8 +89,8 @@
                     }
                 ]
             }
-        </script>
-        <script type="application/ld+json" >
+        </script> -->
+        <!-- <script type="application/ld+json" >
             {
                 "@context": "https://schema.org",
                 "@graph": [
@@ -172,7 +172,7 @@
                     }
                 ]
             }
-        </script>
+        </script> -->
 @endsection
 
 @section('main')

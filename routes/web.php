@@ -22,9 +22,9 @@ Route::get('index.php', function () {
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('gold-rate-in-pakistan', [HomeController::class, 'GoldPrice']);
-Route::get('category/gold-price-history-by-month/', [HomeController::class, 'GoldPriceByMonth']);
-Route::get('category/gold-price-history-by-week/', [HomeController::class, 'GoldPriceByWeek']);
-Route::get('author/staff/', [HomeController::class, 'ShowAuthor']);
+Route::get('category/gold-price-history-by-month', [HomeController::class, 'GoldPriceByMonth']);
+Route::get('category/gold-price-history-by-week', [HomeController::class, 'GoldPriceByWeek']);
+Route::get('author/staff', [HomeController::class, 'ShowAuthor']);
 
 
 
@@ -34,8 +34,8 @@ Route::get('privacy-policy-for-silver-rate-in-pakistan', [HomeController::class,
 // Route::get('terms-and-conditions', [HomeController::class, 'termCondition']);
 Route::get('feed', [HomeController::class, 'ShowFeed']);
 Route::get('web-storie/{slug?}', [HomeController::class, 'WebStories']);
-Route::get('gold-calcultor/', [HomeController::class, 'GoldCalculator']);
-Route::get('historial-gold-rate/', [HomeController::class, 'HistorialGoldRate']);
+Route::get('gold-calcultor', [HomeController::class, 'GoldCalculator']);
+Route::get('historial-gold-rate', [HomeController::class, 'HistorialGoldRate']);
 
 
 

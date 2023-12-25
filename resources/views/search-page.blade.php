@@ -10,11 +10,11 @@
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="gold rate in Pakistan - SilverGoldRate.PK" />
-        <meta property="og:url" content="https://silvergoldrate.pk/search/gold+rate+in+pakistan/" />
+        <meta property="og:url" content="{{ Request::fullUrl() }}" />
         <meta property="og:site_name" content="SilverGoldRate.pk" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="gold rate in pakistan - SilverGoldRate.PK" />
-        <script type="application/ld+json">
+        <!-- <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@graph": [
@@ -38,7 +38,7 @@
                     }
                 ]
             }
-        </script>
+        </script> -->
 
         
 @endsection

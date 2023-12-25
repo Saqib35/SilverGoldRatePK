@@ -5,12 +5,12 @@
     <title>Terms and Conditions</title>
     <meta name="description" content="Welcome to Silver Rate in Pakistan!" />
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-    <link rel="canonical" href="https://silvergoldrate.pk/terms-and-conditions/" />
+    <link rel="canonical" href="{{ Request::fullUrl()}}" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Terms and Conditions" />
     <meta property="og:description" content="Welcome to Silver Rate in Pakistan!" />
-    <meta property="og:url" content="https://silvergoldrate.pk/terms-and-conditions/" />
+    <meta property="og:url" content="{{ Request::fullUrl()}}" />
     <meta property="og:site_name" content="SilverGoldRate.pk" />
     <meta property="article:author" content="#" />
     <meta property="og:updated_time" content="2023-12-19T11:49:56+05:00" />
@@ -22,7 +22,7 @@
     <meta name="twitter:label1" content="Time to read" />
     <meta name="twitter:data1" content="2 minutes" />
    
-    <script type="application/ld+json">
+    <!-- <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@graph": [
@@ -77,7 +77,7 @@
             }
         ]
     }
-    </script>
+    </script> -->
 
 
 

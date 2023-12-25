@@ -16,7 +16,7 @@
         <meta name="twitter:label1" content="Posts" />
         <meta name="twitter:data1" content="8" />
             
-        <script type="application/ld+json" >
+        <!-- <script type="application/ld+json" >
             {
                 "@context": "https://schema.org",
                 "@graph": [
@@ -40,7 +40,7 @@
                     }
                 ]
             }
-        </script>
+        </script> -->
 
 @endsection
 

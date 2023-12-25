@@ -13,13 +13,13 @@
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Gold Rate In Pakistan - SilverGoldRate.PK" />
         <meta property="og:description" content="We provide you historical Gold Rates,  gold Charts & timely gold Graphs. Here you can find Daily, historical and monthly average gold price in Pakistan. - SilverGoldRate.PK" />
-        <meta property="og:url" content="{{ url('/historial-gold-rate/') }}" />
+        <meta property="og:url" content="{{  Request::fullUrl() }}" />
         <meta property="og:site_name" content="SilverGoldRate.pk" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Gold Rate In Pakistan - SilverGoldRate.PK" />
         <meta name="twitter:description" content="We provide you historical Gold Rates,  gold Charts & timely gold Graphs. Here you can find Daily, historical and monthly average gold price in Pakistan. - SilverGoldRate.PK" />
 
-        <script type="application/ld+json">
+        <!-- <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@graph": [
@@ -43,7 +43,7 @@
                 }
             ]
         }
-       </script>
+       </script> -->
         
 @endsection
 

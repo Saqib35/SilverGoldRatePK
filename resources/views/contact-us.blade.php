@@ -5,12 +5,12 @@
         <title>Contact Us</title>
         <meta name="description" content="Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverGoldRate.pk understand how crucial" />
         <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-        <link rel="canonical" href="https://silvergoldrate.pk/contact-us/" />
+        <link rel="canonical" href="{{  Request::fullUrl() }}" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Contact Us" />
         <meta property="og:description" content="Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverGoldRate.pk understand how crucial" />
-        <meta property="og:url" content="https://silvergoldrate.pk/contact-us/" />
+        <meta property="og:url" content="{{  Request::fullUrl() }}" />
         <meta property="og:site_name" content="SilverGoldRate.pk" />
         <meta property="article:author" content="#" />
         <meta property="og:updated_time" content="2023-12-18T11:59:31+05:00" />
@@ -22,7 +22,7 @@
         <meta name="twitter:label1" content="Time to read" />
         <meta name="twitter:data1" content="1 minute" />
         
-        <script type="application/ld+json">
+        <!-- <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@graph": [
@@ -77,7 +77,7 @@
                     }
                 ]
             }
-        </script>
+        </script> -->
 
 
 @endsection

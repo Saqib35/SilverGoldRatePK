@@ -37,7 +37,7 @@
 
         
         
-        <script type="application/ld+json">
+        <!-- <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@graph": [
@@ -104,7 +104,7 @@
                 ]
             }
         </script>
-     
+      -->
 @endsection
 
 @section('main')

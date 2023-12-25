@@ -5,14 +5,14 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Privacy Policy for Silver Rate in Pakistan</title>
-<meta name="description" content="At SilverGoldRate.pk, accessible from https://silvegoldrrate.pk/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains" />
+<meta name="description" content="At SilverGoldRate.pk, accessible from https://silvegoldrrate.pk, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains" />
 <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-<link rel="canonical" href="https://silvergoldrate.pk/privacy-policy-for-silver-rate-in-pakistan/" />
+<link rel="canonical" href="{{ Request::fullUrl()}}" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Privacy Policy for Silver Rate in Pakistan" />
-<meta property="og:description" content="At SilverGoldRate.pk, accessible from https://silvegoldrrate.pk/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains" />
-<meta property="og:url" content="https://silvergoldrate.pk/privacy-policy-for-silver-rate-in-pakistan/" />
+<meta property="og:description" content="At SilverGoldRate.pk, accessible from https://silvegoldrrate.pk, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains" />
+<meta property="og:url" content="{{ Request::fullUrl()}}" />
 <meta property="og:site_name" content="Gold and Silver Rate in Pakistan" />
 <meta property="article:author" content="#" />
 <meta property="og:updated_time" content="2023-12-18T12:04:51+05:00" />
@@ -20,11 +20,11 @@
 <meta property="article:modified_time" content="2023-08-02T12:04:51+05:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Privacy Policy for Silver Rate in Pakistan" />
-<meta name="twitter:description" content="At SilverGoldRate.pk, accessible from https://silvergoldrate.pk/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains" />
+<meta name="twitter:description" content="At SilverGoldRate.pk, accessible from https://silvergoldrate.pk, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains" />
 <meta name="twitter:label1" content="Time to read" />
 <meta name="twitter:data1" content="6 minutes" />
 
-<script type="application/ld+json">
+<!-- <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@graph": [
@@ -79,7 +79,7 @@
         ]
     }
 </script>
-
+ -->
 
 
 @endsection

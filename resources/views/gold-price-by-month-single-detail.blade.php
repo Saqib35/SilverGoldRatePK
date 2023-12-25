@@ -11,7 +11,7 @@
         <meta property="og:type" content="article" />
         <meta property="og:title" content="{{ $GoldRateByMonth->meta_title;  }}" />
         <meta property="og:description" content="{{ $GoldRateByMonth->meta_description;  }}" />
-        <meta property="og:url" content="https://silvergoldrate.pk/gold-price-history-november-2023/" />
+        <meta property="og:url" content="{{  Request::fullUrl() }}" />
         <meta property="og:site_name" content="Gold and Silver Rate in Pakistan" />
         <meta property="article:author" content="#" />
         <meta property="article:section" content="Gold Price History by Month" />
@@ -35,7 +35,7 @@
 
     
        
-        <script type="application/ld+json" >
+        <!-- <script type="application/ld+json" >
             {
                 "@context": "https://schema.org",
                 "@graph": [
@@ -102,7 +102,7 @@
                 ]
             }
         </script>
-       
+        -->
 
 
 
