@@ -129,8 +129,9 @@ class HomeController extends Controller
         return view('gold-price-by-month' ,['GoldRateByMonth'=>$GoldRateByMonth]);
     }
 
-    public function GoldPriceByMonthDetail(REQUEST $request)
+      public function GoldPriceByMonthDetail(REQUEST $request)
      {
+        
         
         $GoldRateByMonth=GoldRateByMonth::where('slug',$request->slug)->first();
         if($GoldRateByMonth)
@@ -172,12 +173,132 @@ class HomeController extends Controller
           return view('gold-price-by-day-single-detail' ,['GoldRateByDay'=>$GoldRateByDay]);
 
         }
-      
 
         return abort(404);
 
      }
 
+     public function calculateRates()
+     {
+        $pricePerTola = 218000; // Rate for one tola in Rupees
+        $gramsPerTola = 11.66; // Grams in one tola
+        $gramsPerTroyOunce = 31.1035; // Grams in one Troy ounce
+        $gramsPerKilogram = 1000; // Grams in one kilogram
+        
+        // Calculate rates
+        $ratePerGram = $pricePerTola / $gramsPerTola;
+        $ratePer10Grams = $ratePerGram * 10;
+        $ratePerTola = $ratePerGram * $gramsPerTola;
+        $ratePerKilogram = $ratePerGram * $gramsPerKilogram ;
+        $ratePerTroyOunce = $ratePerGram * $gramsPerTroyOunce;
+ 
+         // Return an array of calculated rates
+         return [
+             'ratePerGram' => number_format($ratePerGram, 0),
+             'ratePer10Grams' => number_format($ratePer10Grams, 0),
+             'ratePerTola' => number_format($ratePerTola, 0),
+             'ratePerKilogram' => number_format($ratePerKilogram, 0),
+             'ratePerTroyOunce' => number_format($ratePerTroyOunce, 0),
+         ];
+     }
+
+
+     public function calculateRates22K()
+     {
+        $pricePerTola = 201536; // Rate for one tola in Rupees
+        $gramsPerTola = 11.66; // Grams in one tola
+        $gramsPerTroyOunce = 31.1035; // Grams in one Troy ounce
+        $gramsPerKilogram = 1000; // Grams in one kilogram
+        
+        // Calculate rates
+        $ratePerGram = $pricePerTola / $gramsPerTola;
+        $ratePer10Grams = $ratePerGram * 10;
+        $ratePerTola = $ratePerGram * $gramsPerTola;
+        $ratePerKilogram = $ratePerGram * $gramsPerKilogram ;
+        $ratePerTroyOunce = $ratePerGram * $gramsPerTroyOunce;
+ 
+         // Return an array of calculated rates
+         return [
+             'ratePerGram' => number_format($ratePerGram, 0),
+             'ratePer10Grams' => number_format($ratePer10Grams, 0),
+             'ratePerTola' => number_format($ratePerTola, 0),
+             'ratePerKilogram' => number_format($ratePerKilogram, 0),
+             'ratePerTroyOunce' => number_format($ratePerTroyOunce, 0),
+         ];
+     }
+
+
+     public function calculateRates21K()
+     {
+        $pricePerTola = 192374; // Rate for one tola in Rupees
+        $gramsPerTola = 11.66; // Grams in one tola
+        $gramsPerTroyOunce = 31.1035; // Grams in one Troy ounce
+        $gramsPerKilogram = 1000; // Grams in one kilogram
+        
+        // Calculate rates
+        $ratePerGram = $pricePerTola / $gramsPerTola;
+        $ratePer10Grams = $ratePerGram * 10;
+        $ratePerTola = $ratePerGram * $gramsPerTola;
+        $ratePerKilogram = $ratePerGram * $gramsPerKilogram ;
+        $ratePerTroyOunce = $ratePerGram * $gramsPerTroyOunce;
+ 
+         // Return an array of calculated rates
+         return [
+             'ratePerGram' => number_format($ratePerGram, 0),
+             'ratePer10Grams' => number_format($ratePer10Grams, 0),
+             'ratePerTola' => number_format($ratePerTola, 0),
+             'ratePerKilogram' => number_format($ratePerKilogram, 0),
+             'ratePerTroyOunce' => number_format($ratePerTroyOunce, 0),
+         ];
+     }
+
+     public function calculateRates20K()
+     {
+        $pricePerTola = 183214; // Rate for one tola in Rupees
+        $gramsPerTola = 11.66; // Grams in one tola
+        $gramsPerTroyOunce = 31.1035; // Grams in one Troy ounce
+        $gramsPerKilogram = 1000; // Grams in one kilogram
+        
+        // Calculate rates
+        $ratePerGram = $pricePerTola / $gramsPerTola;
+        $ratePer10Grams = $ratePerGram * 10;
+        $ratePerTola = $ratePerGram * $gramsPerTola;
+        $ratePerKilogram = $ratePerGram * $gramsPerKilogram ;
+        $ratePerTroyOunce = $ratePerGram * $gramsPerTroyOunce;
+ 
+         // Return an array of calculated rates
+         return [
+             'ratePerGram' => number_format($ratePerGram, 0),
+             'ratePer10Grams' => number_format($ratePer10Grams, 0),
+             'ratePerTola' => number_format($ratePerTola, 0),
+             'ratePerKilogram' => number_format($ratePerKilogram, 0),
+             'ratePerTroyOunce' => number_format($ratePerTroyOunce, 0),
+         ];
+     }
+
+     public function calculateRates18K()
+     {
+        $pricePerTola = 164892; // Rate for one tola in Rupees
+        $gramsPerTola = 11.66; // Grams in one tola
+        $gramsPerTroyOunce = 31.1035; // Grams in one Troy ounce
+        $gramsPerKilogram = 1000; // Grams in one kilogram
+        
+        // Calculate rates
+        $ratePerGram = $pricePerTola / $gramsPerTola;
+        $ratePer10Grams = $ratePerGram * 10;
+        $ratePerTola = $ratePerGram * $gramsPerTola;
+        $ratePerKilogram = $ratePerGram * $gramsPerKilogram ;
+        $ratePerTroyOunce = $ratePerGram * $gramsPerTroyOunce;
+ 
+         // Return an array of calculated rates
+         return [
+             'ratePerGram' => number_format($ratePerGram, 0),
+             'ratePer10Grams' => number_format($ratePer10Grams, 0),
+             'ratePerTola' => number_format($ratePerTola, 0),
+             'ratePerKilogram' => number_format($ratePerKilogram, 0),
+             'ratePerTroyOunce' => number_format($ratePerTroyOunce, 0),
+         ];
+     }
 
      public function GoldPriceByWeek()
      {
@@ -189,12 +310,153 @@ class HomeController extends Controller
      {
         $HomePageGoldRate=HomePageGoldRate::first();
         $GoldRateByDay=GoldRateByDay::get();
-        return view('today-gold-price',['HomePageGoldRate'=>$HomePageGoldRate,'GoldRateByDay'=>$GoldRateByDay]);
+        $rates = $this->calculateRates();
+        $rates22k = $this->calculateRates22K();
+        $rates21k = $this->calculateRates21K();
+        $rates20k = $this->calculateRates20K();
+        $rates18k = $this->calculateRates18K();
+        $table_all_type = $this->generateTable();
+        $table_Second_Table_24k_And_22k = $this->generateSecondTable24kAnd22k();
+        
+        return view('today-gold-price',['HomePageGoldRate'=>$HomePageGoldRate,'GoldRateByDay'=>$GoldRateByDay,'table_all_type'=>$table_all_type,'table_Second_Table_24k_And_22k'=>$table_Second_Table_24k_And_22k,'rates'=>$rates,'rates22k'=>$rates22k,'rates21k'=>$rates21k,'rates20k'=>$rates20k,'rates18k'=>$rates18k]);
      }
      
         
     //    contact us controller
     
-  
+    private function generateTable()
+    {
+
+        $rates = $this->calculateRates();
+        $rates22k = $this->calculateRates22K();
+        $rates21k = $this->calculateRates21K();
+        $rates20k = $this->calculateRates20K();
+        $rates18k = $this->calculateRates18K();
+
+
+       
+
+        return '<div class="table-responsive"><table border="1" cellpadding="1" cellspacing="1" style="width:100%" class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th class="theadClor">Gold Type</th>
+                <th class="theadClor">Rate per Gram</th>
+                <th class="theadClor">Rate per 10 Grams</th>
+                <th class="theadClor">Rate per Tola</th>
+                <th class="theadClor">Rate per Troy Ounce</th>
+                <th class="theadClor">Rate per Kilogram</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align:center">24K</td>
+                <td style="text-align:center">'.$rates["ratePerGram"].'</td>
+                <td style="text-align:center">'.$rates["ratePer10Grams"].'</td>
+                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
+                <td style="text-align:center">'.$rates["ratePerTroyOunce"].'</td>
+                <td style="text-align:center">'.$rates["ratePerKilogram"].'</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">22K</td>
+                <td style="text-align:center">'.$rates22k["ratePerGram"].'</td>
+                <td style="text-align:center">'.$rates22k["ratePer10Grams"].'</td>
+                <td style="text-align:center">'.$rates22k["ratePerTola"].'  </td>
+                <td style="text-align:center">'.$rates22k["ratePerTroyOunce"].'</td>
+                <td style="text-align:center">'.$rates22k["ratePerKilogram"].'</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">21K</td>
+                <td style="text-align:center">'.$rates21k["ratePerGram"].'</td>
+                <td style="text-align:center">'.$rates21k["ratePer10Grams"].'</td>
+                <td style="text-align:center">'.$rates21k["ratePerTola"].'</td>
+                <td style="text-align:center">'.$rates21k["ratePerTroyOunce"].'</td>
+                <td style="text-align:center">'.$rates21k["ratePerKilogram"].'</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">20K</td>
+                <td style="text-align:center">'.$rates20k["ratePerGram"].'</td>
+                <td style="text-align:center">'.$rates20k["ratePer10Grams"].'</td>
+                <td style="text-align:center">'.$rates20k["ratePerTola"].'</td>
+                <td style="text-align:center">'.$rates20k["ratePerTroyOunce"].'</td>
+                <td style="text-align:center">'.$rates20k["ratePerKilogram"].'</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">18K</td>
+                <td style="text-align:center">'.$rates18k["ratePerGram"].'</td>
+                <td style="text-align:center">'.$rates18k["ratePer10Grams"].'</td>
+                <td style="text-align:center">'.$rates18k["ratePerTola"].'</td>
+                <td style="text-align:center">'.$rates18k["ratePerTroyOunce"].'</td>
+                <td style="text-align:center">'.$rates18k["ratePerKilogram"].'</td>
+            </tr>
+        </tbody>
+    </table></div>';
+    }
+
+
+
+    
+    private function generateSecondTable24kAnd22k()
+    {
+
+        $rates = $this->calculateRates();
+        $rates22k = $this->calculateRates22K();
+   
+
+
+       
+
+        return '<table border="1" cellpadding="1" cellspacing="1" style="width:100%">
+        <thead>
+            <tr>
+                <th scope="col">City</th>
+                <th scope="col">24K Rate per Tola</th>
+                <th scope="col">22K Rate per Tola</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align:center">Hyderabad</td>
+                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
+                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">Lahore</td>
+                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
+                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">Multan</td>
+                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
+                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">Islamabad</td>
+                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
+                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">Faisalabad</td>
+                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
+                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">Rawalpindi</td>
+                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
+                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">Quetta</td>
+                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
+                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+            </tr>
+            <tr>
+                <td style="text-align:center">Karachi</td>
+                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
+                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+            </tr>
+        </tbody>
+    </table>
+    ';
+    }
 
 }
