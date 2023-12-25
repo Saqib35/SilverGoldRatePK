@@ -15,7 +15,7 @@
           <a class="nav-link" href="{{ url('web-storie') }}">Web Stories</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('gold-calcultor/') }}">Gold Calcultor In Pakistan</a>
+          <a class="nav-link" href="{{ url('gold-calculator/') }}">Gold Calculator In Pakistan</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ url('historial-gold-rate/') }}">Historial Gold Rate</a>

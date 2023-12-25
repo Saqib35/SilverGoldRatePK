@@ -117,7 +117,7 @@
             
             <div style="border-bottom: 10px solid #e7ecef;" class="mt-5">
                 <div class="text-center mt-5">
-                    <h2 class="h2-size">{{ $GoldRateByDay->title;  }}</h2>
+                    <h1 class="h1-size">{{ $GoldRateByDay->title;  }}</h1>
                 </div>
                 <hr class="first" />
 
