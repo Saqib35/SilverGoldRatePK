@@ -98,3 +98,6 @@ h2, h3 {
 .text-capitalize {
   text-transform: capitalize;
 }
+.textLeft {
+  text-align: left !important;
+}

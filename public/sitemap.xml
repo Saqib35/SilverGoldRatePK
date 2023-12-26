@@ -1,42 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://silvergoldrate.pk/</loc>
-  <lastmod>2023-12-19T07:20:26+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://silvergoldrate.pk/</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://silvergoldrate.pk/category/gold-price-history-by-month</loc>
-  <lastmod>2023-12-19T07:20:26+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://silvergoldrate.pk/category/gold-price-history-by-month</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://silvergoldrate.pk/category/gold-price-history-by-week</loc>
-  <lastmod>2023-12-19T07:20:26+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://silvergoldrate.pk/category/gold-price-history-by-week</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://silvergoldrate.pk/gold-rate-in-pakistan</loc>
-  <lastmod>2023-12-19T07:20:26+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://silvergoldrate.pk/gold-rate-in-pakistan</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://silvergoldrate.pk/privacy-policy-for-silver-rate-in-pakistan</loc>
-  <lastmod>2023-12-19T07:20:26+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://silvergoldrate.pk/gold-rate-in-pakistan-today-23-december-2023</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://silvergoldrate.pk/contact-us</loc>
-  <lastmod>2023-12-19T07:20:26+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://silvergoldrate.pk/gold-rate-in-pakistan-today-22-december-2023</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-
-
+<url>
+<loc>https://silvergoldrate.pk/gold-rate-in-pakistan-today-21-december-2023</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://silvergoldrate.pk/gold-rate-in-pakistan-today-20-december-2023</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://silvergoldrate.pk/gold-rate-in-pakistan-today-19-december-2023</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://silvergoldrate.pk/privacy-policy-for-silver-rate-in-pakistan/</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://silvergoldrate.pk/contact-us/</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://silvergoldrate.pk/web-storie</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://silvergoldrate.pk/historial-gold-rate</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://silvergoldrate.pk/web-storie/gold-rate-in-pakistan-25-december-2023</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://silvergoldrate.pk/web-storie/gold-rate-in-pakistan-23-december-2023</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://silvergoldrate.pk/web-storie/gold-rate-in-pakistan-22-december-2023</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://silvergoldrate.pk/web-storie/gold-rate-in-pakistan-21-december-2023</loc>
+<lastmod>2023-12-25T18:58:03+00:00</lastmod>
+<priority>0.64</priority>
+</url>
 </urlset>
