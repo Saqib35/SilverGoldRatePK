@@ -393,7 +393,7 @@ class HomeController extends Controller
             return redirect(str_replace('/public', '', $currentUrl));
         } 
         $HomePageGoldRate=HomePageGoldRate::first();
-        $GoldRateByDay=GoldRateByDay::get();
+        $GoldRateByDay=GoldRateByDay::orderBy('created_at', 'desc')->get();
         $rates = $this->calculateRates();
         $rates22k = $this->calculateRates22K();
         $rates21k = $this->calculateRates21K();
