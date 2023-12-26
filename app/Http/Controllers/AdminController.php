@@ -29,6 +29,26 @@ class AdminController extends Controller
         return view('admin.index',['updatedPrice'=>$updatedPrice]);
     }
 
+
+    public function GoldRateUpdate(REQUEST $request)
+    {
+       
+        
+        $updatedPrice = UpdatedPrice::first();
+
+        if ($updatedPrice) {
+          
+            $updatedPrice->kerat24k =  $request->kerat24k;
+            $updatedPrice->kerat22k =  $request->kerat22k;
+            $updatedPrice->kerat21k =  $request->kerat21k;
+            $updatedPrice->kerat20k =  $request->kerat20k;
+            $updatedPrice->kerat18k =  $request->kerat18k;
+            $updatedPrice->save();
+            return redirect()->back()->with('success', 'Gold Rate Updated successfully.');
+        }
+        
+      
+    }
     // start home page content update
     
     public function HomeUpdate()

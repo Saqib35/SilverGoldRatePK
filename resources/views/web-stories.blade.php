@@ -36,7 +36,7 @@
                 {
                     "@type": "CollectionPage",
                     "@id": "{{ url('/web-storie/#webpage') }}",
-                    "url": "{{ url('/web-storie/') }}",
+                    "url": "{{ url('/web-storie') }}",
                     "name": "Web Stories - SilverGoldRate.PK",
                     "isPartOf": { "@id": "{{ url('/#website') }}" },
                     "inLanguage": "en-US"

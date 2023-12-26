@@ -232,6 +232,69 @@
                 <p>Karat is a measurement of metal purity, that how much pure metal is present in 1 “tola” or “Masha” or “Ratti”. For example, 24 karat gold means 99.9% of pure metal i-e gold is present.</p>
                 <h2>How to check gold purity in details:</h2>
                 <p>How much impurity is present in 22k, 20k, 18k etc., is presented in given table.</p>
+                
+                <table align="center" border="1" cellpadding="1" cellspacing="1" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th scope="col">Karat</th>
+                            <th scope="col">Formla</th>
+                            <th scope="col">Gold %</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align:center">24</td>
+                            <td style="text-align:center">(24/24)*100</td>
+                            <td style="text-align:center">99%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">22</td>
+                            <td style="text-align:center">(22/24)*100</td>
+                            <td style="text-align:center">91.6%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">20</td>
+                            <td style="text-align:center">(20/24)*100</td>
+                            <td style="text-align:center">83.3%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">18</td>
+                            <td style="text-align:center">(18/24)*100</td>
+                            <td style="text-align:center">75%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">16</td>
+                            <td style="text-align:center">(16/24)*100</td>
+                            <td style="text-align:center">66.6%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">14</td>
+                            <td style="text-align:center">(14/24)*100</td>
+                            <td style="text-align:center">58.3%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">12</td>
+                            <td style="text-align:center">(12/24)*100</td>
+                            <td style="text-align:center">50%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">10</td>
+                            <td style="text-align:center">(10/24)*100</td>
+                            <td style="text-align:center">41.7%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">8</td>
+                            <td style="text-align:center">(8/24)*100</td>
+                            <td style="text-align:center">33.3%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">6</td>
+                            <td style="text-align:center">(6/24)*100</td>
+                            <td style="text-align:center">25%</td>
+                        </tr>
+                    </tbody>
+                </table>
+
                 <h2>
                     <span >
                         <span>
@@ -401,7 +464,7 @@
                             <div class="lastestNews" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);border-radius:10px">
                                <a href="{{ url($result->slug) }}"> 
                                  <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
-                                 <h6 class="mt-3 p-2">{{ $result->title }}</h6>
+                                 <h2 class="mt-3 p-2">{{ $result->title }}</h2>
                                </a>
                             </div>
                             @endif

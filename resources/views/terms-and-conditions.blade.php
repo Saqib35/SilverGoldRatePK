@@ -22,35 +22,35 @@
     <meta name="twitter:label1" content="Time to read" />
     <meta name="twitter:data1" content="2 minutes" />
    
-    <!-- <script type="application/ld+json">
+    <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@graph": [
-            { "@type": "Organization", "@id": "https://silvergoldrate.pk/#organization", "name": "SilverGoldRate" },
+            { "@type": "Organization", "@id": "{{ url('/#organization') }}", "name": "SilverGoldRate" },
             {
                 "@type": "WebSite",
-                "@id": "https://silvergoldrate.pk/#website",
-                "url": "https://silvergoldrate.pk",
+                "@id": "{{ url('/#website') }}",
+                "url": "{{ url('/') }}",
                 "name": "SilverGoldRate.pk",
                 "alternateName": "Gold and Silver Rate in Pakistan",
-                "publisher": { "@id": "https://silvergoldrate.pk/#organization" },
+                "publisher": { "@id": "{{ url('/#organization') }}" },
                 "inLanguage": "en-US"
             },
             {
                 "@type": "WebPage",
-                "@id": "https://silvergoldrate.pk/terms-and-conditions/#webpage",
-                "url": "https://silvergoldrate.pk/terms-and-conditions/",
+                "@id": "{{  url('/terms-and-conditions/#webpage') }}",
+                "url": "{{ url('/terms-and-conditions') }}",
                 "name": "Terms and Conditions",
                 "datePublished": "2023-12-19T11:49:54+05:00",
                 "dateModified": "2023-12-19T11:49:56+05:00",
-                "isPartOf": { "@id": "https://silvergoldrate.pk/#website" },
+                "isPartOf": { "@id": "{{ url('/#website') }}" },
                 "inLanguage": "en-US"
             },
             {
                 "@type": "Person",
-                "@id": "https://silvergoldrate.pk/author/staff/",
+                "@id": "{{ url('/author/staff/') }}",
                 "name": "Staff",
-                "url": "https://silvergoldrate.pk/author/staff/",
+                "url": "{{ url('/author/staff/') }}",
                 "image": {
                     "@type": "ImageObject",
                     "@id": "{{ asset('assets/staff.webp') }}",
@@ -58,26 +58,26 @@
                     "caption": "Staff",
                     "inLanguage": "en-US"
                 },
-                "sameAs": ["http://silvergoldrate.pk", "#", "https://twitter.com/#"],
-                "worksFor": { "@id": "https://silvergoldrate.pk/#organization" }
+                "sameAs": ["{{ url('/') }}", "#", "https://twitter.com/#"],
+                "worksFor": { "@id": "{{ url('/#organization') }}" }
             },
             {
                 "@type": "NewsArticle",
                 "headline": "Terms and Conditions",
                 "datePublished": "2023-08-02T11:49:54+05:00",
                 "dateModified": "2023-08-02T11:49:56+05:00",
-                "author": { "@id": "https://silvergoldrate.pk/author/staff/", "name": "Staff" },
-                "publisher": { "@id": "https://silvergoldrate.pk/#organization" },
+                "author": { "@id": "{{ url('/author/staff/') }}", "name": "Staff" },
+                "publisher": { "@id": "{{ url('/#organization') }}" },
                 "description": "Welcome to Silver Rate in Pakistan!",
                 "name": "Terms and Conditions",
-                "@id": "https://silvergoldrate.pk/terms-and-conditions/#richSnippet",
-                "isPartOf": { "@id": "https://silvergoldrate.pk/terms-and-conditions/#webpage" },
+                "@id": "{{ url('/terms-and-conditions/#richSnippet') }}",
+                "isPartOf": { "@id": "{{ url('/terms-and-conditions/#webpage') }}" },
                 "inLanguage": "en-US",
-                "mainEntityOfPage": { "@id": "https://silvergoldrate.pk/terms-and-conditions/#webpage" }
+                "mainEntityOfPage": { "@id": "{{ url('/terms-and-conditions/#webpage') }}" }
             }
         ]
     }
-    </script> -->
+    </script>
 
 
 

@@ -2,7 +2,7 @@
 
 @section('css')
 
-        <title>Contact Us</title>
+        <title>Contact Us | Silvergoldrate.pk</title>
         <meta name="description" content="Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverGoldRate.pk understand how crucial" />
         <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
         <link rel="canonical" href="{{  Request::fullUrl() }}" />
@@ -120,8 +120,7 @@
                             <div class="lastestNews" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);border-radius:10px">
                                <a href="{{ url($result->slug) }}"> 
                                  <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
-                                 <h6 class="mt-3 p-2">{{ $result->title }}</h6>
-                               </a>
+                                 <h2 class="mt-3 p-2">{{ $result->title }}</h2>                               </a>
                             </div>
                             @endif
                         @endforeach

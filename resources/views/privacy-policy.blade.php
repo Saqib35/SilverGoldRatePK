@@ -24,35 +24,35 @@
 <meta name="twitter:label1" content="Time to read" />
 <meta name="twitter:data1" content="6 minutes" />
 
-<!-- <script type="application/ld+json">
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@graph": [
-            { "@type": ["Person", "Organization"], "@id": "https://silvergoldrate.pk/#person", "name": "Staff" },
+            { "@type": ["Person", "Organization"], "@id": "{{ url('/#person') }}", "name": "Staff" },
             {
                 "@type": "WebSite",
-                "@id": "https://silvergoldrate.pk/#website",
-                "url": "https://silvergoldrate.pk",
+                "@id": "{{ url('/#website') }}",
+                "url": "{{ url('/') }}",
                 "name": "Gold and Silver Rate in Pakistan",
                 "alternateName": "Gold Price in Pakistan",
-                "publisher": { "@id": "https://silvergoldrate.pk/#person" },
+                "publisher": { "@id": "{{ url('/#person') }}" },
                 "inLanguage": "en-US"
             },
             {
                 "@type": "WebPage",
-                "@id": "https://silvergoldrate.pk/privacy-policy-for-silver-rate-in-pakistan/#webpage",
-                "url": "https://silvergoldrate.pk/privacy-policy-for-silver-rate-in-pakistan/",
+                "@id": "{{ url('/privacy-policy-for-silver-rate-in-pakistan/#webpage') }}",
+                "url": "{{ url('/privacy-policy-for-silver-rate-in-pakistan/') }}",
                 "name": "Privacy Policy for Silver Rate in Pakistan",
                 "datePublished": "2023-12-18T12:04:50+05:00",
                 "dateModified": "2023-12-18T12:04:51+05:00",
-                "isPartOf": { "@id": "https://silvergoldrate.pk/#website" },
+                "isPartOf": { "@id": "{{ url('/#website') }}" },
                 "inLanguage": "en-US"
             },
             {
                 "@type": "Person",
-                "@id": "https://silvergoldrate.pk/author/staff/",
+                "@id": "{{ url('/author/staff/') }}",
                 "name": "Staff",
-                "url": "https://silvergoldrate.pk/author/staff/",
+                "url": "{{ url('/author/staff/') }}",
                 "image": {
                     "@type": "ImageObject",
                     "@id": "{{ asset('assets/staff.webp') }}",
@@ -60,25 +60,25 @@
                     "caption": "Staff",
                     "inLanguage": "en-US"
                 },
-                "sameAs": ["http://silvergoldrate.pk", "#", "https://twitter.com/#"]
+                "sameAs": ["{{ url('/') }}", "#", "https://twitter.com/#"]
             },
             {
                 "@type": "NewsArticle",
                 "headline": "Privacy Policy for Silver Rate in Pakistan",
                 "datePublished": "2023-12-18T12:04:50+05:00",
                 "dateModified": "2023-12-18T12:04:51+05:00",
-                "author": { "@id": "https://silvergoldrate.pk/author/staff/", "name": "Staff" },
-                "publisher": { "@id": "https://silvergoldrate.pk/#person" },
+                "author": { "@id": "{{ url('/author/staff/') }}", "name": "Staff" },
+                "publisher": { "@id": "{{ url('/#person') }}" },
                 "description": "At SilverGoldRate.pk, accessible from https://silvergoldrate.pk/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains",
                 "name": "Privacy Policy for Silver Rate in Pakistan",
-                "@id": "https://silvergoldrate.pk/privacy-policy-for-silver-rate-in-pakistan/#richSnippet",
-                "isPartOf": { "@id": "https://silvergoldrate.pk/privacy-policy-for-silver-rate-in-pakistan/#webpage" },
+                "@id": "{{ url('/privacy-policy-for-silver-rate-in-pakistan/#richSnippet') }}",
+                "isPartOf": { "@id": "{{ url('/privacy-policy-for-silver-rate-in-pakistan/#webpage') }}" },
                 "inLanguage": "en-US",
-                "mainEntityOfPage": { "@id": "https://silvergoldrate.pk/privacy-policy-for-silver-rate-in-pakistan/#webpage" }
+                "mainEntityOfPage": { "@id": "{{ url('/privacy-policy-for-silver-rate-in-pakistan/#webpage') }}" }
             }
         ]
     }
-</script> -->
+</script>
 
 
 
@@ -175,7 +175,7 @@
                             <div class="lastestNews" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);border-radius:10px">
                                <a href="{{ url($result->slug) }}"> 
                                  <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
-                                 <h6 class="mt-3 p-2">{{ $result->title }}</h6>
+                                 <h2 class="mt-3 p-2">{{ $result->title }}</h2>
                                </a>
                             </div>
                             @endif

@@ -39,7 +39,7 @@
                                 <h4 class="card-title mb-0">Upload Gold Rate</h4>
                             </div>
                             <div class="card-body">
-                                <form action="{{ url('add-rate-report-by-day-update') }}" enctype='multipart/form-data' method="post" id="myForm" class="drozone">
+                                <form action="{{ url('panel/admin/edit/home') }}" enctype='multipart/form-data' method="post" id="myForm" class="drozone">
                                  @csrf
                                     
                                         <div class="col-md-12">
