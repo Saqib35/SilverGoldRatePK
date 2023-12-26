@@ -23,10 +23,10 @@
                     Gold Price in Pakistan Today - {{ \Carbon\Carbon::now()->format('F j, Y') }}
                   </a>
                   <div class="dropdown-menu w-100 topHeader" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item">Gold Ratee In Lahore</a>
-                    <a class="dropdown-item">Gold Ratee In Islamabad</a>
-                    <a class="dropdown-item">Gold Ratee In Karachi</a>
-                    <a class="dropdown-item">Gold Ratee In Multan</a>
+                    <a class="dropdown-item">Gold Rate In Lahore</a>
+                    <a class="dropdown-item">Gold Rate In Islamabad</a>
+                    <a class="dropdown-item">Gold Rate In Karachi</a>
+                    <a class="dropdown-item">Gold Rate In Multan</a>
                     
                   </div>
                 </li>
