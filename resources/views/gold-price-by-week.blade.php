@@ -16,7 +16,7 @@
         <meta name="twitter:title" content="Gold Price History by Week | Silvergoldrate.pk" />
         <meta name="twitter:label1" content="Posts" />
         <meta name="twitter:data1" content="8" />
-        <!-- <script type="application/ld+json" >
+        <script type="application/ld+json" >
             {
                 "@context": "https://schema.org",
                 "@graph": [
@@ -33,14 +33,14 @@
                     {
                         "@type": "CollectionPage",
                         "@id": "{{ url('category/gold-price-history-by-week/#webpage') }}",
-                        "url": "{{ url('category/gold-price-history-by-week/') }}",
+                        "url": "{{ url('category/gold-price-history-by-week') }}",
                         "name": "Gold Price History by Week - SilverGoldRate.PK",
                         "isPartOf": { "@id": "{{ url('/#website') }}" },
                         "inLanguage": "en-US"
                     }
                 ]
             }
-        </script> -->
+        </script>
 @endsection
 
 @section('main')
@@ -85,9 +85,6 @@
 
            @endforeach
 
-
-
-
         </div>
 
         <div class="col-md-3" style="border-left: 5px solid #e7ecef;">
@@ -112,9 +109,6 @@
                             @endif
                         @endforeach
                     </div>
-
-
-                   
                 </div>
                 <div></div>
             </div>

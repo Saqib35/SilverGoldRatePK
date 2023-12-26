@@ -37,7 +37,7 @@
 
         
         
-        <!-- <script type="application/ld+json">
+        <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@graph": [
@@ -62,7 +62,7 @@
                     },
                     {
                         "@type": "WebPage",
-                        "@id": "{{ url($GoldRateByWeek->slug)}}#webpage",
+                        "@id": "{{ url($GoldRateByWeek->slug.'/#webpage')}}",
                         "url": "{{ url($GoldRateByWeek->slug)}}",
                         "name": "{{ $GoldRateByWeek->title  }}",
                         "datePublished": "{{ $GoldRateByWeek->created_at  }}",
@@ -104,7 +104,7 @@
                 ]
             }
         </script>
-      -->
+     
 @endsection
 
 @section('main')

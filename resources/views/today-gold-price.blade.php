@@ -32,7 +32,7 @@
         <meta name="twitter:label1" content="Time to read" />
         <meta name="twitter:data1" content="5 minutes" />
 
-<!--         
+        
         <script type="application/ld+json" >
             {
                 "@context": "https://schema.org",
@@ -89,8 +89,8 @@
                     }
                 ]
             }
-        </script> -->
-        <!-- <script type="application/ld+json" >
+        </script>
+        <script type="application/ld+json" >
             {
                 "@context": "https://schema.org",
                 "@graph": [
@@ -172,7 +172,7 @@
                     }
                 ]
             }
-        </script> -->
+        </script>
 @endsection
 
 @section('main')
@@ -228,80 +228,82 @@
                       
                     </tbody>
                 </table>
-
-
+                <h2>What is “Karat” or “Carat”</h2>
+                <p>Karat is a measurement of metal purity, that how much pure metal is present in 1 “tola” or “Masha” or “Ratti”. For example, 24 karat gold means 99.9% of pure metal i-e gold is present.</p>
+                <h2>How to check gold purity in details:</h2>
+                <p>How much impurity is present in 22k, 20k, 18k etc., is presented in given table.</p>
                 <h2>
-                    <span style="font-size: 20px;">
-                        <span style="font-family: Calibri, 'sans-serif';">
+                    <span >
+                        <span>
                             <strong><u>FAQs:</u></strong>
                         </span>
                     </span>
                 </h2>
 
                 <h3>
-                    <span style="font-size: 16px;">
-                        <span style="font-family: Calibri, 'sans-serif';"><strong>1. What is the recent gold rate in Pakistan for 1 tola?</strong></span>
+                    <span>
+                        <span><strong>1. What is the recent gold rate in Pakistan for 1 tola?</strong></span>
                     </span>
                 </h3>
 
                 <p>
-                    <span style="font-size: 11pt;">
-                        <span style="font-family: Calibri, 'sans-serif';">
-                            <span style="font-size: 12pt;">About today, {{ now()->format('d F Y') }}, the rate of 1 Tola 24-carat gold in Pakistan is <strong>PKR&nbsp;</strong></span>
+                    <span >
+                        <span >
+                            <span>About today, {{ now()->format('d F Y') }}, the rate of 1 Tola 24-carat gold in Pakistan is <strong>PKR&nbsp;</strong></span>
                         </span>
                     </span>
                     <strong>{{ $rates['ratePerTola'] }}</strong>.
                 </p>
 
                 <h3>
-                    <span style="font-size: 16px;">
-                        <span style="font-family: Calibri, 'sans-serif';"><strong>2. What is the rate of 1 Tola 22-carat gold in Pakistan today?</strong></span>
+                    <span>
+                        <span ><strong>2. What is the rate of 1 Tola 22-carat gold in Pakistan today?</strong></span>
                     </span>
                 </h3>
 
                 <p>
-                    <span style="font-size: 11pt;">
-                        <span style="font-family: Calibri, 'sans-serif';">
-                            <span style="font-size: 12pt;">As of today, {{ now()->format('d F Y') }}, the rate of 1 Tola 22-carat gold in Pakistan is <strong>PKR </strong></span>
+                    <span >
+                        <span >
+                            <span>As of today, {{ now()->format('d F Y') }}, the rate of 1 Tola 22-carat gold in Pakistan is <strong>PKR </strong></span>
                         </span>
                     </span>
                     <strong>{{ $rates22k['ratePerTola'] }}</strong>.
                 </p>
 
                 <h3>
-                    <span style="font-size: 16px;">
-                        <span style="font-family: Calibri, 'sans-serif';"><strong>3. How many grams are in one Tola?</strong></span>
+                    <span>
+                        <span ><strong>3. How many grams are in one Tola?</strong></span>
                     </span>
                 </h3>
 
                 <p>
-                    <span style="font-size: 11pt;">
-                        <span style="font-family: Calibri, 'sans-serif';"><span style="font-size: 12pt;">There are &ldquo;11.664&rdquo; grams in 1 Tola.</span></span>
+                    <span>
+                        <span><span>There are &ldquo;11.664&rdquo; grams in 1 Tola.</span></span>
                     </span>
                 </p>
 
                 <h3>
-                    <span style="font-size: 16px;">
-                        <span style="font-family: Calibri, 'sans-serif';"><strong>4. How many carats are in a tola?</strong></span>
+                    <span >
+                        <span ><strong>4. How many carats are in a tola?</strong></span>
                     </span>
                 </h3>
 
                 <p>
-                    <span style="font-size: 11pt;">
-                        <span style="font-family: Calibri, 'sans-serif';"><span style="font-size: 12pt;">1 Pakistan Tola is 12.5g or 11/25 of a t/oz (0.44 t/oz)</span></span>
+                    <span >
+                        <span ><span>1 Pakistan Tola is 12.5g or 11/25 of a t/oz (0.44 t/oz)</span></span>
                     </span>
                 </p>
 
                 <h3>
-                    <span style="font-size: 16px;">
+                    <span >
                         <span style="font-family: Calibri, 'sans-serif';"><strong>5. How many Ratti are in one Masha?</strong></span>
                     </span>
                 </h3>
 
                 <p>
-                    <span style="font-size: 11pt;">
-                        <span style="font-family: Calibri, 'sans-serif';">
-                            <span style="font-size: 12pt;">
+                    <span>
+                        <span>
+                            <span>
                                 One Masha is equal to 8&nbsp;<a href="https://en.wikipedia.org/wiki/Ratti" target="_blank"><span style="color: blue;">Ratti</span></a>.
                             </span>
                         </span>
@@ -309,66 +311,66 @@
                 </p>
 
                 <h3>
-                    <span style="font-size: 16px;">
-                        <span style="font-family: Calibri, 'sans-serif';"><strong>6. How much does 1 gram of gold cost in Pakistan?</strong></span>
+                    <span>
+                        <span><strong>6. How much does 1 gram of gold cost in Pakistan?</strong></span>
                     </span>
                 </h3>
 
                 <p>
-                    <span style="font-size: 11pt;">
-                        <span style="font-family: Calibri, 'sans-serif';"><span style="font-size: 12pt;">As of today, {{ now()->format('d F Y') }}, 1 gram of gold in Pakistan costs </span></span>
+                    <span >
+                        <span >As of today, {{ now()->format('d F Y') }}, 1 gram of gold in Pakistan costs </span>
                     </span>
                     <strong>PKR {{ $rates['ratePerGram'] }}</strong>.
                 </p>
 
                 <h3>
-                    <span style="font-size: 16px;">
-                        <span style="font-family: Calibri, 'sans-serif';"><strong>7. How often does the gold rate change in Pakistan?</strong></span>
+                    <span>
+                        <span ><strong>7. How often does the gold rate change in Pakistan?</strong></span>
                     </span>
                 </h3>
 
                 <p>
-                    <span style="font-size: 11pt;">
-                        <span style="font-family: Calibri, 'sans-serif';"><span style="font-size: 12pt;">The gold rate in Pakistan can change anytime, and it may fluctuate multiple times per day.</span></span>
+                    <span >
+                        <span>The gold rate in Pakistan can change anytime, and it may fluctuate multiple times per day.</span>
                     </span>
                 </p>
 
                 <h3>
-                    <span style="font-size: 16px;">
-                        <span style="font-family: Calibri, 'sans-serif';"><strong>8. What factors influence the gold rate in Pakistan?</strong></span>
+                    <span>
+                        <span><strong>8. What factors influence the gold rate in Pakistan?</strong></span>
                     </span>
                 </h3>
 
                 <p>
-                    <span style="font-size: 11pt;">
-                        <span style="font-family: Calibri, 'sans-serif';"><span style="font-size: 12pt;">The gold rate in Pakistan is greatly influenced by variations in the dollar rate and the economic instability of Pakistan.</span></span>
+                    <span >
+                        <span>The gold rate in Pakistan is greatly influenced by variations in the dollar rate and the economic instability of Pakistan.</span>
                     </span>
                 </p>
 
                 <h3>
-                    <span style="font-size: 16px;">
-                        <span style="font-family: Calibri, 'sans-serif';"><strong>9. What is the difference between 24-carat and 22-carat gold?</strong></span>
+                    <span>
+                        <span><strong>9. What is the difference between 24-carat and 22-carat gold?</strong></span>
                     </span>
                 </h3>
 
                 <p>
-                    <span style="font-size: 11pt;">
-                        <span style="font-family: Calibri, 'sans-serif';">
-                            <span style="font-size: 12pt;">24-carat gold is the purest form of gold, containing 99.5% of the precious metal, while 22-carat gold contains 91.6% gold and 8.4% of other metals.</span>
+                    <span>
+                        <span>
+                            <span >24-carat gold is the purest form of gold, containing 99.5% of the precious metal, while 22-carat gold contains 91.6% gold and 8.4% of other metals.</span>
                         </span>
                     </span>
                 </p>
 
                 <h3>
-                    <span style="font-size: 16px;">
-                        <span style="font-family: Calibri, 'sans-serif';"><strong>10. Where to sell gold in Pakistan?</strong></span>
+                    <span>
+                        <span><strong>10. Where to sell gold in Pakistan?</strong></span>
                     </span>
                 </h3>
 
                 <p>
-                    <span style="font-size: 11pt;">
-                        <span style="font-family: Calibri, 'sans-serif';">
-                            <span style="font-size: 12pt;">
+                    <span>
+                        <span>
+                            <span>
                                 Don&rsquo;t sell gold to local jewelers they won&rsquo;t give you a good price. It is advisable to sell gold in Pakistan at Sarafa Bazar to wholesalers, as they usually offer better prices compared to local jewelers.
                             </span>
                         </span>

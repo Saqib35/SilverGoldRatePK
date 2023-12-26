@@ -19,7 +19,7 @@
         <meta name="twitter:title" content="Gold Rate In Pakistan - SilverGoldRate.PK" />
         <meta name="twitter:description" content="We provide you historical Gold Rates,  gold Charts & timely gold Graphs. Here you can find Daily, historical and monthly average gold price in Pakistan. - SilverGoldRate.PK" />
 
-        <!-- <script type="application/ld+json">
+        <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@graph": [
@@ -36,14 +36,14 @@
                 {
                     "@type": "CollectionPage",
                     "@id": "{{ url('/historial-gold-rate/#webpage') }}",
-                    "url": "{{ url('/historial-gold-rate/') }}",
+                    "url": "{{ url('/historial-gold-rate') }}",
                     "name": "Gold Rate Calculator  - SilverGoldRate.PK",
                     "isPartOf": { "@id": "{{ url('/#website') }}" },
                     "inLanguage": "en-US"
                 }
             ]
         }
-       </script> -->
+       </script>
         
 @endsection
 

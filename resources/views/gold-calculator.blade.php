@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Gold Rate Calculator - SilverGoldRate.PK" />
 <meta name="twitter:description" content="Gold Rate Calculator - SilverGoldRate.PK" />
 
-<!-- <script type="application/ld+json">
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@graph": [
@@ -40,7 +40,7 @@
             }
         ]
     }
-</script> -->
+</script>
 
 @endsection @section('main')
 <div class="container mt-3 bg-white p-5">

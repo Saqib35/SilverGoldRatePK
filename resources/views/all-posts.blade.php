@@ -9,7 +9,7 @@
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="profile" />
         <meta property="og:title" content="Staff - Silvergoldrate.pk" />
-        <meta property="og:url" content="https://silvergoldrate.pk/author/staff/" />
+        <meta property="og:url" content="{{  Request::fullUrl() }}" />
         <meta property="og:site_name" content="Gold and Silver Rate in Pakistan" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Staff - Silvergoldrate.pk" />
@@ -19,7 +19,7 @@
         <meta name="twitter:data2" content="103" />
 
 
-        <!-- <script type="application/ld+json">
+        <script type="application/ld+json">
        {
         "@context": "https://schema.org",
         "@graph": [
@@ -58,7 +58,7 @@
             }
           ]
         }
-    </script> -->
+    </script>
         
 @endsection
 

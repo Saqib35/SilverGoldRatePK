@@ -16,7 +16,7 @@
         <meta name="twitter:label1" content="Posts" />
         <meta name="twitter:data1" content="8" />
             
-        <!-- <script type="application/ld+json" >
+        <script type="application/ld+json" >
             {
                 "@context": "https://schema.org",
                 "@graph": [
@@ -33,14 +33,14 @@
                     {
                         "@type": "CollectionPage",
                         "@id": "{{ url('/category/gold-price-history-by-month/#webpage') }}",
-                        "url": "{{ url('/category/gold-price-history-by-month/') }}",
+                        "url": "{{ url('/category/gold-price-history-by-month') }}",
                         "name": "Gold Price History by Month | Silvergoldrate.pk",
                         "isPartOf": { "@id": "{{ url('/#website') }}" },
                         "inLanguage": "en-US"
                     }
                 ]
             }
-        </script> -->
+        </script>
 
 @endsection
 

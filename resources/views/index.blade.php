@@ -32,7 +32,7 @@
         <meta name="twitter:data2" content="2 minutes" />
 
 
-        <!-- <script type="application/ld+json">
+        <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@graph": [
@@ -88,9 +88,9 @@
                 }
             ]
         }
-    </script> -->
+    </script>
 
-    <!-- {!! $home_content->home_schema !!} -->
+    {!! $home_content->home_schema !!}
 
 
 

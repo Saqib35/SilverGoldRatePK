@@ -14,18 +14,18 @@
         <meta property="og:site_name" content="SilverGoldRate.pk" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="gold rate in pakistan - SilverGoldRate.PK" />
-        <!-- <script type="application/ld+json">
+        <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@graph": [
-                    { "@type": "Organization", "@id": "https://silvergoldrate.pk/#organization", "name": "SilverGoldRate" },
+                    { "@type": "Organization", "@id": "{{ url('/#organization') }}", "name": "SilverGoldRate" },
                     {
                         "@type": "WebSite",
-                        "@id": "https://silvergoldrate.pk/#website",
-                        "url": "https://silvergoldrate.pk",
+                        "@id": "{{ url('/#website') }}",
+                        "url": "{{ url('/') }}",
                         "name": "SilverGoldRate.pk",
                         "alternateName": "Gold and Silver Rate in Pakistan",
-                        "publisher": { "@id": "https://silvergoldrate.pk/#organization" },
+                        "publisher": { "@id": "{{ url('/#organization') }}" },
                         "inLanguage": "en-US"
                     },
                     {
@@ -38,7 +38,7 @@
                     }
                 ]
             }
-        </script> -->
+        </script>
 
         
 @endsection
