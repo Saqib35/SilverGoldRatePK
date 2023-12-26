@@ -37,10 +37,10 @@
       <div class="col-md-3">
         <ul class="nav footer-nav d-block">
           <li class="nav-item textLeft">
-            <a class="nav-link" href="{{ url('category/gold-price-history-by-month') }}">History by Month In Pakistan</a>
+            <a class="nav-link" href="{{ url('category/gold-price-history-by-month') }}">History by Month</a>
           </li>
           <li class="nav-item textLeft">
-            <a class="nav-link" href="{{ url('category/gold-price-history-by-week') }}">History by Week In Pakistan</a>
+            <a class="nav-link" href="{{ url('category/gold-price-history-by-week') }}">History by Week</a>
           </li>
           <li class="nav-item textLeft">
             <a class="nav-link" href="{{ url('historial-gold-rate') }}">Historial Gold Rate</a>
