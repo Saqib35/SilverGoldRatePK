@@ -18,6 +18,9 @@ Route::get('/clear', function () {
 Route::get('index.php', function () {
     return redirect('/', 301);
 });
+Route::get('gold-calcultor', function () {
+    return redirect('/gold-calculator', 301);
+});
 
 
 Route::get('/', [HomeController::class, 'index']);
@@ -28,13 +31,13 @@ Route::get('author/staff', [HomeController::class, 'ShowAuthor']);
 
 
 
-Route::get('contact-us', [HomeController::class, 'contact']);
-Route::get('privacy-policy-for-silver-rate-in-pakistan', [HomeController::class, 'privacyPolicy']);
+Route::get('contact-us/', [HomeController::class, 'contact']);
+Route::get('privacy-policy-for-silver-rate-in-pakistan/', [HomeController::class, 'privacyPolicy']);
 
 // Route::get('terms-and-conditions', [HomeController::class, 'termCondition']);
 Route::get('feed', [HomeController::class, 'ShowFeed']);
 Route::get('web-storie/{slug?}', [HomeController::class, 'WebStories']);
-Route::get('gold-calcultor', [HomeController::class, 'GoldCalculator']);
+Route::get('gold-calculator', [HomeController::class, 'GoldCalculator']);
 Route::get('historial-gold-rate', [HomeController::class, 'HistorialGoldRate']);
 
 
