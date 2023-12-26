@@ -15,13 +15,20 @@
             <div class="collapse navbar-collapse ml-auto" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ url('category/gold-price-history-by-month') }}">Gold Price History by Month</a>
+                  <a class="nav-link" href="{{ url('/') }}">Silver Price in Pakistan Today - {{ \Carbon\Carbon::now()->format('F j, Y') }}</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ url('category/gold-price-history-by-week') }}">Gold Price History by Week</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ url('gold-rate-in-pakistan') }}">Gold Price in Pakistan Today - {{ \Carbon\Carbon::now()->format('F j, Y') }}</a>
+              
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="{{ url('gold-rate-in-pakistan') }}" id="navbarDropdown">
+                    Gold Price in Pakistan Today - {{ \Carbon\Carbon::now()->format('F j, Y') }}
+                  </a>
+                  <div class="dropdown-menu w-100 topHeader" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item">Gold Ratee In Lahore</a>
+                    <a class="dropdown-item">Gold Ratee In Islamabad</a>
+                    <a class="dropdown-item">Gold Ratee In Karachi</a>
+                    <a class="dropdown-item">Gold Ratee In Multan</a>
+                    
+                  </div>
                 </li>
               </ul>
             </div>

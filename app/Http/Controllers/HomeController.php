@@ -35,29 +35,50 @@ class HomeController extends Controller
 
    
 
-     public function contact()
+     public function contact(REQUEST $request)
      {
-         
+            $currentUrl = $request->url();
+
+        if (strpos($currentUrl, '/public') !== false) {
+          
+            return redirect(str_replace('/public', '', $currentUrl));
+        }
          return view('contact-us');
          
  
      }
 
-     public function privacyPolicy()
+     public function privacyPolicy(REQUEST $request)
      {
-         
+            $currentUrl = $request->url();
+
+        if (strpos($currentUrl, '/public') !== false) {
+          
+            return redirect(str_replace('/public', '', $currentUrl));
+        } 
         return view('privacy-policy');
 
      }
 
-     public function termCondition()
+     public function termCondition(REQUEST $request)
      {
+             $currentUrl = $request->url();
+
+        if (strpos($currentUrl, '/public') !== false) {
+          
+            return redirect(str_replace('/public', '', $currentUrl));
+        } 
         return view('terms-and-conditions');
      }
 
-     public function ShowAuthor()
+     public function ShowAuthor(REQUEST $request)
      {
-           
+             $currentUrl = $request->url();
+
+        if (strpos($currentUrl, '/public') !== false) {
+          
+            return redirect(str_replace('/public', '', $currentUrl));
+        } 
           
           $posts =GoldRateByDay::orderBy('created_at', 'desc')->get();
          
@@ -69,6 +90,17 @@ class HomeController extends Controller
 
     public function index(REQUEST $request)
     {
+        
+        
+        $currentUrl = $request->url();
+
+        if (strpos($currentUrl, '/public') !== false) {
+          
+            return redirect(str_replace('/public', '', $currentUrl));
+        }
+        
+        
+        
         if($request->s)
         {
             $posts =GoldRateByDay::where('title', 'LIKE', "%$request->s%")->orderBy('created_at', 'desc')->get();
@@ -81,10 +113,15 @@ class HomeController extends Controller
        
     }
 
-    public function ShowFeed()
+    public function ShowFeed(REQUEST $request)
     {
           
-         
+           $currentUrl = $request->url();
+
+        if (strpos($currentUrl, '/public') !== false) {
+          
+            return redirect(str_replace('/public', '', $currentUrl));
+        } 
          $posts =GoldRateByDay::orderBy('created_at', 'desc')->get();
         
          return response()->view('rss', [
@@ -96,7 +133,12 @@ class HomeController extends Controller
 
     public function WebStories(REQUEST $request)
     {
-      
+          $currentUrl = $request->url();
+
+        if (strpos($currentUrl, '/public') !== false) {
+          
+            return redirect(str_replace('/public', '', $currentUrl));
+        } 
         if(!empty($request->slug))
         {
             
@@ -108,31 +150,54 @@ class HomeController extends Controller
         return view('web-stories',['webStory'=>$webStory]);
     }
 
-    public function HistorialGoldRate(){
+    public function HistorialGoldRate(REQUEST $request){
 
+    $currentUrl = $request->url();
+
+        if (strpos($currentUrl, '/public') !== false) {
+          
+            return redirect(str_replace('/public', '', $currentUrl));
+        } 
         $posts =GoldRateByDay::orderBy('created_at', 'desc')->get();
         return view('historial-gold-rate',['posts'=>$posts]);
 
     }
 
 
-    public function GoldCalculator()
+    public function GoldCalculator(REQUEST $request)
     {
         
+         $currentUrl = $request->url();
+
+        if (strpos($currentUrl, '/public') !== false) {
+          
+            return redirect(str_replace('/public', '', $currentUrl));
+        } 
         return view('gold-calculator');
      
     }
 
 
-    public function GoldPriceByMonth()
+    public function GoldPriceByMonth(REQUEST $request)
     {
+            $currentUrl = $request->url();
+
+        if (strpos($currentUrl, '/public') !== false) {
+          
+            return redirect(str_replace('/public', '', $currentUrl));
+        } 
         $GoldRateByMonth=GoldRateByMonth::get();
         return view('gold-price-by-month' ,['GoldRateByMonth'=>$GoldRateByMonth]);
     }
 
       public function GoldPriceByMonthDetail(REQUEST $request)
      {
-        
+            $currentUrl = $request->url();
+
+        if (strpos($currentUrl, '/public') !== false) {
+          
+            return redirect(str_replace('/public', '', $currentUrl));
+        } 
         
         $GoldRateByMonth=GoldRateByMonth::where('slug',$request->slug)->first();
         if($GoldRateByMonth)
@@ -306,14 +371,27 @@ class HomeController extends Controller
          ];
      }
 
-     public function GoldPriceByWeek()
+     public function GoldPriceByWeek(REQUEST $request)
      {
+             $currentUrl = $request->url();
+
+        if (strpos($currentUrl, '/public') !== false) {
+          
+            return redirect(str_replace('/public', '', $currentUrl));
+        } 
          $GoldRateByWeek=GoldRateByWeek::get();
          return view('gold-price-by-week' ,['GoldRateByWeek'=>$GoldRateByWeek]);
      }
     
-     public function GoldPrice()
+     public function GoldPrice(REQUEST $request)
      {
+         
+             $currentUrl = $request->url();
+
+        if (strpos($currentUrl, '/public') !== false) {
+          
+            return redirect(str_replace('/public', '', $currentUrl));
+        } 
         $HomePageGoldRate=HomePageGoldRate::first();
         $GoldRateByDay=GoldRateByDay::get();
         $rates = $this->calculateRates();

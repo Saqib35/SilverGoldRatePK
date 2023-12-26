@@ -15,11 +15,13 @@
       </div>
 
       <div class="col-md-3">
+      <h3 class="textLeft">Gold Rate Major Cities</h3>
         <ul class="nav footer-nav d-block" >
-            
+         
         <li class="nav-item textLeft">
             <a class="nav-link">Gold Rate In Lahore</a>
           </li>
+
           <li class="nav-item textLeft">
             <a class="nav-link">Gold Rate In Islamabad</a>
           </li>
@@ -35,6 +37,7 @@
 
      
       <div class="col-md-3">
+        <h3 class="textLeft">Quick Links</h3>
         <ul class="nav footer-nav d-block">
           <li class="nav-item textLeft">
             <a class="nav-link" href="{{ url('category/gold-price-history-by-month') }}">History by Month</a>
@@ -54,6 +57,7 @@
       </div>
 
       <div class="col-md-3">
+      <h3 class="textLeft">Basic Pages</h3>
         <ul class="nav footer-nav d-block">
        
           <li class="nav-item textLeft">
@@ -62,6 +66,13 @@
           <li class="nav-item textLeft">
            <a class="nav-link" href="{{ url('contact-us/') }}">Contact Us</a>
            </li>
+           <li class="nav-item textLeft">
+           <a class="nav-link">About Us</a>
+           </li>
+           <li class="nav-item textLeft">
+           <a class="nav-link">Terms & Condition</a>
+           </li>
+           
           <li class="nav-item textLeft">
             <a class="nav-link" href="{{ url('web-storie') }}">Web Stories</a>
           </li>

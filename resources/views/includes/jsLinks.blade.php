@@ -38,6 +38,17 @@
                 }
             });
 
+            
+            $('.nav-item.dropdown').hover(
+              function () {
+                // Show the dropdown on hover
+                $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
+              },
+              function () {
+                // Hide the dropdown when the mouse leaves
+                $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
+              }
+            );
 
 
 
