@@ -24,7 +24,7 @@
 <meta name="twitter:label1" content="Time to read" />
 <meta name="twitter:data1" content="6 minutes" />
 
-<script type="application/ld+json">
+<!-- <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@graph": [
@@ -78,7 +78,7 @@
             }
         ]
     }
-</script>
+</script> -->
 
 
 

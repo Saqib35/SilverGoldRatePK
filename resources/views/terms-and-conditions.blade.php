@@ -21,7 +21,7 @@
     <meta name="twitter:description" content="Welcome to Silver Rate in Pakistan!" />
     <meta name="twitter:label1" content="Time to read" />
     <meta name="twitter:data1" content="2 minutes" />
-   
+<!--    
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -77,7 +77,7 @@
             }
         ]
     }
-    </script>
+    </script> -->
 
 
 

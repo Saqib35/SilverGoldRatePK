@@ -31,7 +31,7 @@
         <meta name="twitter:label2" content="Time to read" />
         <meta name="twitter:data2" content="2 minutes" />
 
-
+<!-- 
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -88,7 +88,7 @@
                 }
             ]
         }
-    </script>
+    </script> -->
 
     {!! $home_content->home_schema !!}
 

@@ -35,7 +35,7 @@
         <meta name="twitter:data2" content="1 minute" />
         
 
-        <script type="application/ld+json" >
+        <!-- <script type="application/ld+json" >
             {
                 "@context": "https://schema.org",
                 "@graph": [
@@ -102,7 +102,7 @@
                 ]
             }
         </script>
-                                            
+                                             -->
 
 @endsection
 

@@ -33,7 +33,7 @@
         <meta name="twitter:label2" content="Time to read" />
         <meta name="twitter:data2" content="1 minute" />
 
-    
+<!--     
        
         <script type="application/ld+json" >
             {
@@ -102,7 +102,7 @@
                 ]
             }
         </script>
-       
+        -->
 
 
 
