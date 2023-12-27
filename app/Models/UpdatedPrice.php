@@ -16,5 +16,6 @@ class UpdatedPrice extends Model
         'kerat21k',
         'kerat20k',
         'kerat18k',
+        'gold_per_ounce_dollar'
     ];
 }

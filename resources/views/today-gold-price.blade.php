@@ -4,14 +4,14 @@
 
    
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{{  $HomePageGoldRate->meta_title }}</title>
-        <meta name="description" content="{{  $HomePageGoldRate->meta_description }}" />
+        <title>Gold Rate in Pakistan Today – {{ now()->format('d F Y') }}</title>
+        <meta name="description" content="1 tola gold rate in Pakistan today, {{ now()->format('d F Y') }}, stands at Rs. {{ $rates['ratePerTola'] }} per tola for 24-karat gold, and Rs. {{ $rates['ratePer10Grams'] }} for 10 grams." />
         <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
         <link rel="canonical" href="{{  Request::fullUrl() }}"/>
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="{{  $HomePageGoldRate->meta_title }}" />
-        <meta property="og:description" content="{{  $HomePageGoldRate->meta_description }}" />
+        <meta property="og:title" content="Gold Rate in Pakistan Today – {{ now()->format('d F Y') }}" />
+        <meta property="og:description" content="1 tola gold rate in Pakistan today, {{ now()->format('d F Y') }}, stands at Rs. {{ $rates['ratePerTola'] }} per tola for 24-karat gold, and Rs. {{ $rates['ratePer10Grams'] }} for 10 grams." />
         <meta property="og:url" content="{{  Request::fullUrl() }}" />
         <meta property="og:site_name" content="Gold and Silver Rate in Pakistan" />
         <meta property="article:author" content="#" />
@@ -26,8 +26,8 @@
         <meta property="article:published_time" content="{{  $HomePageGoldRate->created_at }}" />
         <meta property="article:modified_time" content="{{  $HomePageGoldRate->updated_at }}" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="{{  $HomePageGoldRate->meta_title }}" />
-        <meta name="twitter:description" content="{{  $HomePageGoldRate->meta_description }}" />
+        <meta name="twitter:title" content="Gold Rate in Pakistan Today – {{ now()->format('d F Y') }}" />
+        <meta name="twitter:description" content="1 tola gold rate in Pakistan today, {{ now()->format('d F Y') }}, stands at Rs. {{ $rates['ratePerTola'] }} per tola for 24-karat gold, and Rs. {{ $rates['ratePer10Grams'] }} for 10 grams." />
         <meta name="twitter:image" content="{{  asset($HomePageGoldRate->img) }}" />
         <meta name="twitter:label1" content="Time to read" />
         <meta name="twitter:data1" content="5 minutes" />
@@ -73,14 +73,14 @@
                     },
                     {
                         "@type": "NewsArticle",
-                        "headline": "{{ $HomePageGoldRate->meta_title }}",
+                        "headline": "Gold Rate in Pakistan Today – {{ now()->format('d F Y') }}",
                         "keywords": "gold rate in pakistan",
                         "datePublished": "{{ $HomePageGoldRate->created_at }}",
                         "dateModified": "{{ $HomePageGoldRate->updated_at }}",
                         "author": { "@id": "{{ url('/author/staff/') }}", "name": "Staff" },
                         "publisher": { "@id": "{{ url('/#person') }}" },
-                        "description": "{{ $HomePageGoldRate->meta_description }}",
-                        "name": "{{ $HomePageGoldRate->meta_title }}",
+                        "description": "1 tola gold rate in Pakistan today, {{ now()->format('d F Y') }}, stands at Rs. {{ $rates['ratePerTola'] }} per tola for 24-karat gold, and Rs. {{ $rates['ratePer10Grams'] }} for 10 grams.",
+                        "name": "Gold Rate in Pakistan Today – {{ now()->format('d F Y') }}",
                         "@id": "{{ url('/gold-rate-in-pakistan/#richSnippet') }}",
                         "isPartOf": { "@id": "{{ url('/gold-rate-in-pakistan/#webpage') }}" },
                         "image": { "@id": "{{ asset('images/today-gold-rate-in-pakistan.webp') }}" },
@@ -96,72 +96,72 @@
                 "@graph": [
                     {
                         "@type": ["WebPage", "FAQPage"],
-                        "@id": "https://silvergoldrate.pk/gold-rate-in-pakistan/#webpage",
-                        "url": "https://silvergoldrate.pk/gold-rate-in-pakistan/",
+                        "@id": "{{ url('/gold-rate-in-pakistan/#webpage') }}",
+                        "url": "{{ url('/gold-rate-in-pakistan') }}",
                         "name": "Gold Rate in Pakistan Today \u2013 {{ now()->format('d F Y') }}",
                         "datePublished": "{{  $HomePageGoldRate->created_at }}",
                         "dateModified": "{{  $HomePageGoldRate->updated_at }}",
-                        "isPartOf": { "@id": "https://silvergoldrate.pk/#website" },
+                        "isPartOf": { "@id": "{{ url('/#website') }}" },
                         "primaryImageOfPage": { "@id": "{{ asset('images/today-gold-rate-in-pakistan.webp') }}" },
                         "inLanguage": "en-US",
                         "mainEntity": [
                             {
                                 "@type": "Question",
-                                "url": "https://silvergoldrate.pk/gold-rate-in-pakistan/#faq-question-64a661358faf9",
+                                "url": "{{ url('/gold-rate-in-pakistan/#faq-question-64a661358faf9') }}",
                                 "name": "What is the recent gold rate in Pakistan for 1 tola?",
                                 "acceptedAnswer": { "@type": "Answer", "text": "About today, {{ now()->format('d F Y') }}, the rate of 1 Tola 24-carat gold in Pakistan is PKR {{ $rates['ratePerTola'] }}." }
                             },
                             {
                                 "@type": "Question",
-                                "url": "https://silvergoldrate.pk/gold-rate-in-pakistan/#faq-question-64a661358faff",
+                                "url": "{{ url('/gold-rate-in-pakistan/#faq-question-64a661358faff') }}",
                                 "name": "What is the rate of 1 Tola 22-carat gold in Pakistan today?",
                                 "acceptedAnswer": { "@type": "Answer", "text": "As of today, {{ now()->format('d F Y') }}, the rate of 1 Tola 22-carat gold in Pakistan is PKR {{ $rates22k['ratePerTola'] }}." }
                             },
                             {
                                 "@type": "Question",
-                                "url": "https://silvergoldrate.pk/gold-rate-in-pakistan/#faq-question-64a661358fb01",
+                                "url": "{{ url('/gold-rate-in-pakistan/#faq-question-64a661358fb01') }}",
                                 "name": "How many grams are in one Tola?",
                                 "acceptedAnswer": { "@type": "Answer", "text": "there are \"<strong>11.664</strong>\" grams  in 1 Tola." }
                             },
                             {
                                 "@type": "Question",
-                                "url": "https://silvergoldrate.pk/gold-rate-in-pakistan/#faq-question-64a661358fb04",
+                                "url": "{{ url('/gold-rate-in-pakistan/#faq-question-64a661358fb04') }}",
                                 "name": "How many carats are in a tola?",
                                 "acceptedAnswer": { "@type": "Answer", "text": "carats are used to measure the weight of gemstones (Nagina), not gold. Gold is typically measured in grams or ounces." }
                             },
                             {
                                 "@type": "Question",
-                                "url": "https://silvergoldrate.pk/gold-rate-in-pakistan/#faq-question-64a661358fb05",
+                                "url": "{{ url('/gold-rate-in-pakistan/#faq-question-64a661358fb05') }}",
                                 "name": "How many Ratti are in one Masha?",
                                 "acceptedAnswer": { "@type": "Answer", "text": "One Masha is equal to 8 <a rel='nofollow' href=\"https://en.wikipedia.org/wiki/Ratti\">Ratti</a>." }
                             },
                             {
                                 "@type": "Question",
-                                "url": "https://silvergoldrate.pk/gold-rate-in-pakistan/#faq-question-1688801939426",
+                                "url": "{{ url('/gold-rate-in-pakistan/#faq-question-1688801939426') }}",
                                 "name": "How much does 1 gram of gold cost in Pakistan?",
                                 "acceptedAnswer": { "@type": "Answer", "text": "As of today, {{ now()->format('d F Y') }}, 1 gram of gold in Pakistan costs PKR {{ $rates['ratePerGram'] }}." }
                             },
                             {
                                 "@type": "Question",
-                                "url": "https://silvergoldrate.pk/gold-rate-in-pakistan/#faq-question-1688801999749",
+                                "url": "{{ url('/gold-rate-in-pakistan/#faq-question-1688801999749') }}",
                                 "name": "How often does the gold rate change in Pakistan?",
                                 "acceptedAnswer": { "@type": "Answer", "text": "The gold rate in Pakistan can change anytime, and it may fluctuate multiple times per day." }
                             },
                             {
                                 "@type": "Question",
-                                "url": "https://silvergoldrate.pk/gold-rate-in-pakistan/#faq-question-1688802038099",
+                                "url": "{{ url('/gold-rate-in-pakistan/#faq-question-1688802038099') }}",
                                 "name": "What factors influence the gold rate in Pakistan?",
                                 "acceptedAnswer": { "@type": "Answer", "text": "The gold rate in Pakistan is greatly influenced by variations in the dollar rate and the economic instability of Pakistan." }
                             },
                             {
                                 "@type": "Question",
-                                "url": "https://silvergoldrate.pk/gold-rate-in-pakistan/#faq-question-1688802060484",
+                                "url": "{{ url('/gold-rate-in-pakistan/#faq-question-1688802060484') }}",
                                 "name": "What is the difference between 24-carat and 22-carat gold?",
                                 "acceptedAnswer": { "@type": "Answer", "text": "24-carat gold is the purest form of gold, containing 99.5% of the precious metal, while 22-carat gold contains 91.6% gold and 8.4% of other metals." }
                             },
                             {
                                 "@type": "Question",
-                                "url": "https://silvergoldrate.pk/gold-rate-in-pakistan/#faq-question-1688802238499",
+                                "url": "{{ url('/gold-rate-in-pakistan/#faq-question-1688802238499') }}",
                                 "name": "Where to sell gold in Pakistan?",
                                 "acceptedAnswer": {
                                     "@type": "Answer",
@@ -173,6 +173,17 @@
                 ]
             }
         </script>
+
+        <style>
+             .gold-rate {
+               color: #ff0000;
+             }
+             
+             .bg-bf9109{
+               background-color: #bf9109 !important;
+             }
+             
+        </style>
 @endsection
 
 @section('main')
@@ -187,16 +198,117 @@
             <hr class="first" />
             <div>
             <div class="updatSetting">
-            <hr>By Staff ⏰ Updated <strong> {{ now()->format('d F Y') }}</strong>
-            <hr>
+            <hr />
+              By Staff ⏰ Updated <strong> {{ now()->format('d F Y') }}</strong>
+            <hr />
+
+            <div class="alert alert-info">
+                <p class="mb-0">
+                    1 Tola Gold rate in Pakistan today, {{ now()->format('jS F Y') }} announced for
+                    <strong class="gold-rate">24 karat Rs {{  $rates['ratePerTola'] }}</strong> tola for 22k <strong>Rs. {{  $rates22k['ratePerTola'] }}</strong> for 21 karat <strong>Rs. {{  $rates21k['ratePerTola'] }}</strong> and for 18 karat gold <strong>Rs {{  $rates18k['ratePerTola'] }}.</strong>
+                 </p>
+            </div>
+
+            <p>These variations are nearly tied to changes in the value of the US dollar, showing the link between currency values and gold rates.</p>
+
+            <p class="text-justify">
+                The gold price is increasing globally at <span class="gold-rate"><strong>${{ $updatedPrice->gold_per_ounce_dollar }} per ounce</strong></span>. It is noticeable that gold rates in Pakistan can have some ups and downs a second time due to the global gold market.
+            </p>
+
+            <p>For the recent and most accurate gold rates, you can visit the live markets of your cities.</p>
+
+            <p>If you have an interest in gold, then it is necessary for you to keep yourself up to date. Regularly check the market trends to be aware of the market, i.e., it is up or down.</p>
+
+            <h2><strong>Today's 24K Gold Prices in Pakistan ({{ now()->format('d F Y') }}):</strong></h2>
+
+            <ul>
+                <li class="text-justify"><strong>1 gram:<span class="gold-rate">{{  $rates['ratePerGram'] }}</span></strong></li>
+                <li class="text-justify"><strong>10 grams:<span class="gold-rate">{{  $rates['ratePer10Grams'] }}</span></strong></li>
+                <li class="text-justify"><strong>1 tola:<span class="gold-rate">{{  $rates['ratePerTola'] }}</span></strong></li>
+                <li class="text-justify"><strong>1 ounce:<span class="gold-rate">{{  $rates['ratePerTroyOunce'] }}</span></strong></li>
+                <li class="text-justify"><strong>1 kilogram:<span class="gold-rate">{{  $rates['ratePerKilogram'] }}</span></strong></li>
+            </ul>
+
+            <div class="alert alert-warning">
+                <p class="mb-0">
+                    Please Note: All these Rates Mentioned Here are Just to Get an Idea of what could be the Price in Bullion Markets. Please Visit Your City's Gold Market for the Actual Gold Rate.
+                </p>
+            </div>
+
             @if($HomePageGoldRate)
                 {!! $HomePageGoldRate->content !!}
             @else
                 <p>No content available</p>
             @endif
+  
+            <div class="bg-bf9109 text-white p-2">
+                <h2 class="text-center">Gold Rate in Pakistan today <strong>{{ now()->format('d F Y') }}</strong></h2>
+            </div>
 
-            <div style="background-color:#bf9109; color:white; padding:10px 20px; text-align:center"><h2>Gold Rate In Pakistan For the Last 30 Days<h2></div>
-                
+
+            <p class="text-justify mt-3">
+                 As of today, <strong class="gold-rate">{{ now()->format('d F Y') }}</strong>, the 1 tola gold price in Pakistan is
+                 <strong class="gold-rate">Rs. {{  $rates['ratePerTola'] }}</strong>. The Gold Prices in Pakistan are usually sourced from the Karachi Gold Market.
+            </p>
+
+            <p class="text-justify">
+               In Pakistan, gold rates change due to the two big reasons. One major reason is the fluctuations in the dollar rate, and the second reason is the economic instability of Pakistan.
+            </p>
+            
+            <p>
+                These two external factors influence the local gold prices and because of these factors, a gold rate may change multiple times per day.
+            </p>
+
+            <p>In Pakistan gold is measured in different units but most commonly used widely ,Tola,..</p>
+
+            <p>Gold is found in multiple weightages and karats: for example, 24 karat, 22 karat, 21 karat gold 18 karat gold. Gold price is fixed accordingly.</p>
+
+            <p>In Pakistan gold/Sona price is offered in such quantities:</p>
+
+            <ul>
+                <li>Gold price per tola</li>
+                <li>Gold price per 10 grams</li>
+                <li>Gold price per 1 gram</li>
+                <li>Gold price per ounce</li>
+            </ul>
+
+            <p>This category is for the convenience of customer or investor.</p>
+
+            <p>
+                In the below table, you can check the latest 1 tola Gold Price in Pakistan on <span class="gold-rate"><strong>{{ now()->format('d F Y') }}</strong></span> for different karats.
+            </p>
+
+
+           
+            <div class="bg-bf9109 text-white p-2">
+              <h2 class="text-center">1 Tola Gold Price Today ({{ now()->format('d F Y') }})</h2>
+            </div>
+
+            <div id="gold_all_detail_table" class="mt-2"></div>
+
+         
+            <div class="bg-bf9109 text-white p-2">
+              <h2 class="text-center">Gold Price Today In Major Cities Of Pakistan</h2>
+            </div>
+
+
+            <div id="table_Second_Table_24k_And_22k" class="mt-2"></div>
+
+
+             <h2>
+                    <strong class="gold-rate">Disclaimer:</strong>
+            </h2>
+
+            <p>
+                <span class="gold-rate">
+                    The gold rates mentioned above are for information only are not guaranteed to be 100% accurate. We are not taking any responsibility
+                    if there is any change in above values later.
+                </span>
+            </p>
+
+
+            <div class="text-center text-white p-2 bg-bf9109"><h2>Gold Rate In Pakistan For the Last 30 Days<h2></div>
+
                 <table border="1" cellpadding="1" cellspacing="1" style="width:100%" class="table table-bordered table-hover mt-3">
                     <thead>
                         <tr>
@@ -210,16 +322,16 @@
                         
                             @if(\Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->dayOfWeek == Carbon\Carbon::SUNDAY)
                                   <tr>
-                                    <td style="text-align:center"><a>{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->format('d M Y') }}</a></td>
-                                    <td style="text-align:center">Market Closed</td>
-                                    <td style="text-align:center">Market Closed</td>
+                                    <td  class="text-center"><a>{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->format('d M Y') }}</a></td>
+                                    <td  class="text-center">Market Closed</td>
+                                    <td  class="text-center">Market Closed</td>
                                 </tr>
                                 
                             @else
                                  <tr>
-                                    <td style="text-align:center"><a href="{{  url($GoldRateByDay->slug); }}">{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->format('d M Y') }}</a></td>
-                                    <td style="text-align:center">{{  $GoldRateByDay->First_rate }}</td>
-                                    <td style="text-align:center">{{  $GoldRateByDay->Second_rate }}</td>
+                                    <td  class="text-center"><a href="{{  url($GoldRateByDay->slug); }}">{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->format('d M Y') }}</a></td>
+                                    <td  class="text-center">{{  $GoldRateByDay->First_rate }}</td>
+                                    <td  class="text-center">{{  $GoldRateByDay->Second_rate }}</td>
                                 </tr>
                                 
                             @endif
@@ -228,6 +340,7 @@
                       
                     </tbody>
                 </table>
+
                 <h2>What is “Karat” or “Carat”</h2>
                 <p>Karat is a measurement of metal purity, that how much pure metal is present in 1 “tola” or “Masha” or “Ratti”. For example, 24 karat gold means 99.9% of pure metal i-e gold is present.</p>
                 <h2>How to check gold purity in details:</h2>
@@ -243,146 +356,110 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td style="text-align:center">24</td>
-                            <td style="text-align:center">(24/24)*100</td>
-                            <td style="text-align:center">99%</td>
+                            <td  class="text-center">24</td>
+                            <td  class="text-center">(24/24)*100</td>
+                            <td  class="text-center">99%</td>
                         </tr>
                         <tr>
-                            <td style="text-align:center">22</td>
-                            <td style="text-align:center">(22/24)*100</td>
-                            <td style="text-align:center">91.6%</td>
+                            <td  class="text-center">22</td>
+                            <td  class="text-center">(22/24)*100</td>
+                            <td  class="text-center">91.6%</td>
                         </tr>
                         <tr>
-                            <td style="text-align:center">20</td>
-                            <td style="text-align:center">(20/24)*100</td>
-                            <td style="text-align:center">83.3%</td>
+                            <td  class="text-center">20</td>
+                            <td  class="text-center">(20/24)*100</td>
+                            <td  class="text-center">83.3%</td>
                         </tr>
                         <tr>
-                            <td style="text-align:center">18</td>
-                            <td style="text-align:center">(18/24)*100</td>
-                            <td style="text-align:center">75%</td>
+                            <td  class="text-center">18</td>
+                            <td  class="text-center">(18/24)*100</td>
+                            <td  class="text-center">75%</td>
                         </tr>
                         <tr>
-                            <td style="text-align:center">16</td>
-                            <td style="text-align:center">(16/24)*100</td>
-                            <td style="text-align:center">66.6%</td>
+                            <td  class="text-center">16</td>
+                            <td  class="text-center">(16/24)*100</td>
+                            <td  class="text-center">66.6%</td>
                         </tr>
                         <tr>
-                            <td style="text-align:center">14</td>
-                            <td style="text-align:center">(14/24)*100</td>
-                            <td style="text-align:center">58.3%</td>
+                            <td  class="text-center">14</td>
+                            <td  class="text-center">(14/24)*100</td>
+                            <td  class="text-center">58.3%</td>
                         </tr>
                         <tr>
-                            <td style="text-align:center">12</td>
-                            <td style="text-align:center">(12/24)*100</td>
-                            <td style="text-align:center">50%</td>
+                            <td  class="text-center">12</td>
+                            <td  class="text-center">(12/24)*100</td>
+                            <td  class="text-center">50%</td>
                         </tr>
                         <tr>
-                            <td style="text-align:center">10</td>
-                            <td style="text-align:center">(10/24)*100</td>
-                            <td style="text-align:center">41.7%</td>
+                            <td  class="text-center">10</td>
+                            <td  class="text-center">(10/24)*100</td>
+                            <td  class="text-center">41.7%</td>
                         </tr>
                         <tr>
-                            <td style="text-align:center">8</td>
-                            <td style="text-align:center">(8/24)*100</td>
-                            <td style="text-align:center">33.3%</td>
+                            <td  class="text-center">8</td>
+                            <td  class="text-center">(8/24)*100</td>
+                            <td  class="text-center">33.3%</td>
                         </tr>
                         <tr>
-                            <td style="text-align:center">6</td>
-                            <td style="text-align:center">(6/24)*100</td>
-                            <td style="text-align:center">25%</td>
+                            <td  class="text-center">6</td>
+                            <td  class="text-center">(6/24)*100</td>
+                            <td  class="text-center">25%</td>
                         </tr>
                     </tbody>
                 </table>
 
                 <h2>
-                    <span >
-                        <span>
-                            <strong><u>FAQs:</u></strong>
-                        </span>
-                    </span>
+                   <strong><u>FAQs:</u></strong>
                 </h2>
 
                 <h3>
-                    <span>
-                        <span><strong>1. What is the recent gold rate in Pakistan for 1 tola?</strong></span>
-                    </span>
+                   <strong>1. What is the recent gold rate in Pakistan for 1 tola?</strong>
                 </h3>
 
                 <p>
-                    <span >
-                        <span >
-                            <span>About today, {{ now()->format('d F Y') }}, the rate of 1 Tola 24-carat gold in Pakistan is <strong>PKR&nbsp;</strong></span>
-                        </span>
-                    </span>
-                    <strong>{{ $rates['ratePerTola'] }}</strong>.
+                    About today, {{ now()->format('d F Y') }}, the rate of 1 Tola 24-carat gold in Pakistan is
+                    <strong>PKR {{ $rates['ratePerTola'] }}</strong>.
                 </p>
 
                 <h3>
-                    <span>
-                        <span ><strong>2. What is the rate of 1 Tola 22-carat gold in Pakistan today?</strong></span>
-                    </span>
+                    <strong>2. What is the rate of 1 Tola 22-carat gold in Pakistan today?</strong>
                 </h3>
 
                 <p>
-                    <span >
-                        <span >
-                            <span>As of today, {{ now()->format('d F Y') }}, the rate of 1 Tola 22-carat gold in Pakistan is <strong>PKR </strong></span>
-                        </span>
-                    </span>
-                    <strong>{{ $rates22k['ratePerTola'] }}</strong>.
+                    As of today, {{ now()->format('d F Y') }}, the rate of 1 Tola 22-carat gold in Pakistan is
+                    <strong>PKR {{ $rates22k['ratePerTola'] }}</strong>.
                 </p>
 
                 <h3>
-                    <span>
-                        <span ><strong>3. How many grams are in one Tola?</strong></span>
-                    </span>
+                    <strong>3. How many grams are in one Tola?</strong>
                 </h3>
 
                 <p>
-                    <span>
-                        <span><span>There are &ldquo;11.664&rdquo; grams in 1 Tola.</span></span>
-                    </span>
+                    There are “11.664” grams in 1 Tola.
                 </p>
 
                 <h3>
-                    <span >
-                        <span ><strong>4. How many carats are in a tola?</strong></span>
-                    </span>
+                   4. How many carats are in a tola?
                 </h3>
 
                 <p>
-                    <span >
-                        <span ><span>1 Pakistan Tola is 12.5g or 11/25 of a t/oz (0.44 t/oz)</span></span>
-                    </span>
+                   1 Pakistan Tola is 12.5g or 11/25 of a t/oz (0.44 t/oz)
                 </p>
 
                 <h3>
-                    <span >
-                        <span style="font-family: Calibri, 'sans-serif';"><strong>5. How many Ratti are in one Masha?</strong></span>
-                    </span>
+                    <strong>5. How many Ratti are in one Masha?</strong>
                 </h3>
 
                 <p>
-                    <span>
-                        <span>
-                            <span>
-                                One Masha is equal to 8&nbsp;<a href="https://en.wikipedia.org/wiki/Ratti" target="_blank"><span style="color: blue;">Ratti</span></a>.
-                            </span>
-                        </span>
-                    </span>
+                   One Masha is equal to 8 <a  rel='nofollow' href="https://en.wikipedia.org/wiki/Ratti" target="_blank"><span style="color: blue;">Ratti</span></a>.
                 </p>
 
                 <h3>
-                    <span>
-                        <span><strong>6. How much does 1 gram of gold cost in Pakistan?</strong></span>
-                    </span>
+                   <strong>6. How much does 1 gram of gold cost in Pakistan?</strong>
                 </h3>
 
                 <p>
-                    <span >
-                        <span >As of today, {{ now()->format('d F Y') }}, 1 gram of gold in Pakistan costs </span>
-                    </span>
+                    As of today, {{ now()->format('d F Y') }}, 1 gram of gold in Pakistan costs 
                     <strong>PKR {{ $rates['ratePerGram'] }}</strong>.
                 </p>
 
@@ -393,54 +470,32 @@
                 </h3>
 
                 <p>
-                    <span >
-                        <span>The gold rate in Pakistan can change anytime, and it may fluctuate multiple times per day.</span>
-                    </span>
+                    The gold rate in Pakistan can change anytime, and it may fluctuate multiple times per day.
                 </p>
 
                 <h3>
-                    <span>
-                        <span><strong>8. What factors influence the gold rate in Pakistan?</strong></span>
-                    </span>
+                    <strong>8. What factors influence the gold rate in Pakistan?</strong>
                 </h3>
 
                 <p>
-                    <span >
-                        <span>The gold rate in Pakistan is greatly influenced by variations in the dollar rate and the economic instability of Pakistan.</span>
-                    </span>
+                    The gold rate in Pakistan is greatly influenced by variations in the dollar rate and the economic instability of Pakistan.
                 </p>
 
                 <h3>
-                    <span>
-                        <span><strong>9. What is the difference between 24-carat and 22-carat gold?</strong></span>
-                    </span>
+                   <strong>9. What is the difference between 24-carat and 22-carat gold?</strong>
                 </h3>
 
                 <p>
-                    <span>
-                        <span>
-                            <span >24-carat gold is the purest form of gold, containing 99.5% of the precious metal, while 22-carat gold contains 91.6% gold and 8.4% of other metals.</span>
-                        </span>
-                    </span>
+                   24-carat gold is the purest form of gold, containing 99.5% of the precious metal, while 22-carat gold contains 91.6% gold and 8.4% of other metals.
                 </p>
 
                 <h3>
-                    <span>
-                        <span><strong>10. Where to sell gold in Pakistan?</strong></span>
-                    </span>
+                   <strong>10. Where to sell gold in Pakistan?</strong>
                 </h3>
 
                 <p>
-                    <span>
-                        <span>
-                            <span>
-                                Don&rsquo;t sell gold to local jewelers they won&rsquo;t give you a good price. It is advisable to sell gold in Pakistan at Sarafa Bazar to wholesalers, as they usually offer better prices compared to local jewelers.
-                            </span>
-                        </span>
-                    </span>
+                   Don't sell gold to local jewelers they won't give you a good price. It is advisable to sell gold in Pakistan at Sarafa Bazar to wholesalers, as they usually offer better prices compared to local jewelers.
                 </p>
-
-                <h2>&nbsp;</h2>
 
 
             </div>

@@ -401,8 +401,9 @@ class HomeController extends Controller
         $rates18k = $this->calculateRates18K();
         $table_all_type = $this->generateTable();
         $table_Second_Table_24k_And_22k = $this->generateSecondTable24kAnd22k();
-        
-        return view('today-gold-price',['HomePageGoldRate'=>$HomePageGoldRate,'GoldRateByDay'=>$GoldRateByDay,'table_all_type'=>$table_all_type,'table_Second_Table_24k_And_22k'=>$table_Second_Table_24k_And_22k,'rates'=>$rates,'rates22k'=>$rates22k,'rates21k'=>$rates21k,'rates20k'=>$rates20k,'rates18k'=>$rates18k]);
+        $updatedPrice=UpdatedPrice::first();
+
+        return view('today-gold-price',['HomePageGoldRate'=>$HomePageGoldRate,'GoldRateByDay'=>$GoldRateByDay,'table_all_type'=>$table_all_type,'table_Second_Table_24k_And_22k'=>$table_Second_Table_24k_And_22k,'rates'=>$rates,'rates22k'=>$rates22k,'rates21k'=>$rates21k,'rates20k'=>$rates20k,'rates18k'=>$rates18k,'updatedPrice'=> $updatedPrice]);
      }
      
         
@@ -433,50 +434,48 @@ class HomeController extends Controller
         </thead>
         <tbody>
             <tr>
-                <td style="text-align:center">24K</td>
-                <td style="text-align:center">'.$rates["ratePerGram"].'</td>
-                <td style="text-align:center">'.$rates["ratePer10Grams"].'</td>
-                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
-                <td style="text-align:center">'.$rates["ratePerTroyOunce"].'</td>
-                <td style="text-align:center">'.$rates["ratePerKilogram"].'</td>
+                <td class="text-center">24K</td>
+                <td class="text-center">'.$rates["ratePerGram"].'</td>
+                <td class="text-center">'.$rates["ratePer10Grams"].'</td>
+                <td class="text-center">'.$rates["ratePerTola"] .'</td>
+                <td class="text-center">'.$rates["ratePerTroyOunce"].'</td>
+                <td class="text-center">'.$rates["ratePerKilogram"].'</td>
             </tr>
             <tr>
-                <td style="text-align:center">22K</td>
-                <td style="text-align:center">'.$rates22k["ratePerGram"].'</td>
-                <td style="text-align:center">'.$rates22k["ratePer10Grams"].'</td>
-                <td style="text-align:center">'.$rates22k["ratePerTola"].'  </td>
-                <td style="text-align:center">'.$rates22k["ratePerTroyOunce"].'</td>
-                <td style="text-align:center">'.$rates22k["ratePerKilogram"].'</td>
+                <td class="text-center">22K</td>
+                <td class="text-center">'.$rates22k["ratePerGram"].'</td>
+                <td class="text-center">'.$rates22k["ratePer10Grams"].'</td>
+                <td class="text-center">'.$rates22k["ratePerTola"].'  </td>
+                <td class="text-center">'.$rates22k["ratePerTroyOunce"].'</td>
+                <td class="text-center">'.$rates22k["ratePerKilogram"].'</td>
             </tr>
             <tr>
-                <td style="text-align:center">21K</td>
-                <td style="text-align:center">'.$rates21k["ratePerGram"].'</td>
-                <td style="text-align:center">'.$rates21k["ratePer10Grams"].'</td>
-                <td style="text-align:center">'.$rates21k["ratePerTola"].'</td>
-                <td style="text-align:center">'.$rates21k["ratePerTroyOunce"].'</td>
-                <td style="text-align:center">'.$rates21k["ratePerKilogram"].'</td>
+                <td class="text-center">21K</td>
+                <td class="text-center">'.$rates21k["ratePerGram"].'</td>
+                <td class="text-center">'.$rates21k["ratePer10Grams"].'</td>
+                <td class="text-center">'.$rates21k["ratePerTola"].'</td>
+                <td class="text-center">'.$rates21k["ratePerTroyOunce"].'</td>
+                <td class="text-center">'.$rates21k["ratePerKilogram"].'</td>
             </tr>
             <tr>
-                <td style="text-align:center">20K</td>
-                <td style="text-align:center">'.$rates20k["ratePerGram"].'</td>
-                <td style="text-align:center">'.$rates20k["ratePer10Grams"].'</td>
-                <td style="text-align:center">'.$rates20k["ratePerTola"].'</td>
-                <td style="text-align:center">'.$rates20k["ratePerTroyOunce"].'</td>
-                <td style="text-align:center">'.$rates20k["ratePerKilogram"].'</td>
+                <td class="text-center">20K</td>
+                <td class="text-center">'.$rates20k["ratePerGram"].'</td>
+                <td class="text-center">'.$rates20k["ratePer10Grams"].'</td>
+                <td class="text-center">'.$rates20k["ratePerTola"].'</td>
+                <td class="text-center">'.$rates20k["ratePerTroyOunce"].'</td>
+                <td class="text-center">'.$rates20k["ratePerKilogram"].'</td>
             </tr>
             <tr>
-                <td style="text-align:center">18K</td>
-                <td style="text-align:center">'.$rates18k["ratePerGram"].'</td>
-                <td style="text-align:center">'.$rates18k["ratePer10Grams"].'</td>
-                <td style="text-align:center">'.$rates18k["ratePerTola"].'</td>
-                <td style="text-align:center">'.$rates18k["ratePerTroyOunce"].'</td>
-                <td style="text-align:center">'.$rates18k["ratePerKilogram"].'</td>
+                <td class="text-center">18K</td>
+                <td class="text-center">'.$rates18k["ratePerGram"].'</td>
+                <td class="text-center">'.$rates18k["ratePer10Grams"].'</td>
+                <td class="text-center">'.$rates18k["ratePerTola"].'</td>
+                <td class="text-center">'.$rates18k["ratePerTroyOunce"].'</td>
+                <td class="text-center">'.$rates18k["ratePerKilogram"].'</td>
             </tr>
         </tbody>
     </table></div>';
     }
-
-
 
     
     private function generateSecondTable24kAnd22k()
@@ -499,44 +498,44 @@ class HomeController extends Controller
         </thead>
         <tbody>
             <tr>
-                <td style="text-align:center">Hyderabad</td>
-                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
-                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+                <td class="text-center">Hyderabad</td>
+                <td class="text-center">'.$rates["ratePerTola"] .'</td>
+                <td class="text-center">'.$rates22k["ratePerTola"].'</td>
             </tr>
             <tr>
-                <td style="text-align:center">Lahore</td>
-                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
-                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+                <td class="text-center">Lahore</td>
+                <td class="text-center">'.$rates["ratePerTola"] .'</td>
+                <td class="text-center">'.$rates22k["ratePerTola"].'</td>
             </tr>
             <tr>
-                <td style="text-align:center">Multan</td>
-                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
-                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+                <td class="text-center">Multan</td>
+                <td class="text-center">'.$rates["ratePerTola"] .'</td>
+                <td class="text-center">'.$rates22k["ratePerTola"].'</td>
             </tr>
             <tr>
-                <td style="text-align:center">Islamabad</td>
-                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
-                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+                <td class="text-center">Islamabad</td>
+                <td class="text-center">'.$rates["ratePerTola"] .'</td>
+                <td class="text-center">'.$rates22k["ratePerTola"].'</td>
             </tr>
             <tr>
-                <td style="text-align:center">Faisalabad</td>
-                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
-                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+                <td class="text-center">Faisalabad</td>
+                <td class="text-center">'.$rates["ratePerTola"] .'</td>
+                <td class="text-center">'.$rates22k["ratePerTola"].'</td>
             </tr>
             <tr>
-                <td style="text-align:center">Rawalpindi</td>
-                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
-                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+                <td class="text-center">Rawalpindi</td>
+                <td class="text-center">'.$rates["ratePerTola"] .'</td>
+                <td class="text-center">'.$rates22k["ratePerTola"].'</td>
             </tr>
             <tr>
-                <td style="text-align:center">Quetta</td>
-                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
-                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+                <td class="text-center">Quetta</td>
+                <td class="text-center">'.$rates["ratePerTola"] .'</td>
+                <td class="text-center">'.$rates22k["ratePerTola"].'</td>
             </tr>
             <tr>
-                <td style="text-align:center">Karachi</td>
-                <td style="text-align:center">'.$rates["ratePerTola"] .'</td>
-                <td style="text-align:center">'.$rates22k["ratePerTola"].'</td>
+                <td class="text-center">Karachi</td>
+                <td class="text-center">'.$rates["ratePerTola"] .'</td>
+                <td class="text-center">'.$rates22k["ratePerTola"].'</td>
             </tr>
         </tbody>
     </table>

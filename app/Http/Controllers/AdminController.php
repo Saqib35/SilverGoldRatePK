@@ -43,7 +43,9 @@ class AdminController extends Controller
             $updatedPrice->kerat21k =  $request->kerat21k;
             $updatedPrice->kerat20k =  $request->kerat20k;
             $updatedPrice->kerat18k =  $request->kerat18k;
+            $updatedPrice->gold_per_ounce_dollar =  $request->gold_per_ounce_dollar;
             $updatedPrice->save();
+            
             return redirect()->back()->with('success', 'Gold Rate Updated successfully.');
         }
         

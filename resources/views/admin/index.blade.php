@@ -79,7 +79,13 @@
                                             
                                         </div>
                                         
-
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="gold_per_ounce_dollar">Gold Per ounce Dollar</label>
+                                                <input id="gold_per_ounce_dollar" value="{{ $updatedPrice->gold_per_ounce_dollar }}" required="" name="gold_per_ounce_dollar" type="text" class="form-control">
+                                            </div>
+                                            
+                                        </div>
                                     <br>
                                     <div class="d-flex flex-wrap gap-2">
                                         <button type="submit" name="add-category" class="btn btn-primary waves-effect waves-light">Save Changes</button>
