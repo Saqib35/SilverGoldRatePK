@@ -19,7 +19,7 @@
         <meta name="twitter:data2" content="103" />
 
 
-        <!-- <script type="application/ld+json">
+        <script type="application/ld+json">
        {
         "@context": "https://schema.org",
         "@graph": [
@@ -58,7 +58,7 @@
             }
           ]
         }
-    </script> -->
+    </script>
         
 @endsection
 

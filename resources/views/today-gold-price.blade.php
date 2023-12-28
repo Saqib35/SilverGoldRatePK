@@ -33,7 +33,7 @@
         <meta name="twitter:data1" content="5 minutes" />
 
         
-        <!-- <script type="application/ld+json" >
+        <script type="application/ld+json" >
             {
                 "@context": "https://schema.org",
                 "@graph": [
@@ -172,7 +172,7 @@
                     }
                 ]
             }
-        </script> -->
+        </script>
 
         <style>
              .gold-rate {

@@ -19,7 +19,7 @@
     <meta name="twitter:title" content="Web Stories - SilverGoldRate.PK" />
     <meta name="twitter:description" content="Web Stories Archive - SilverGoldRate.PK" />
 
-      <!-- <script type="application/ld+json">
+      <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@graph": [
@@ -43,7 +43,7 @@
                 }
             ]
         }
-       </script> -->
+       </script>
 
        
             <style>

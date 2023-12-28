@@ -14,7 +14,7 @@
         <meta property="og:site_name" content="SilverGoldRate.pk" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="gold rate in pakistan - SilverGoldRate.PK" />
-        <!-- <script type="application/ld+json">
+        <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@graph": [
@@ -38,7 +38,7 @@
                     }
                 ]
             }
-        </script> -->
+        </script>
 
         
 @endsection
