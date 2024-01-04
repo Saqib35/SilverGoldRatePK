@@ -18,27 +18,33 @@
             {
                 "@context": "https://schema.org",
                 "@graph": [
-                    { "@type": "Organization", "@id": "{{ url('/#organization') }}", "name": "SilverGoldRate" },
+                    {
+                        "@type": "Organization",
+                        "@id": "https://silvergoldrate.pk#organization",
+                        "name": "SilverGoldRate"
+                    },
                     {
                         "@type": "WebSite",
-                        "@id": "{{ url('/#website') }}",
-                        "url": "{{ url('/') }}",
+                        "@id": "https://silvergoldrate.pk#website",
+                        "url": "https://silvergoldrate.pk",
                         "name": "SilverGoldRate.pk",
                         "alternateName": "Gold and Silver Rate in Pakistan",
-                        "publisher": { "@id": "{{ url('/#organization') }}" },
+                        "publisher": { "@id": "https://silvergoldrate.pk#organization" },
                         "inLanguage": "en-US"
                     },
                     {
                         "@type": "SearchResultsPage",
-                        "@id": "https://silvergoldrate.pk/search/gold+rate+in+pakistan/#webpage",
-                        "url": "https://silvergoldrate.pk/search/gold+rate+in+pakistan/",
+                        "@id": "https://silvergoldrate.pk/search/gold+rate+in+pakistan#webpage",
+                        "url": "https://silvergoldrate.pk/search/gold+rate+in+pakistan",
                         "name": "gold rate in Pakistan- SilverGoldRate.PK",
-                        "isPartOf": { "@id": "https://silvergoldrate.pk/#website" },
+                        "isPartOf": { "@id": "https://silvergoldrate.pk#website" },
                         "inLanguage": "en-US"
                     }
+
                 ]
             }
         </script>
+
 
         
 @endsection

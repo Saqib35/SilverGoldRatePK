@@ -61,10 +61,10 @@
         <ul class="nav footer-nav d-block">
        
           <li class="nav-item textLeft">
-           <a class="nav-link" href="{{ url('privacy-policy-for-silver-rate-in-pakistan/') }}">Privacy Policy</a>
+           <a class="nav-link" href="{{ url('privacy-policy-for-silver-rate-in-pakistan') }}">Privacy Policy</a>
           </li>
           <li class="nav-item textLeft">
-           <a class="nav-link" href="{{ url('contact-us/') }}">Contact Us</a>
+           <a class="nav-link" href="{{ url('contact-us') }}">Contact Us</a>
            </li>
            <li class="nav-item textLeft">
            <a class="nav-link">About Us</a>
@@ -82,7 +82,7 @@
     </div>
 
    
-    <p class="mt-3">&copy; 2023 SilverGoldRate.PK. All rights reserved.</p>
+    <p class="mt-3">&copy; 2024 SilverGoldRate.PK. All rights reserved.</p>
   </div>
 </footer>
 

@@ -77,7 +77,7 @@
                                         <div class="col-md-12">
                                             <div class="mb-3">
                                                 <label for="Img">Img</label>
-                                                <input id="Img"  name="Img1" type="file" class="form-control">
+                                                <input id="Img"  name="Img1" required="" type="file" class="form-control">
                                             </div>
                                             
                                         </div>

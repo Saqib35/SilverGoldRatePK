@@ -36,16 +36,24 @@
         {
             "@context": "https://schema.org",
             "@graph": [
-                { "@type": ["Person", "Organization"], "@id": "{{ url('/#person') }}", "name": "Staff" },
+                {
+                    "@type": ["Person", "Organization"],
+                    "@id": "https://silvergoldrate.pk#person",
+                    "name": "Staff"
+                },
                 {
                     "@type": "WebSite",
-                    "@id": "{{ url('/#website')}}",
-                    "url": "{{ url('/')}}",
+                    "@id": "https://silvergoldrate.pk#website",
+                    "url": "https://silvergoldrate.pk",
                     "name": "Gold and Silver Rate in Pakistan",
                     "alternateName": "Gold Price in Pakistan",
-                    "publisher": { "@id": "{{ url('/#person')}}" },
+                    "publisher": { "@id": "https://silvergoldrate.pk#person" },
                     "inLanguage": "en-US",
-                    "potentialAction": { "@type": "SearchAction", "target": "https://silvergoldrate.pk/?s={search_term_string}", "query-input": "required name=search_term_string" }
+                    "potentialAction": {
+                        "@type": "SearchAction",
+                        "target": "https://silvergoldrate.pk/?s={search_term_string}",
+                        "query-input": "required name=search_term_string"
+                    }
                 },
                 {
                     "@type": "ImageObject",
@@ -57,34 +65,38 @@
                     "inLanguage": "en-US"
                 },
                 {
-                    "@type": "Person",
-                    "@id": "{{ url('/author/staff/') }}",
-                    "name": "Staff",
-                    "url": "{{ url('/author/staff/') }}",
-                    "image": {
-                        "@type": "ImageObject",
-                        "@id": "{{ asset('assets/staff.webp') }}",
-                        "url": "{{ asset('assets/staff.webp') }}",
+                "@type": "Person",
+                "@id": "https://silvergoldrate.pk/author/staff#person",
+                "name": "Staff",
+                "url": "https://silvergoldrate.pk/author/staff",
+                "image": {
+                    "@type": "ImageObject",
+                    "@id": "https://silvergoldrate.pk/assets/staff.webp",
+                    "url": "https://silvergoldrate.pk/assets/staff.webp",
                         "caption": "Staff",
                         "inLanguage": "en-US"
                     },
-                    "sameAs": ["{{ url('/')}}", "#", "https://twitter.com/#"]
+                    "sameAs": [
+                        "https://silvergoldrate.pk",
+                        "#",
+                        "https://twitter.com"
+                    ]
                 },
                 {
                     "@type": "NewsArticle",
                     "headline": "{{ $home_content->meta_title }}",
-                    "keywords": "Silver rate in pakistan",
+                    "keywords": "Silver rate in Pakistan",
                     "datePublished": "{{ $home_content->created_at }}",
                     "dateModified": "{{ $home_content->updated_at }}",
-                    "author": { "@id": "{{ url('/author/staff/') }}", "name": "Staff" },
-                    "publisher": { "@id": "{{ url('/#person') }}" },
+                    "author": { "@id": "https://silvergoldrate.pk/author/staff#person", "name": "Staff" },
+                    "publisher": { "@id": "https://silvergoldrate.pk#person" },
                     "description": "{{ $home_content->meta_description }}",
                     "name": "{{ $home_content->meta_title }}",
-                    "@id": "{{ url('/#richSnippet') }}",
-                    "isPartOf": { "@id": "{{ url('/#webpage') }}" },
-                    "image": { "@id": "{{ asset('images/today-silver-rate-in-pakistan.webp') }}" },
+                    "@id": "https://silvergoldrate.pk#richSnippet",
+                    "isPartOf": { "@id": "https://silvergoldrate.pk#webpage" },
+                    "image": { "@id": "https://silvergoldrate.pk/images/today-silver-rate-in-pakistan.webp" },
                     "inLanguage": "en-US",
-                    "mainEntityOfPage": { "@id": "{{ url('/#webpage') }}" }
+                    "mainEntityOfPage": { "@id": "https://silvergoldrate.pk#webpage" }
                 }
             ]
         }

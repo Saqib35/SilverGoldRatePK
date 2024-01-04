@@ -20,24 +20,29 @@
             {
                 "@context": "https://schema.org",
                 "@graph": [
-                    { "@type": "Person", "@id": "{{ url('/#person') }}", "name": "Staff" },
+                    {
+                        "@type": "Person",
+                        "@id": "https://silvergoldrate.pk#person",
+                        "name": "Staff"
+                    },
                     {
                         "@type": "WebSite",
-                        "@id": "{{ url('/#website') }}",
-                        "url": "{{ url('/') }}",
+                        "@id": "https://silvergoldrate.pk#website",
+                        "url": "https://silvergoldrate.pk",
                         "name": "Gold and Silver Rate in Pakistan",
                         "alternateName": "Gold Price in Pakistan",
-                        "publisher": { "@id": "{{ url('/#person') }}" },
+                        "publisher": { "@id": "https://silvergoldrate.pk#person" },
                         "inLanguage": "en-US"
                     },
                     {
                         "@type": "CollectionPage",
-                        "@id": "{{ url('/category/gold-price-history-by-month/#webpage') }}",
-                        "url": "{{ url('/category/gold-price-history-by-month') }}",
+                        "@id": "https://silvergoldrate.pk/category/gold-price-history-by-month#webpage",
+                        "url": "https://silvergoldrate.pk/category/gold-price-history-by-month",
                         "name": "Gold Price History by Month | Silvergoldrate.pk",
-                        "isPartOf": { "@id": "{{ url('/#website') }}" },
+                        "isPartOf": { "@id": "https://silvergoldrate.pk#website" },
                         "inLanguage": "en-US"
                     }
+
                 ]
             }
         </script>

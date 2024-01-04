@@ -28,54 +28,59 @@
     {
         "@context": "https://schema.org",
         "@graph": [
-            { "@type": ["Person", "Organization"], "@id": "{{ url('/#person') }}", "name": "Staff" },
+            {
+                "@type": ["Person", "Organization"],
+                "@id": "https://silvergoldrate.pk#person",
+                "name": "Staff"
+            },
             {
                 "@type": "WebSite",
-                "@id": "{{ url('/#website') }}",
-                "url": "{{ url('/') }}",
+                "@id": "https://silvergoldrate.pk#website",
+                "url": "https://silvergoldrate.pk",
                 "name": "Gold and Silver Rate in Pakistan",
                 "alternateName": "Gold Price in Pakistan",
-                "publisher": { "@id": "{{ url('/#person') }}" },
+                "publisher": { "@id": "https://silvergoldrate.pk#person" },
                 "inLanguage": "en-US"
             },
             {
                 "@type": "WebPage",
-                "@id": "{{ url('/privacy-policy-for-silver-rate-in-pakistan/#webpage') }}",
-                "url": "{{ url('/privacy-policy-for-silver-rate-in-pakistan/') }}",
+                "@id": "https://silvergoldrate.pk/privacy-policy-for-silver-rate-in-pakistan#webpage",
+                "url": "https://silvergoldrate.pk/privacy-policy-for-silver-rate-in-pakistan",
                 "name": "Privacy Policy for Silver Rate in Pakistan",
                 "datePublished": "2023-12-18T12:04:50+05:00",
                 "dateModified": "2023-12-18T12:04:51+05:00",
-                "isPartOf": { "@id": "{{ url('/#website') }}" },
+                "isPartOf": { "@id": "https://silvergoldrate.pk#website" },
                 "inLanguage": "en-US"
             },
             {
                 "@type": "Person",
-                "@id": "{{ url('/author/staff/') }}",
+                "@id": "https://silvergoldrate.pk/author/staff#person",
                 "name": "Staff",
-                "url": "{{ url('/author/staff/') }}",
+                "url": "https://silvergoldrate.pk/author/staff",
                 "image": {
                     "@type": "ImageObject",
-                    "@id": "{{ asset('assets/staff.webp') }}",
-                    "url": "{{ asset('assets/staff.webp') }}",
+                    "@id": "https://silvergoldrate.pk/assets/staff.webp",
+                    "url": "https://silvergoldrate.pk/assets/staff.webp",
                     "caption": "Staff",
                     "inLanguage": "en-US"
                 },
-                "sameAs": ["{{ url('/') }}", "#", "https://twitter.com/#"]
+                "sameAs": ["https://silvergoldrate.pk", "#", "https://twitter.com"]
             },
             {
-                "@type": "NewsArticle",
+               "@type": "NewsArticle",
                 "headline": "Privacy Policy for Silver Rate in Pakistan",
                 "datePublished": "2023-12-18T12:04:50+05:00",
                 "dateModified": "2023-12-18T12:04:51+05:00",
-                "author": { "@id": "{{ url('/author/staff/') }}", "name": "Staff" },
-                "publisher": { "@id": "{{ url('/#person') }}" },
-                "description": "At SilverGoldRate.pk, accessible from https://silvergoldrate.pk/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains",
+                "author": { "@id": "https://silvergoldrate.pk/author/staff", "name": "Staff" },
+                "publisher": { "@id": "https://silvergoldrate.pk#person" },
+                "description": "At SilverGoldRate.pk, accessible from https://silvergoldrate.pk, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains",
                 "name": "Privacy Policy for Silver Rate in Pakistan",
-                "@id": "{{ url('/privacy-policy-for-silver-rate-in-pakistan/#richSnippet') }}",
-                "isPartOf": { "@id": "{{ url('/privacy-policy-for-silver-rate-in-pakistan/#webpage') }}" },
+                "@id": "https://silvergoldrate.pk/privacy-policy-for-silver-rate-in-pakistan#richSnippet",
+                "isPartOf": { "@id": "https://silvergoldrate.pk/privacy-policy-for-silver-rate-in-pakistan#webpage" },
                 "inLanguage": "en-US",
-                "mainEntityOfPage": { "@id": "{{ url('/privacy-policy-for-silver-rate-in-pakistan/#webpage') }}" }
+                "mainEntityOfPage": { "@id": "https://silvergoldrate.pk/privacy-policy-for-silver-rate-in-pakistan#webpage" }
             }
+
         ]
     }
 </script>

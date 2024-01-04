@@ -26,55 +26,60 @@
     {
         "@context": "https://schema.org",
         "@graph": [
-            { "@type": "Organization", "@id": "{{ url('/#organization') }}", "name": "SilverGoldRate" },
+            {
+                "@type": "Organization",
+                "@id": "https://silvergoldrate.pk#organization",
+                "name": "SilverGoldRate"
+            },
             {
                 "@type": "WebSite",
-                "@id": "{{ url('/#website') }}",
-                "url": "{{ url('/') }}",
+                "@id": "https://silvergoldrate.pk#website",
+                "url": "https://silvergoldrate.pk",
                 "name": "SilverGoldRate.pk",
                 "alternateName": "Gold and Silver Rate in Pakistan",
-                "publisher": { "@id": "{{ url('/#organization') }}" },
+                "publisher": { "@id": "https://silvergoldrate.pk#organization" },
                 "inLanguage": "en-US"
             },
             {
                 "@type": "WebPage",
-                "@id": "{{  url('/terms-and-conditions/#webpage') }}",
-                "url": "{{ url('/terms-and-conditions') }}",
+                "@id": "https://silvergoldrate.pk/terms-and-conditions#webpage",
+                "url": "https://silvergoldrate.pk/terms-and-conditions",
                 "name": "Terms and Conditions",
                 "datePublished": "2023-12-19T11:49:54+05:00",
                 "dateModified": "2023-12-19T11:49:56+05:00",
-                "isPartOf": { "@id": "{{ url('/#website') }}" },
+                "isPartOf": { "@id": "https://silvergoldrate.pk#website" },
                 "inLanguage": "en-US"
             },
             {
                 "@type": "Person",
-                "@id": "{{ url('/author/staff/') }}",
+                "@id": "https://silvergoldrate.pk/author/staff#person",
                 "name": "Staff",
-                "url": "{{ url('/author/staff/') }}",
+                "url": "https://silvergoldrate.pk/author/staff",
                 "image": {
                     "@type": "ImageObject",
-                    "@id": "{{ asset('assets/staff.webp') }}",
-                    "url": "{{ asset('assets/staff.webp') }}",
+                    "@id": "https://silvergoldrate.pk/assets/staff.webp",
+                    "url": "https://silvergoldrate.pk/assets/staff.webp",
                     "caption": "Staff",
                     "inLanguage": "en-US"
                 },
-                "sameAs": ["{{ url('/') }}", "#", "https://twitter.com/#"],
-                "worksFor": { "@id": "{{ url('/#organization') }}" }
+                "sameAs": ["https://silvergoldrate.pk", "#", "https://twitter.com"],
+                "worksFor": { "@id": "https://silvergoldrate.pk#organization" }
             },
             {
                 "@type": "NewsArticle",
                 "headline": "Terms and Conditions",
                 "datePublished": "2023-08-02T11:49:54+05:00",
                 "dateModified": "2023-08-02T11:49:56+05:00",
-                "author": { "@id": "{{ url('/author/staff/') }}", "name": "Staff" },
-                "publisher": { "@id": "{{ url('/#organization') }}" },
+                "author": { "@id": "https://silvergoldrate.pk/author/staff#person", "name": "Staff" },
+                "publisher": { "@id": "https://silvergoldrate.pk#organization" },
                 "description": "Welcome to Silver Rate in Pakistan!",
                 "name": "Terms and Conditions",
-                "@id": "{{ url('/terms-and-conditions/#richSnippet') }}",
-                "isPartOf": { "@id": "{{ url('/terms-and-conditions/#webpage') }}" },
+                "@id": "https://silvergoldrate.pk/terms-and-conditions#richSnippet",
+                "isPartOf": { "@id": "https://silvergoldrate.pk/terms-and-conditions#webpage" },
                 "inLanguage": "en-US",
-                "mainEntityOfPage": { "@id": "{{ url('/terms-and-conditions/#webpage') }}" }
+                "mainEntityOfPage": { "@id": "https://silvergoldrate.pk/terms-and-conditions#webpage" }
             }
+
         ]
     }
     </script>

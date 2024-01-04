@@ -41,14 +41,18 @@
             {
                 "@context": "https://schema.org",
                 "@graph": [
-                    { "@type": ["Person", "Organization"], "@id": "{{ url('/#person') }}", "name": "Staff" },
+                    {
+                        "@type": ["Person", "Organization"],
+                        "@id": "https://silvergoldrate.pk#person",
+                        "name": "Staff"
+                    },
                     {
                         "@type": "WebSite",
-                        "@id": "{{ url('/#website') }}",
-                        "url": "{{ url('/') }}",
+                        "@id": "https://silvergoldrate.pk#website",
+                        "url": "https://silvergoldrate.pk",
                         "name": "Gold and Silver Rate in Pakistan",
                         "alternateName": "Gold Price in Pakistan",
-                        "publisher": { "@id": "{{ url('/#person') }}" },
+                        "publisher": { "@id": "https://silvergoldrate.pk#person" },
                         "inLanguage": "en-US"
                     },
                     {
@@ -62,28 +66,28 @@
                     },
                     {
                         "@type": "WebPage",
-                        "@id": "{{ url($GoldRateByWeek->slug.'/#webpage')}}",
-                        "url": "{{ url($GoldRateByWeek->slug)}}",
-                        "name": "{{ $GoldRateByWeek->title  }}",
-                        "datePublished": "{{ $GoldRateByWeek->created_at  }}",
-                        "dateModified": "{{ $GoldRateByWeek->updated_at  }}",
-                        "isPartOf": { "@id": "{{ url('/#website') }}" },
-                        "primaryImageOfPage": { "@id": "{{ asset('weekly-gold-rate-in-pakistan.webp') }}" },
+                        "@id": "https://silvergoldrate.pk/{{ $GoldRateByWeek->slug }}#webpage",
+                        "url": "https://silvergoldrate.pk/{{ $GoldRateByWeek->slug }}",
+                        "name": "{{ $GoldRateByWeek->title }}",
+                        "datePublished": "{{ $GoldRateByWeek->created_at }}",
+                        "dateModified": "{{ $GoldRateByWeek->updated_at }}",
+                        "isPartOf": { "@id": "https://silvergoldrate.pk#website" },
+                        "primaryImageOfPage": { "@id": "https://silvergoldrate.pk/weekly-gold-rate-in-pakistan.webp" },
                         "inLanguage": "en-US"
                     },
                     {
                         "@type": "Person",
-                        "@id": "{{ url('/author/staff/') }}",
+                        "@id": "https://silvergoldrate.pk/author/staff",
                         "name": "Staff",
-                        "url": "{{ url('/author/staff/') }}",
+                        "url": "https://silvergoldrate.pk/author/staff",
                         "image": {
                             "@type": "ImageObject",
-                            "@id": "{{ asset('assets/staff.webp') }}",
-                            "url": "{{ asset('assets/staff.webp') }}",
+                            "@id": "https://silvergoldrate.pk/assets/staff.webp",
+                            "url": "https://silvergoldrate.pk/assets/staff.webp",
                             "caption": "Staff",
                             "inLanguage": "en-US"
                         },
-                        "sameAs": ["{{ url('/') }}", "#", "https://twitter.com/#"]
+                        "sameAs": ["https://silvergoldrate.pk", "#", "https://twitter.com"]
                     },
                     {
                         "@type": "NewsArticle",
@@ -91,16 +95,17 @@
                         "datePublished": "{{ $GoldRateByWeek->created_at  }}",
                         "dateModified": "{{ $GoldRateByWeek->updated_at  }}",
                         "articleSection": "Gold Price History by Week",
-                        "author": { "@id": "{{ url('/author/staff/') }}", "name": "Staff" },
-                        "publisher": { "@id": "{{ url('/#person') }}" },
+                        "author": { "@id": "https://silvergoldrate.pk/author/staff", "name": "Staff" },
+                        "publisher": { "@id": "https://silvergoldrate.pk#person" },
                         "description": "{{  $GoldRateByWeek->meta_description  }}",             
                         "name": "{{ $GoldRateByWeek->title  }}",
-                        "@id": "{{ url($GoldRateByWeek->slug.'/#richSnippet') }}",
-                        "isPartOf": { "@id": "{{ url($GoldRateByWeek->slug.'/#webpage') }}" },
-                        "image": { "@id": "{{ asset('images/weekly-gold-rate-in-pakistan.webp') }}" },
+                        "@id": "https://silvergoldrate.pk/{{ $GoldRateByWeek->slug }}richSnippet",
+                        "isPartOf": { "@id": "https://silvergoldrate.pk/{{ $GoldRateByWeek->slug }}webpage" },
+                        "image": { "@id": "https://silvergoldrate.pk/images/weekly-gold-rate-in-pakistan.webp" },
                         "inLanguage": "en-US",
-                        "mainEntityOfPage": { "@id": "{{ url($GoldRateByWeek->slug.'/#webpage') }}" }
+                        "mainEntityOfPage": { "@id": "https://silvergoldrate.pk/{{ $GoldRateByWeek->slug }}webpage" }
                     }
+
                 ]
             }
         </script>

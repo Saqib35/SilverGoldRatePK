@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /public/*/
+Disallow: */public/
+Disallow: */public
+Disallow: */public/*
+
+
+Sitemap: https://silvergoldrate.pk/sitemap.xml

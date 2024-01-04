@@ -3,7 +3,7 @@
 ?>
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
     <channel>
-        <title><![CDATA[ https://silvergoldrate.pk/ ]]></title>
+        <title><![CDATA[ https://silvergoldrate.pk ]]></title>
         <link><![CDATA[ https://silvergoldrate.pk/feed ]]></link>
         <description><![CDATA[ Gold Rate in Pakistan Today ]]></description>
         <language>en</language>
@@ -17,7 +17,7 @@
                 <author><![CDATA[Staff]]></author>
                 <guid>{{ $post->id }}</guid>
                 <pubDate>{{ $post->updated_at->toRssString() }}</pubDate>
-                <media:content url="{{ asset($post->img) }}" medium="image">
+                <media:content url="{{ asset('images/gold-rate-in-pakistan-today.webp') }}" medium="image">
                     <media:description><![CDATA[{{ $post->alt_tag }}]]></media:description>
                     <media:credit><![CDATA[Gold Rate In pakistan]]></media:credit>
                 </media:content>

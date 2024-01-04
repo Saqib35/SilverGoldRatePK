@@ -39,14 +39,18 @@
             {
                 "@context": "https://schema.org",
                 "@graph": [
-                    { "@type": ["Person", "Organization"], "@id": "{{ url('/#person') }}", "name": "Staff" },
+                    {
+                        "@type": ["Person", "Organization"],
+                        "@id": "https://silvergoldrate.pk#person",
+                        "name": "Staff"
+                    },
                     {
                         "@type": "WebSite",
-                        "@id": "{{ url('/#website') }}",
-                        "url": "{{ url('/') }}",
+                        "@id": "https://silvergoldrate.pk#website",
+                        "url": "https://silvergoldrate.pk",
                         "name": "Gold and Silver Rate in Pakistan",
                         "alternateName": "Gold Price in Pakistan",
-                        "publisher": { "@id": "{{ url('/#person') }}" },
+                        "publisher": { "@id": "https://silvergoldrate.pk#person" },
                         "inLanguage": "en-US"
                     },
                     {
@@ -60,44 +64,44 @@
                     },
                     {
                         "@type": "WebPage",
-                        "@id": "{{ url($GoldRateByMonth->slug.'/#webpage')}}",
-                        "url": "{{ url($GoldRateByMonth->slug)}}",
-                        "name": "{{ $GoldRateByMonth->title  }}",
-                        "datePublished": "{{ $GoldRateByMonth->created_at  }}",
-                        "dateModified": "{{ $GoldRateByMonth->updated_at  }}",
-                        "isPartOf": { "@id": "{{ url('/#website') }}" },
-                        "primaryImageOfPage": { "@id": "{{ asset('images/today-gold-rate-in-pakistan.webp') }}" },
+                        "@id": "https://silvergoldrate.pk/{{ $GoldRateByMonth->slug }}#webpage",
+                        "url": "https://silvergoldrate.pk/{{ $GoldRateByMonth->slug }}",
+                        "name": "{{ $GoldRateByMonth->title }}",
+                        "datePublished": "{{ $GoldRateByMonth->created_at }}",
+                        "dateModified": "{{ $GoldRateByMonth->updated_at }}",
+                        "isPartOf": { "@id": "https://silvergoldrate.pk#website" },
+                        "primaryImageOfPage": { "@id": "https://silvergoldrate.pk/images/today-gold-rate-in-pakistan.webp" },
                         "inLanguage": "en-US"
                     },
                     {
-                        "@type": "Person",
-                        "@id": "{{ url('/author/staff/') }}",
-                        "name": "Staff",
-                        "url": "{{ url('/author/staff/') }}",
-                        "image": {
+                    "@type": "Person",
+                    "@id": "https://silvergoldrate.pk/author/staff",
+                    "name": "Staff",
+                    "url": "https://silvergoldrate.pk/author/staff",
+                    "image": {
                             "@type": "ImageObject",
-                            "@id": "{{ asset('assets/staff.webp') }}",
-                            "url": "{{ asset('assets/staff.webp') }}",
+                            "@id": "https://silvergoldrate.pk/assets/staff.webp",
+                            "url": "https://silvergoldrate.pk/assets/staff.webp",
                             "caption": "Staff",
                             "inLanguage": "en-US"
                         },
-                        "sameAs": ["{{ url('/')}}", "#", "https://twitter.com/#"]
+                        "sameAs": ["https://silvergoldrate.pk", "#", "https://twitter.com"]
                     },
                     {
                         "@type": "NewsArticle",
-                        "headline": "{{ $GoldRateByMonth->title  }}",
-                        "datePublished": "{{ $GoldRateByMonth->created_at  }}",
-                        "dateModified": "{{ $GoldRateByMonth->updated_at  }}",
+                        "headline": "{{ $GoldRateByMonth->title }}",
+                        "datePublished": "{{ $GoldRateByMonth->created_at }}",
+                        "dateModified": "{{ $GoldRateByMonth->updated_at }}",
                         "articleSection": "Gold Price History by Month",
-                        "author": { "@id": "{{ url('/author/staff/') }}", "name": "Staff" },
-                        "publisher": { "@id": "{{ url('/#person') }}" },
-                        "description": "{{  $GoldRateByMonth->meta_description  }}",             
-                        "name": "{{ $GoldRateByMonth->title  }}",
-                        "@id": "{{ url($GoldRateByMonth->slug.'/#richSnippet') }}",
-                        "isPartOf": { "@id": "{{ url($GoldRateByMonth->slug.'/#webpage') }}" },
-                        "image": { "@id": "{{ asset('images/today-gold-rate-in-pakistan.webp') }}" },
+                        "author": { "@id": "https://silvergoldrate.pk/author/staff", "name": "Staff" },
+                        "publisher": { "@id": "https://silvergoldrate.pk#person" },
+                        "description": "{{ $GoldRateByMonth->meta_description }}",
+                        "name": "{{ $GoldRateByMonth->title }}",
+                        "@id": "https://silvergoldrate.pk/{{ $GoldRateByMonth->slug }}#richSnippet",
+                        "isPartOf": { "@id": "https://silvergoldrate.pk/{{ $GoldRateByMonth->slug }}#webpage" },
+                        "image": { "@id": "https://silvergoldrate.pk/images/today-gold-rate-in-pakistan.webp" },
                         "inLanguage": "en-US",
-                        "mainEntityOfPage": { "@id": "{{ url($GoldRateByMonth->slug.'/#webpage') }}" }
+                        "mainEntityOfPage": { "@id": "https://silvergoldrate.pk/{{ $GoldRateByMonth->slug }}#webpage" }
                     }
                 ]
             }

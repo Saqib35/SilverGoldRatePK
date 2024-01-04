@@ -23,38 +23,38 @@
        {
         "@context": "https://schema.org",
         "@graph": [
-            { "@type": "Person", "@id": "{{ url('/#person') }}", "name": "Staff" },
+            { "@type": "Person", "@id": "https://silvergoldrate.pk#person", "name": "Staff" },
             {
                 "@type": "WebSite",
-                "@id": "{{ url('/#website') }}",
-                "url": "{{ url('/') }}",
+                "@id": "https://silvergoldrate.pk#website",
+                "url": "https://silvergoldrate.pk",
                 "name": "Gold and Silver Rate in Pakistan",
                 "alternateName": "Gold Price in Pakistan",
-                "publisher": { "@id": "{{ url('/#person') }}" },
+                "publisher": { "@id": "https://silvergoldrate.pk#person" },
                 "inLanguage": "en-US"
             },
             {
                 "@type": "ProfilePage",
-                "@id": "{{ url('/author/staff/#webpage') }}",
-                "url": "{{ url('/author/staff/') }}",
+                "@id": "https://silvergoldrate.pk/author/staff#webpage",
+                "url": "https://silvergoldrate.pk/author/staff",
                 "name": "Staff - Silvergoldrate PK",
-                "isPartOf": { "@id": "{{ url('/#website') }}" },
+                "isPartOf": { "@id": "https://silvergoldrate.pk#website" },
                 "inLanguage": "en-US"
             },
             {
                 "@type": "Person",
-                "@id": "{{ url('/author/staff/') }}",
+                "@id": "https://silvergoldrate.pk/author/staff",
                 "name": "Staff",
-                "url": "{{ url('/author/staff/') }}",
+                "url": "https://silvergoldrate.pk/author/staff",
                 "image": {
                     "@type": "ImageObject",
-                    "@id": "{{ asset('assets/staff.webp') }}",
-                    "url": "{{ asset('assets/staff.webp') }}",
+                    "@id": "https://silvergoldrate.pk/assets/staff.webp",
+                    "url": "https://silvergoldrate.pk/assets/staff.webp",
                     "caption": "Staff",
                     "inLanguage": "en-US"
                 },
-                "sameAs": ["{{ url('/') }}", "#", "https://twitter.com/#"],
-                "mainEntityOfPage": { "@id": "{{ url('/author/staff/#webpage') }}" }
+                "sameAs": ["https://silvergoldrate.pk", "#", "https://twitter.com"],
+                "mainEntityOfPage": { "@id": "https://silvergoldrate.pk/author/staff#webpage" }
             }
           ]
         }

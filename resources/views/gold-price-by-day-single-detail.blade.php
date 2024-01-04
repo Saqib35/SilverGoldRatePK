@@ -39,20 +39,24 @@
             {
                 "@context": "https://schema.org",
                 "@graph": [
-                    { "@type": ["Person", "Organization"], "@id": "{{ url('/#person') }}", "name": "Staff" },
+                    {
+                        "@type": ["Person", "Organization"],
+                        "@id": "https://silvergoldrate.pk#person",
+                        "name": "Staff"
+                    },
                     {
                         "@type": "WebSite",
-                        "@id": "{{ url('/#website')}}",
-                        "url": "{{ url('/')}}",
+                        "@id": "https://silvergoldrate.pk#website",
+                        "url": "https://silvergoldrate.pk",
                         "name": "Gold and Silver Rate in Pakistan",
                         "alternateName": "Gold Price in Pakistan",
-                        "publisher": { "@id": "{{ url('/#person')}}" },
+                        "publisher": { "@id": "https://silvergoldrate.pk#person" },
                         "inLanguage": "en-US"
                     },
                     {
                         "@type": "ImageObject",
-                        "@id": "{{ asset('images/today-gold-rate-in-pakistan.webp') }}",
-                        "url": "{{ asset('images/today-gold-rate-in-pakistan.webp') }}",
+                        "@id": "https://silvergoldrate.pk/images/today-gold-rate-in-pakistan.webp",
+                        "url": "https://silvergoldrate.pk/images/today-gold-rate-in-pakistan.webp",
                         "width": "1280",
                         "height": "720",
                         "caption": "gold rate Pakistan Today",
@@ -60,45 +64,46 @@
                     },
                     {
                         "@type": "WebPage",
-                        "@id": "{{ url($GoldRateByDay->slug)}}#webpage",
-                        "url": "{{ url($GoldRateByDay->slug)}}",
-                        "name": "{{ $GoldRateByDay->title  }}",
+                        "@id": "https://silvergoldrate.pk/{{ $GoldRateByDay->slug }}#webpage",
+                        "url": "https://silvergoldrate.pk/{{ $GoldRateByDay->slug }}",
+                        "name": "{{ $GoldRateByDay->title }}",
                         "datePublished": "{{ $GoldRateByDay->created_at }}",
                         "dateModified": "{{ $GoldRateByDay->updated_at }}",
-                        "isPartOf": { "@id": "{{ url('/#website') }}" },
-                        "primaryImageOfPage": { "@id": "{{ asset('images/today-gold-rate-in-pakistan.webp') }}" },
+                        "isPartOf": { "@id": "https://silvergoldrate.pk#website" },
+                        "primaryImageOfPage": { "@id": "https://silvergoldrate.pk/images/today-gold-rate-in-pakistan.webp" },
                         "inLanguage": "en-US"
                     },
                     {
                         "@type": "Person",
-                        "@id": "{{ url('/author/staff/') }}",
+                        "@id": "https://silvergoldrate.pk/author/staff",
                         "name": "Staff",
-                        "url": "{{ url('/author/staff/') }}",
+                        "url": "https://silvergoldrate.pk/author/staff",
                         "image": {
                             "@type": "ImageObject",
-                            "@id": "{{ asset('assets/staff.webp') }}",
-                            "url": "{{ asset('assets/staff.webp') }}",
+                            "@id": "https://silvergoldrate.pk/assets/staff.webp",
+                            "url": "https://silvergoldrate.pk/assets/staff.webp",
                             "caption": "Staff",
                             "inLanguage": "en-US"
                         },
-                        "sameAs": ["{{ url('/')}}", "#", "https://twitter.com/#"]
+                        "sameAs": ["https://silvergoldrate.pk", "#", "https://twitter.com"]
                     },
                     {
                         "@type": "NewsArticle",
-                        "headline": "{{ $GoldRateByDay->title  }}",
-                        "datePublished": "{{ $GoldRateByDay->created_at  }}",
-                        "dateModified": "{{ $GoldRateByDay->updated_at  }}",
+                        "headline": "{{ $GoldRateByDay->title }}",
+                        "datePublished": "{{ $GoldRateByDay->created_at }}",
+                        "dateModified": "{{ $GoldRateByDay->updated_at }}",
                         "articleSection": "Gold and Silver Rates",
-                        "author": { "@id": "{{ url('/author/staff/') }}", "name": "Staff" },
-                        "publisher": { "@id": "{{ url('/#person') }}" },
-                        "description": "{{  $GoldRateByDay->meta_description  }}",
-                        "name": "{{ $GoldRateByDay->title  }}",
-                        "@id": "{{ url($GoldRateByDay->slug.'/#richSnippet') }}",
-                        "isPartOf": { "@id": "{{ url($GoldRateByDay->slug.'/#webpage') }}" },
-                        "image": { "@id": "{{ asset('images/today-gold-rate-in-pakistan.webp') }}" },
+                        "author": { "@id": "https://silvergoldrate.pk/author/staff", "name": "Staff" },
+                        "publisher": { "@id": "https://silvergoldrate.pk#person" },
+                        "description": "{{ $GoldRateByDay->meta_description }}",
+                        "name": "{{ $GoldRateByDay->title }}",
+                        "@id": "https://silvergoldrate.pk/{{ $GoldRateByDay->slug }}#richSnippet",
+                        "isPartOf": { "@id": "https://silvergoldrate.pk/{{ $GoldRateByDay->slug }}#webpage" },
+                        "image": { "@id": "https://silvergoldrate.pk/images/today-gold-rate-in-pakistan.webp" },
                         "inLanguage": "en-US",
-                        "mainEntityOfPage": { "@id": "{{ url($GoldRateByDay->slug.'/#webpage') }}" }
+                        "mainEntityOfPage": { "@id": "https://silvergoldrate.pk/{{ $GoldRateByDay->slug }}#webpage" }
                     }
+
                 ]
             }
         </script>

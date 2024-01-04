@@ -20,24 +20,29 @@
     {
         "@context": "https://schema.org",
         "@graph": [
-            { "@type": "Organization", "@id": "{{ url('/#organization') }}", "name": "SilverGoldRate" },
-            {
-                "@type": "WebSite",
-                "@id": "{{ url('/#website') }}",
-                "url": "{{ url('/') }}",
-                "name": "SilverGoldRate.pk",
-                "alternateName": "Gold and Silver Rate in Pakistan",
-                "publisher": { "@id": "{{ url('/#organization') }}" },
-                "inLanguage": "en-US"
-            },
-            {
-                "@type": "CollectionPage",
-                "@id": "{{ url('/gold-calcultor/#webpage') }}",
-                "url": "{{ url('/gold-calcultor/') }}",
-                "name": "Gold Rate Calculator  - SilverGoldRate.PK",
-                "isPartOf": { "@id": "{{ url('/#website') }}" },
-                "inLanguage": "en-US"
-            }
+                {
+                    "@type": "Organization",
+                    "@id": "https://silvergoldrate.pk#organization",
+                    "name": "SilverGoldRate"
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://silvergoldrate.pk#website",
+                    "url": "https://silvergoldrate.pk",
+                    "name": "SilverGoldRate.pk",
+                    "alternateName": "Gold and Silver Rate in Pakistan",
+                    "publisher": { "@id": "https://silvergoldrate.pk#organization" },
+                    "inLanguage": "en-US"
+                },
+                {
+                    "@type": "CollectionPage",
+                    "@id": "https://silvergoldrate.pk/gold-calculator#webpage",
+                    "url": "https://silvergoldrate.pk/gold-calculator",
+                    "name": "Gold Rate Calculator  - SilverGoldRate.PK",
+                    "isPartOf": { "@id": "https://silvergoldrate.pk#website" },
+                    "inLanguage": "en-US"
+                }
+
         ]
     }
 </script>

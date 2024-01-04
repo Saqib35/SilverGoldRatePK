@@ -386,12 +386,25 @@ class HomeController extends Controller
      public function GoldPrice(REQUEST $request)
      {
          
-             $currentUrl = $request->url();
-
+     $currentUrl = $request->url();
+        
+        // Check for '/public' in the URL
         if (strpos($currentUrl, '/public') !== false) {
-          
-            return redirect(str_replace('/public', '', $currentUrl));
-        } 
+            // Remove trailing slash and perform a 301 redirect
+            if (rtrim($currentUrl, '/') !== $currentUrl) {
+                return redirect()->to(rtrim($currentUrl, '/'), 301);
+            } else {
+                // Remove '/public' and perform a redirect
+                return redirect(str_replace('/public', '', $currentUrl));
+            }
+        }
+        
+        // Check for a trailing slash and perform a 301 redirect
+        if (rtrim($currentUrl, '/') !== $currentUrl) {
+            return redirect()->to(rtrim($currentUrl, '/'), 301);
+        }
+
+        
         $HomePageGoldRate=HomePageGoldRate::first();
         $GoldRateByDay=GoldRateByDay::orderBy('created_at', 'desc')->get();
         $rates = $this->calculateRates();

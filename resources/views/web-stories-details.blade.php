@@ -112,24 +112,33 @@
                     publisher="Staff"
                     publisher-logo-src="{{ asset('assets/logo.png')}}"
                     poster-portrait-src="{{ asset('assets/logo.png') }}">
-            <amp-story-page id="page1" auto-advance-after="4s">
-                <amp-img src="{{ asset($webStory->image_path_one) }}" width="720" height="1280" layout="responsive" alt="Gold Rate In Pakistan"></amp-img>
-                <amp-story-cta-layer>
-                    <a href="{{ url('gold-rate-in-pakistan/') }}">Continue to Next Section</a>
-                </amp-story-cta-layer>
-            </amp-story-page>
-            <amp-story-page id="page2" auto-advance-after="4s">
-                <amp-img src="{{ asset($webStory->image_path_two) }}" width="720" height="1280" layout="responsive" alt="Gold Rate In Pakistan"></amp-img>
-                <amp-story-cta-layer>
-                    <a href="{{ url('gold-rate-in-pakistan/') }}">Continue to Next Section</a>
-                </amp-story-cta-layer>
-            </amp-story-page>
-            <amp-story-page id="page3" auto-advance-after="4s">
-                <amp-img src="{{ asset($webStory->image_path_three) }}" width="720" height="1280" layout="responsive" alt="Gold Rate In Pakistan"></amp-img>
-                <amp-story-cta-layer>
-                    <a href="{{ url('gold-rate-in-pakistan/') }}">Continue to Next Section</a>
-                </amp-story-cta-layer>
-            </amp-story-page>
+                    <amp-story-page id="page1" auto-advance-after="4s">
+                    @if(!empty($webStory->image_path_one)  && file_exists(public_path($webStory->image_path_one)))
+                        <amp-img src="{{ asset($webStory->image_path_one) }}" width="720" height="1280" layout="responsive" alt="Gold Rate In Pakistan"></amp-img>
+                    @endif
+                    <amp-story-cta-layer>
+                        <a href="{{ url('gold-rate-in-pakistan/') }}">Continue to Next Section</a>
+                    </amp-story-cta-layer>
+                </amp-story-page>
+
+                <amp-story-page id="page2" auto-advance-after="4s">
+                    @if(!empty($webStory->image_path_two)  && file_exists(public_path($webStory->image_path_two)))
+                        <amp-img src="{{ asset($webStory->image_path_two) }}" width="720" height="1280" layout="responsive" alt="Gold Rate In Pakistan"></amp-img>
+                    @endif
+                    <amp-story-cta-layer>
+                        <a href="{{ url('gold-rate-in-pakistan/') }}">Continue to Next Section</a>
+                    </amp-story-cta-layer>
+                </amp-story-page>
+
+                <amp-story-page id="page3" auto-advance-after="4s">
+                    @if(!empty($webStory->image_path_three)  && file_exists(public_path($webStory->image_path_three)))
+                        <amp-img src="{{ asset($webStory->image_path_three) }}" width="720" height="1280" layout="responsive" alt="Gold Rate In Pakistan"></amp-img>
+                    @endif
+                    <amp-story-cta-layer>
+                        <a href="{{ url('gold-rate-in-pakistan/') }}">Continue to Next Section</a>
+                    </amp-story-cta-layer>
+                </amp-story-page>
+
         </amp-story>
     </div>
 </div>

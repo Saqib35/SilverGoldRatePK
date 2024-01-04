@@ -23,24 +23,29 @@
         {
             "@context": "https://schema.org",
             "@graph": [
-                { "@type": "Organization", "@id": "{{ url('/#organization') }}", "name": "SilverGoldRate" },
+                {
+                    "@type": "Organization",
+                    "@id": "https://silvergoldrate.pk#organization",
+                    "name": "SilverGoldRate"
+                },
                 {
                     "@type": "WebSite",
-                    "@id": "{{ url('/#website') }}",
-                    "url": "{{ url('/') }}",
+                    "@id": "https://silvergoldrate.pk#website",
+                    "url": "https://silvergoldrate.pk",
                     "name": "SilverGoldRate.pk",
                     "alternateName": "Gold and Silver Rate in Pakistan",
-                    "publisher": { "@id": "{{ url('/#organization') }}" },
+                    "publisher": { "@id": "https://silvergoldrate.pk#organization" },
                     "inLanguage": "en-US"
                 },
                 {
                     "@type": "CollectionPage",
-                    "@id": "{{ url('/web-storie/#webpage') }}",
-                    "url": "{{ url('/web-storie') }}",
+                    "@id": "https://silvergoldrate.pk/web-storie#webpage",
+                    "url": "https://silvergoldrate.pk/web-storie",
                     "name": "Web Stories - SilverGoldRate.PK",
-                    "isPartOf": { "@id": "{{ url('/#website') }}" },
+                    "isPartOf": { "@id": "https://silvergoldrate.pk#website" },
                     "inLanguage": "en-US"
                 }
+
             ]
         }
        </script>
@@ -58,12 +63,12 @@
 
 @section('main')
 <div class="container mt-3 bg-white">
-    <div class="row">
-        <h1 class="col-12 text-center mt-5 mb-4"><strong>Web stories Gold Rate In Pakistan</strong></h1>
+   <h1 class="col-12 text-center mt-5 mb-4"><strong>Web stories Gold Rate In Pakistan</strong></h1>        
+   <div class="row">
          @foreach($webStory as $webStory)
-        <div class="col-md-4">
+        <div class="col-md-3">
         <iframe
-        width="100%"
+        width="90%"
         height="300"
         sandbox="allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation"
         allow="autoplay; web-share"
@@ -83,24 +88,32 @@
                             publisher='Staff'
                             publisher-logo-src='{{ asset('assets/logo.png') }}'
                             poster-portrait-src='{{ asset('assets/logo.png') }}'>
-                    <amp-story-page id='page1' auto-advance-after='4s'>
+                    @if(!empty($webStory->image_path_one)  && file_exists(public_path($webStory->image_path_one)))
+                            <amp-story-page id='page1' auto-advance-after='4s'>
                         <amp-img src='{{asset($webStory->image_path_one)}}' width='720' height='1280' layout='responsive' alt='Gold Rate In Pakistan'></amp-img>
                         <amp-story-cta-layer>
                             <a href='{{ url('gold-rate-in-pakistan') }}'>Continue to Next Section</a>
                         </amp-story-cta-layer>
                     </amp-story-page>
+                    @endif
+                    @if(!empty($webStory->image_path_two)  && file_exists(public_path($webStory->image_path_two)))
+                    
                     <amp-story-page id='page1' auto-advance-after='4s'>
                         <amp-img src='{{asset($webStory->image_path_two)}}' width='720' height='1280' layout='responsive' alt='Gold Rate In Pakistan'></amp-img>
                         <amp-story-cta-layer>
                             <a href='{{ url('gold-rate-in-pakistan') }}'>Continue to Next Section</a>
                         </amp-story-cta-layer>
                     </amp-story-page>
+                    @endif
+                    @if(!empty($webStory->image_path_three)  && file_exists(public_path($webStory->image_path_three)))
+                    
                     <amp-story-page id='page1' auto-advance-after='4s'>
                         <amp-img src='{{asset($webStory->image_path_three)}}' width='720' height='1280' layout='responsive' alt='Gold Rate In Pakistan'></amp-img>
                         <amp-story-cta-layer>
                             <a href='{{ url('gold-rate-in-pakistan') }}'>Continue to Next Section</a>
                         </amp-story-cta-layer>
                     </amp-story-page>
+                    @endif
                 </amp-story>
             </body>
             </html>"

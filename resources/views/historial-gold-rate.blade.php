@@ -20,30 +20,31 @@
         <meta name="twitter:description" content="We provide you historical Gold Rates,  gold Charts & timely gold Graphs. Here you can find Daily, historical and monthly average gold price in Pakistan. - SilverGoldRate.PK" />
 
         <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@graph": [
-                { "@type": "Organization", "@id": "{{ url('/#organization') }}", "name": "SilverGoldRate" },
-                {
-                    "@type": "WebSite",
-                    "@id": "{{ url('/#website') }}",
-                    "url": "{{ url('/') }}",
-                    "name": "SilverGoldRate.pk",
-                    "alternateName": "Gold and Silver Rate in Pakistan",
-                    "publisher": { "@id": "{{ url('/#organization') }}" },
-                    "inLanguage": "en-US"
-                },
-                {
-                    "@type": "CollectionPage",
-                    "@id": "{{ url('/historial-gold-rate/#webpage') }}",
-                    "url": "{{ url('/historial-gold-rate') }}",
-                    "name": "Gold Rate Calculator  - SilverGoldRate.PK",
-                    "isPartOf": { "@id": "{{ url('/#website') }}" },
-                    "inLanguage": "en-US"
-                }
-            ]
-        }
-       </script>
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    { "@type": "Organization", "@id": "https://silvergoldrate.pk#organization", "name": "SilverGoldRate" },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://silvergoldrate.pk#website",
+                        "url": "https://silvergoldrate.pk",
+                        "name": "SilverGoldRate.pk",
+                        "alternateName": "Gold and Silver Rate in Pakistan",
+                        "publisher": { "@id": "https://silvergoldrate.pk#organization" },
+                        "inLanguage": "en-US"
+                    },
+                    {
+                        "@type": "CollectionPage",
+                        "@id": "https://silvergoldrate.pk/historical-gold-rate#webpage",
+                        "url": "https://silvergoldrate.pk/historical-gold-rate",
+                        "name": "Gold Rate Calculator  - SilverGoldRate.PK",
+                        "isPartOf": { "@id": "https://silvergoldrate.pk#website" },
+                        "inLanguage": "en-US"
+                    }
+                ]
+            }
+        </script>
+
         
 @endsection
 

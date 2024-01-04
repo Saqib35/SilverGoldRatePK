@@ -204,7 +204,7 @@ class AdminController extends Controller
           $goldRateByMonth->save();
     
             
-          $apiKey = 'NGFiZTZjNTYtZTVhZS00OTZmLTk0ZGEtYzc0ZDdkOTJhN2Fk';
+          $apiKey = 'MTZjOGNjYWMtZmU1ZC00ZWQ2LThlNDMtZjMyMzMyNjMzMTVk';
           $appId = '9d827635-a865-4c6f-8e68-1fdd56cbada6';
           $apiEndpoint = 'https://onesignal.com/api/v1/notifications';
           $data = [
@@ -398,8 +398,7 @@ class AdminController extends Controller
     
           $GoldRateByWeek->save();
     
-            
-          $apiKey = 'NGFiZTZjNTYtZTVhZS00OTZmLTk0ZGEtYzc0ZDdkOTJhN2Fk';
+          $apiKey = 'MTZjOGNjYWMtZmU1ZC00ZWQ2LThlNDMtZjMyMzMyNjMzMTVk';
           $appId = '9d827635-a865-4c6f-8e68-1fdd56cbada6';
           $apiEndpoint = 'https://onesignal.com/api/v1/notifications';
           $data = [
@@ -596,8 +595,9 @@ class AdminController extends Controller
          $GoldRateByDay->save();
    
            
-           $apiKey = 'NGFiZTZjNTYtZTVhZS00OTZmLTk0ZGEtYzc0ZDdkOTJhN2Fk';
-           $appId = '9d827635-a865-4c6f-8e68-1fdd56cbada6';
+           
+          $apiKey = 'MTZjOGNjYWMtZmU1ZC00ZWQ2LThlNDMtZjMyMzMyNjMzMTVk';
+          $appId = '9d827635-a865-4c6f-8e68-1fdd56cbada6';
            $apiEndpoint = 'https://onesignal.com/api/v1/notifications';
            $data = [
                'app_id' => $appId,

@@ -22,17 +22,29 @@ Route::get('gold-calcultor', function () {
     return redirect('/gold-calculator', 301);
 });
 
+Route::get('contact-us/', function () {
+    return redirect('/contact-us', 301);
+});
+
+Route::get('privacy-policy-for-silver-rate-in-pakistan/', function () {
+    return redirect('/privacy-policy-for-silver-rate-in-pakistan', 301);
+});
+
+
+
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('gold-rate-in-pakistan', [HomeController::class, 'GoldPrice']);
 Route::get('category/gold-price-history-by-month', [HomeController::class, 'GoldPriceByMonth']);
 Route::get('category/gold-price-history-by-week', [HomeController::class, 'GoldPriceByWeek']);
-Route::get('author/staff/', [HomeController::class, 'ShowAuthor']);
+Route::get('author/staff', [HomeController::class, 'ShowAuthor']);
 
 
 
-Route::get('contact-us/', [HomeController::class, 'contact']);
-Route::get('privacy-policy-for-silver-rate-in-pakistan/', [HomeController::class, 'privacyPolicy']);
+
+
+Route::get('contact-us', [HomeController::class, 'contact']);
+Route::get('privacy-policy-for-silver-rate-in-pakistan', [HomeController::class, 'privacyPolicy']);
 
 // Route::get('terms-and-conditions', [HomeController::class, 'termCondition']);
 Route::get('feed', [HomeController::class, 'ShowFeed']);

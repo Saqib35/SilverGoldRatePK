@@ -26,55 +26,60 @@
             {
                 "@context": "https://schema.org",
                 "@graph": [
-                    { "@type": "Organization", "@id": "{{ url('/#organization')  }}", "name": "SilverGoldRate" },
+                    {
+                        "@type": "Organization",
+                        "@id": "https://silvergoldrate.pk#organization",
+                        "name": "SilverGoldRate"
+                    },
                     {
                         "@type": "WebSite",
-                        "@id": "{{ url('/#website') }}",
-                        "url": "{{ url('/') }}",
+                        "@id": "https://silvergoldrate.pk#website",
+                        "url": "https://silvergoldrate.pk",
                         "name": "SilverGoldRate.pk",
                         "alternateName": "Gold and Silver Rate in Pakistan",
-                        "publisher": { "@id": "{{ url('/#organization') }}" },
+                        "publisher": { "@id": "https://silvergoldrate.pk#organization" },
                         "inLanguage": "en-US"
                     },
                     {
                         "@type": "WebPage",
-                        "@id": "{{ url('/contact-us/#webpage')  }}",
-                        "url": "{{ url('/contact-us/') }}",
+                        "@id": "https://silvergoldrate.pk/contact-us#webpage",
+                        "url": "https://silvergoldrate.pk/contact-us",
                         "name": "Contact Us",
                         "datePublished": "2023-12-18T11:59:29+05:00",
                         "dateModified": "2023-12-18T11:59:31+05:00",
-                        "isPartOf": { "@id": "{{ url('/#website') }}" },
+                        "isPartOf": { "@id": "https://silvergoldrate.pk#website" },
                         "inLanguage": "en-US"
                     },
                     {
                         "@type": "Person",
-                        "@id": "{{ url('/author/staff/') }}",
+                        "@id": "https://silvergoldrate.pk/author/staff",
                         "name": "Staff",
-                        "url": "{{ url('/author/staff/') }}",
+                        "url": "https://silvergoldrate.pk/author/staff",
                         "image": {
                             "@type": "ImageObject",
-                            "@id": "{{ asset('assets/staff.webp') }}",
-                            "url": "{{ asset('assets/staff.webp') }}",
+                            "@id": "https://silvergoldrate.pk/assets/staff.webp",
+                            "url": "https://silvergoldrate.pk/assets/staff.webp",
                             "caption": "Staff",
                             "inLanguage": "en-US"
                         },
-                        "sameAs": ["{{ url('/') }}", "#", "https://twitter.com/#"],
-                        "worksFor": { "@id": "{{  url('/#organization') }}" }
+                        "sameAs": ["https://silvergoldrate.pk", "#", "https://twitter.com"],
+                        "worksFor": { "@id": "https://silvergoldrate.pk#organization" }
                     },
                     {
                         "@type": "NewsArticle",
                         "headline": "Contact Us",
                         "datePublished": "2023-12-18T11:59:29+05:00",
                         "dateModified": "2023-12-18T11:59:31+05:00",
-                        "author": { "@id": "{{ url('/author/staff/') }}", "name": "Staff" },
-                        "publisher": { "@id": "{{ url('/#organization') }}" },
+                        "author": { "@id": "https://silvergoldrate.pk/author/staff", "name": "Staff" },
+                        "publisher": { "@id": "https://silvergoldrate.pk#organization" },
                         "description": "Thank you for visiting our website, dedicated to providing real-time updates on gold and silver rates in Pakistan. We at SilverGoldRate.pk understand how crucial",
                         "name": "Contact Us",
-                        "@id": "{{ url('/contact-us/#richSnippet') }}",
-                        "isPartOf": { "@id": "{{ url('/contact-us/#webpage') }}" },
+                        "@id": "https://silvergoldrate.pk/contact-us#richSnippet",
+                        "isPartOf": { "@id": "https://silvergoldrate.pk/contact-us#webpage" },
                         "inLanguage": "en-US",
-                        "mainEntityOfPage": { "@id": "{{ url('/contact-us/#webpage') }}" }
+                        "mainEntityOfPage": { "@id": "https://silvergoldrate.pk/contact-us#webpage" }
                     }
+
                 ]
             }
         </script>
