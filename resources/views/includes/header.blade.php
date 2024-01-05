@@ -15,15 +15,15 @@
             <div class="collapse navbar-collapse ml-auto" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ url('/') }}">Silver Price in Pakistan Today - {{ \Carbon\Carbon::now()->format('F j, Y') }}</a>
+                  <a class="nav-link" href="{{ url('/') }}">Today's Silver Price</a>
                 </li>
               
                 <li class="nav-item dropdown">
                   <a class="nav-link" href="{{ url('gold-rate-in-pakistan') }}" id="navbarDropdown">
-                    Gold Price in Pakistan Today - {{ \Carbon\Carbon::now()->format('F j, Y') }}
+                  Today's Gold Price - {{ \Carbon\Carbon::now()->format('F j, Y') }}
                   </a>
                   <div class="dropdown-menu w-100 topHeader" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item">Gold Rate In Lahore</a>
+                    <a class="dropdown-item"  href="{{ url('gold-rate-in-lahore') }}">Gold Rate In Lahore</a>
                     <a class="dropdown-item">Gold Rate In Islamabad</a>
                     <a class="dropdown-item">Gold Rate In Karachi</a>
                     <a class="dropdown-item">Gold Rate In Multan</a>

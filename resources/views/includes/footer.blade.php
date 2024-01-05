@@ -19,7 +19,7 @@
         <ul class="nav footer-nav d-block" >
          
         <li class="nav-item textLeft">
-            <a class="nav-link">Gold Rate In Lahore</a>
+            <a class="nav-link" href="{{ url('gold-rate-in-lahore') }}">Gold Rate In Lahore</a>
           </li>
 
           <li class="nav-item textLeft">

@@ -4,14 +4,14 @@
 
    
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Gold Rate in Pakistan Today – {{ now()->format('d F Y') }}</title>
-        <meta name="description" content="1 tola gold rate in Pakistan today, {{ now()->format('d F Y') }}, stands at Rs. {{ $rates['ratePerTola'] }} per tola for 24-karat gold, and Rs. {{ $rates['ratePer10Grams'] }} for 10 grams." />
+        <title>Gold Rate in Pakistan Today – {{ now()->format('j F Y') }}</title>
+        <meta name="description" content="1 tola gold rate in Pakistan today, {{ now()->format('j F Y') }}, stands at Rs. {{ $rates['ratePerTola'] }} per tola for 24-karat gold, and Rs. {{ $rates['ratePer10Grams'] }} for 10 grams." />
         <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
         <link rel="canonical" href="{{  Request::fullUrl() }}"/>
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Gold Rate in Pakistan Today – {{ now()->format('d F Y') }}" />
-        <meta property="og:description" content="1 tola gold rate in Pakistan today, {{ now()->format('d F Y') }}, stands at Rs. {{ $rates['ratePerTola'] }} per tola for 24-karat gold, and Rs. {{ $rates['ratePer10Grams'] }} for 10 grams." />
+        <meta property="og:title" content="Gold Rate in Pakistan Today – {{ now()->format('j F Y') }}" />
+        <meta property="og:description" content="1 tola gold rate in Pakistan today, {{ now()->format('j F Y') }}, stands at Rs. {{ $rates['ratePerTola'] }} per tola for 24-karat gold, and Rs. {{ $rates['ratePer10Grams'] }} for 10 grams." />
         <meta property="og:url" content="{{  Request::fullUrl() }}" />
         <meta property="og:site_name" content="Gold and Silver Rate in Pakistan" />
         <meta property="article:author" content="#" />
@@ -26,8 +26,8 @@
         <meta property="article:published_time" content="{{  $HomePageGoldRate->created_at }}" />
         <meta property="article:modified_time" content="{{  $HomePageGoldRate->updated_at }}" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Gold Rate in Pakistan Today – {{ now()->format('d F Y') }}" />
-        <meta name="twitter:description" content="1 tola gold rate in Pakistan today, {{ now()->format('d F Y') }}, stands at Rs. {{ $rates['ratePerTola'] }} per tola for 24-karat gold, and Rs. {{ $rates['ratePer10Grams'] }} for 10 grams." />
+        <meta name="twitter:title" content="Gold Rate in Pakistan Today – {{ now()->format('j F Y') }}" />
+        <meta name="twitter:description" content="1 tola gold rate in Pakistan today, {{ now()->format('j F Y') }}, stands at Rs. {{ $rates['ratePerTola'] }} per tola for 24-karat gold, and Rs. {{ $rates['ratePer10Grams'] }} for 10 grams." />
         <meta name="twitter:image" content="{{  asset($HomePageGoldRate->img) }}" />
         <meta name="twitter:label1" content="Time to read" />
         <meta name="twitter:data1" content="5 minutes" />
@@ -76,14 +76,14 @@
                     },
                     {
                         "@type": "NewsArticle",
-                        "headline": "Gold Rate in Pakistan Today – {{ now()->format('d F Y') }}",
+                        "headline": "Gold Rate in Pakistan Today – {{ now()->format('j F Y') }}",
                         "keywords": "gold rate in pakistan",
                         "datePublished": "{{ $HomePageGoldRate->created_at }}",
                         "dateModified": "{{ $HomePageGoldRate->updated_at }}",
                         "author": { "@id": "https://silvergoldrate.pk/author/staff#person", "name": "Staff" },
                         "publisher": { "@id": "https://silvergoldrate.pk#person" },
-                        "description": "1 tola gold rate in Pakistan today, {{ now()->format('d F Y') }}, stands at Rs. {{ $rates['ratePerTola'] }} per tola for 24-karat gold, and Rs. {{ $rates['ratePer10Grams'] }} for 10 grams.",
-                        "name": "Gold Rate in Pakistan Today – {{ now()->format('d F Y') }}",
+                        "description": "1 tola gold rate in Pakistan today, {{ now()->format('j F Y') }}, stands at Rs. {{ $rates['ratePerTola'] }} per tola for 24-karat gold, and Rs. {{ $rates['ratePer10Grams'] }} for 10 grams.",
+                        "name": "Gold Rate in Pakistan Today – {{ now()->format('j F Y') }}",
                         "@id": "https://silvergoldrate.pk/gold-rate-in-pakistan#richSnippet",
                         "isPartOf": { "@id": "https://silvergoldrate.pk/gold-rate-in-pakistan#webpage" },
                         "image": { "@id": "https://silvergoldrate.pk/assets/images/today-gold-rate-in-pakistan.webp" },
@@ -101,7 +101,7 @@
                         "@type": ["WebPage", "FAQPage"],
                         "@id": "{{ url('/gold-rate-in-pakistan#webpage') }}",
                         "url": "{{ url('/gold-rate-in-pakistan') }}",
-                        "name": "Gold Rate in Pakistan Today \u2013 {{ now()->format('d F Y') }}",
+                        "name": "Gold Rate in Pakistan Today \u2013 {{ now()->format('j F Y') }}",
                         "datePublished": "{{  $HomePageGoldRate->created_at }}",
                         "dateModified": "{{  $HomePageGoldRate->updated_at }}",
                         "isPartOf": { "@id": "https://silvergoldrate.pk/#website" },
@@ -113,13 +113,13 @@
                                 "@type": "Question",
                                 "url": "{{ url('/gold-rate-in-pakistan#faq-question-64a661358faf9') }}",
                                 "name": "What is the recent gold rate in Pakistan for 1 tola?",
-                                "acceptedAnswer": { "@type": "Answer", "text": "About today, {{ now()->format('d F Y') }}, the rate of 1 Tola 24-carat gold in Pakistan is PKR {{ $rates['ratePerTola'] }}." }
+                                "acceptedAnswer": { "@type": "Answer", "text": "About today, {{ now()->format('j F Y') }}, the rate of 1 Tola 24-carat gold in Pakistan is PKR {{ $rates['ratePerTola'] }}." }
                             },
                             {
                                 "@type": "Question",
                                 "url": "{{ url('/gold-rate-in-pakistan#faq-question-64a661358faff') }}",
                                 "name": "What is the rate of 1 Tola 22-carat gold in Pakistan today?",
-                                "acceptedAnswer": { "@type": "Answer", "text": "As of today, {{ now()->format('d F Y') }}, the rate of 1 Tola 22-carat gold in Pakistan is PKR {{ $rates22k['ratePerTola'] }}." }
+                                "acceptedAnswer": { "@type": "Answer", "text": "As of today, {{ now()->format('j F Y') }}, the rate of 1 Tola 22-carat gold in Pakistan is PKR {{ $rates22k['ratePerTola'] }}." }
                             },
                             {
                                 "@type": "Question",
@@ -143,7 +143,7 @@
                                 "@type": "Question",
                                 "url": "{{ url('/gold-rate-in-pakistan#faq-question-1688801939426') }}",
                                 "name": "How much does 1 gram of gold cost in Pakistan?",
-                                "acceptedAnswer": { "@type": "Answer", "text": "As of today, {{ now()->format('d F Y') }}, 1 gram of gold in Pakistan costs PKR {{ $rates['ratePerGram'] }}." }
+                                "acceptedAnswer": { "@type": "Answer", "text": "As of today, {{ now()->format('j F Y') }}, 1 gram of gold in Pakistan costs PKR {{ $rates['ratePerGram'] }}." }
                             },
                             {
                                 "@type": "Question",
@@ -197,13 +197,13 @@
     <div class="row">
         <div class="col-md-9" style="border-right: 5px solid #e7ecef;">
             <div class="text-center mt-5">
-                <h1 class="h1-size">Gold Rate in Pakistan Today – {{ now()->format('d F Y') }}</h1>
+                <h1 class="h1-size">Gold Rate in Pakistan Today – {{ now()->format('j F Y') }}</h1>
             </div>
             <hr class="first" />
             <div>
             <div class="updatSetting">
             <hr />
-              By Staff ⏰ Updated <strong> {{ now()->format('d F Y') }}</strong>
+              By Staff ⏰ Updated <strong> {{ now()->format('j F Y') }}</strong>
             <hr />
 
             <div class="alert alert-info">
@@ -224,7 +224,7 @@
             <p>If you have an interest in gold, then it is necessary for you to keep yourself up to date. Regularly check the market trends to be aware of the market, i.e., it is up or down.</p>
             
             
-            <h2><strong>Today's 24K Gold Prices in Pakistan ({{ now()->format('d F Y') }}):</strong></h2>
+            <h2><strong>Today's 24K Gold Prices in Pakistan ({{ now()->format('j F Y') }}):</strong></h2>
 
             <ul>
                 <li class="text-justify"><strong>1 gram:<span class="gold-rate">{{  $rates['ratePerGram'] }}</span></strong></li>
@@ -247,12 +247,12 @@
             @endif
   
             <div class="bg-bf9109 text-white p-2">
-                <h2 class="text-center">Gold Rate in Pakistan today <strong>{{ now()->format('d F Y') }}</strong></h2>
+                <h2 class="text-center">Gold Rate in Pakistan today <strong>{{ now()->format('j F Y') }}</strong></h2>
             </div>
 
 
             <p class="text-justify mt-3">
-                 As of today, <strong class="gold-rate">{{ now()->format('d F Y') }}</strong>, the 1 tola gold price in Pakistan is
+                 As of today, <strong class="gold-rate">{{ now()->format('j F Y') }}</strong>, the 1 tola gold price in Pakistan is
                  <strong class="gold-rate">Rs. {{  $rates['ratePerTola'] }}</strong>. The Gold Prices in Pakistan are usually sourced from the Karachi Gold Market.
             </p>
 
@@ -280,13 +280,13 @@
             <p>This category is for the convenience of customer or investor.</p>
 
             <p>
-                In the below table, you can check the latest 1 tola Gold Price in Pakistan on <span class="gold-rate"><strong>{{ now()->format('d F Y') }}</strong></span> for different karats.
+                In the below table, you can check the latest 1 tola Gold Price in Pakistan on <span class="gold-rate"><strong>{{ now()->format('j F Y') }}</strong></span> for different karats.
             </p>
 
 
            
             <div class="bg-bf9109 text-white p-2">
-              <h2 class="text-center">1 Tola Gold Price Today ({{ now()->format('d F Y') }})</h2>
+              <h2 class="text-center">1 Tola Gold Price Today ({{ now()->format('j F Y') }})</h2>
             </div>
 
             <div id="gold_all_detail_table" class="mt-2"></div>
@@ -327,14 +327,14 @@
                         
                             @if(\Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->dayOfWeek == Carbon\Carbon::SUNDAY)
                                   <tr>
-                                    <td  class="text-center"><a>{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->format('d M Y') }}</a></td>
+                                    <td  class="text-center"><a>{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->format('j M Y') }}</a></td>
                                     <td  class="text-center">Market Closed</td>
                                     <td  class="text-center">Market Closed</td>
                                 </tr>
                                 
                             @else
                                  <tr>
-                                    <td  class="text-center"><a href="{{  url($GoldRateByDay->slug); }}">{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->format('d M Y') }}</a></td>
+                                    <td  class="text-center"><a href="{{  url($GoldRateByDay->slug); }}">{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->format('j M Y') }}</a></td>
                                     <td  class="text-center">{{  $GoldRateByDay->First_rate }}</td>
                                     <td  class="text-center">{{  $GoldRateByDay->Second_rate }}</td>
                                 </tr>
@@ -422,7 +422,7 @@
                 </h3>
 
                 <p>
-                    About today, {{ now()->format('d F Y') }}, the rate of 1 Tola 24-carat gold in Pakistan is
+                    About today, {{ now()->format('j F Y') }}, the rate of 1 Tola 24-carat gold in Pakistan is
                     <strong>PKR {{ $rates['ratePerTola'] }}</strong>.
                 </p>
 
@@ -431,7 +431,7 @@
                 </h3>
 
                 <p>
-                    As of today, {{ now()->format('d F Y') }}, the rate of 1 Tola 22-carat gold in Pakistan is
+                    As of today, {{ now()->format('j F Y') }}, the rate of 1 Tola 22-carat gold in Pakistan is
                     <strong>PKR {{ $rates22k['ratePerTola'] }}</strong>.
                 </p>
 
@@ -464,7 +464,7 @@
                 </h3>
 
                 <p>
-                    As of today, {{ now()->format('d F Y') }}, 1 gram of gold in Pakistan costs 
+                    As of today, {{ now()->format('j F Y') }}, 1 gram of gold in Pakistan costs 
                     <strong>PKR {{ $rates['ratePerGram'] }}</strong>.
                 </p>
 
