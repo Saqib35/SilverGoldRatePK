@@ -25,3 +25,4 @@ yarn-error.log
 app/Http/index-api/service_account_key.json
 .env
 .env
+.env
