@@ -85,6 +85,19 @@
                         </li>
 
 
+                        
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow">
+                            <i class="fa fa-tv" style="font-size:17px"></i>
+                                <span data-key="t-ecommerce">Blogs Manage...</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="{{  url('panel/admin/add-blogs') }}" key="t-products">Add Blog</a></li>
+                                <li><a href="{{ url('panel/admin/show-blogs') }}" key="t-products">Show Blog</a></li>
+                            </ul>
+                        </li>
+
+
 
                         <li>
                             <a class="dropdown-item" href="{{ route('logout') }}"

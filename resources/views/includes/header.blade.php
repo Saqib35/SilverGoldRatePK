@@ -26,7 +26,7 @@
                     <a class="dropdown-item"  href="{{ url('gold-rate-in-lahore') }}">Gold Rate In Lahore</a>
                     <a class="dropdown-item">Gold Rate In Islamabad</a>
                     <a class="dropdown-item">Gold Rate In Karachi</a>
-                    <a class="dropdown-item">Gold Rate In Multan</a>
+                    <a class="dropdown-item" href="{{ url('gold-rate-in-multan') }}">Gold Rate In Multan</a>
                     
                   </div>
                 </li>

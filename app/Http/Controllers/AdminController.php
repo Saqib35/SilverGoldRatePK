@@ -8,6 +8,7 @@ use App\Models\HomePageGoldRate;
 use App\Models\GoldRateByMonth;
 use App\Models\GoldRateByWeek;
 use App\Models\GoldRateByDay;
+use App\Models\Blogs;
 use App\Models\WebStory;
 use Yajra\DataTables\DataTables;
 use App\Models\UpdatedPrice;
@@ -81,7 +82,7 @@ class AdminController extends Controller
             }
 
             $extension = strtolower($request->file('Img')->getClientOriginalExtension());
-            $fileName = bin2hex(random_bytes(20)) . '.' . $extension;
+            $fileName = $request->slug.'.'. $extension; // rename image
             
             $request->file('Img')->move($dir, $fileName);
             $logos1 = "{$dir1}{$fileName}";
@@ -135,7 +136,7 @@ class AdminController extends Controller
             }
 
             $extension = strtolower($request->file('Img')->getClientOriginalExtension());
-            $fileName = bin2hex(random_bytes(20)) . '.' . $extension;
+            $fileName = $request->slug.'.'. $extension; // rename image
             
             $request->file('Img')->move($dir, $fileName);
             $logos1 = "{$dir1}{$fileName}";
@@ -194,7 +195,7 @@ class AdminController extends Controller
               $dir =  public_path('images/');
               $dir1 = 'images/';            
               $extension = strtolower($request['Img']->getClientOriginalExtension()); // get image extension
-              $fileName = bin2hex(random_bytes(20)).'.'. $extension; // rename image
+              $fileName = $request->slug.'.'. $extension; // rename image
               $request['Img']->move($dir, $fileName);
               $logos1 ="{$dir1}{$fileName}";
               $goldRateByMonth->img = $logos1;
@@ -325,7 +326,7 @@ class AdminController extends Controller
             $dir =  public_path('images/');
             $dir1 = 'images/';            
             $extension = strtolower($request['Img']->getClientOriginalExtension()); // get image extension
-            $fileName = bin2hex(random_bytes(20)).'.'. $extension; // rename image
+            $fileName = $request->slug.'.'. $extension; // rename image
             $request['Img']->move($dir, $fileName);
             $logos1 ="{$dir1}{$fileName}";
             $goldRateByMonth->img = $logos1;
@@ -389,7 +390,7 @@ class AdminController extends Controller
               $dir =  public_path('images/');
               $dir1 = 'images/';            
               $extension = strtolower($request['Img']->getClientOriginalExtension()); // get image extension
-              $fileName = bin2hex(random_bytes(20)).'.'. $extension; // rename image
+              $fileName = $request->slug.'.'. $extension; // rename image
               $request['Img']->move($dir, $fileName);
               $logos1 ="{$dir1}{$fileName}";
               $GoldRateByWeek->img = $logos1;
@@ -530,7 +531,7 @@ class AdminController extends Controller
             $dir =  public_path('images/');
             $dir1 = 'images/';            
             $extension = strtolower($request['Img']->getClientOriginalExtension()); // get image extension
-            $fileName = bin2hex(random_bytes(20)).'.'. $extension; // rename image
+            $fileName = $request->slug.'.'. $extension; // rename image
             $request['Img']->move($dir, $fileName);
             $logos1 ="{$dir1}{$fileName}";
             $GoldRateByWeek->img = $logos1;
@@ -560,6 +561,16 @@ class AdminController extends Controller
    }
 
 
+   public function addRateByBlog()
+   {
+       
+       return view('admin.add-blogs');
+   }
+
+
+
+
+
    
    public function AddRateByDayInsert(REQUEST $request)
    {
@@ -585,7 +596,7 @@ class AdminController extends Controller
              $dir =  public_path('images/');
              $dir1 = 'images/';            
              $extension = strtolower($request['Img']->getClientOriginalExtension()); // get image extension
-             $fileName = bin2hex(random_bytes(20)).'.'. $extension; // rename image
+             $fileName = $request->slug.'.'. $extension; // rename image
              $request['Img']->move($dir, $fileName);
              $logos1 ="{$dir1}{$fileName}";
              $GoldRateByDay->img = $logos1;
@@ -633,6 +644,77 @@ class AdminController extends Controller
    }
 
 
+
+   public function AddBlogs(REQUEST $request)
+   {
+
+   
+
+       $Blogs = new Blogs();
+       $Blogs->meta_title = $request->meta_title;
+       $Blogs->meta_description =  $request->meta_description;
+       $Blogs->meta_keyword =  $request->meta_keyword;
+       $Blogs->title =  $request->title;
+       $Blogs->slug =  $request->slug;
+       $Blogs->description_short =  $request->description_short;
+       $Blogs->alt_tag =  $request->alt_tag;
+       $Blogs->details =  $request->content;
+       
+       
+       if($request->hasFile('Img'))
+       {
+             $dir =  public_path('blogs/');
+             $dir1 = 'blogs/';            
+             $extension = strtolower($request['Img']->getClientOriginalExtension()); // get image extension
+             $fileName = $request->slug.'.'. $extension; // rename image
+             $request['Img']->move($dir, $fileName);
+             $logos1 ="{$dir1}{$fileName}";
+             $Blogs->img = $logos1;
+               
+        }
+   
+         $Blogs->save();
+   
+           
+           
+          $apiKey = 'MTZjOGNjYWMtZmU1ZC00ZWQ2LThlNDMtZjMyMzMyNjMzMTVk';
+          $appId = '9d827635-a865-4c6f-8e68-1fdd56cbada6';
+           $apiEndpoint = 'https://onesignal.com/api/v1/notifications';
+           $data = [
+               'app_id' => $appId,
+               'contents' => [
+                   'en' => $request->title
+               ],
+               'included_segments' => ['All'] , // Send to all subscribed users 
+               // 'icon' => '', // Image URL
+               'chrome_web_image' => asset('images/today-gold-rate-in-pakistan.webp'),
+               'url' =>url($request->slug), // URL link
+   
+           ];
+           $payload = json_encode($data);
+           $ch = curl_init($apiEndpoint);
+           curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+           curl_setopt($ch, CURLOPT_HEADER, false);
+           curl_setopt($ch, CURLOPT_POST, true);
+           curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+           curl_setopt($ch, CURLOPT_HTTPHEADER, [
+               'Content-Type: application/json',
+               'Authorization: Basic ' . $apiKey
+           ]);
+           $response = curl_exec($ch);
+           echo $response;
+           curl_close($ch);
+   
+   
+       return redirect()->back()->with('success', 'Blog Added successfully.');
+   
+   
+   
+   
+   }
+
+
+
    
    public function ShowReportByDay(REQUEST $request)
    {
@@ -658,6 +740,33 @@ class AdminController extends Controller
    
 
      return view('admin.show-report-by-day');
+
+   }
+
+   public function ShowBlogs (REQUEST $request)
+   {
+
+       if (request()->ajax()) {
+           
+           
+           $Blogs = Blogs::select('*');
+   
+           return DataTables::of($Blogs)
+               ->addColumn('action', function ($row) {
+                   return '<button class="btn btn-danger" id="delscholarship' . $row->id . '" onclick="delscholarship(' . $row->id . ')"><i class="fa fa-trash"></i></button>
+                   <a href="'.url("panel/admin/edit-blog/".$row->id).'" class="btn btn-primary"><i class="fa fa-edit"></i></a>';
+               })
+               ->editColumn('img', function ($row) {
+                   $logoUrl = asset($row->img);
+                   return '<img src="' . $logoUrl . '" alt="University Logo" width="100px" height="100px">';
+               })
+               ->rawColumns(['img','action'])
+               ->make(true);
+           
+       }
+   
+
+     return view('admin.show-blogs');
 
    }
 
@@ -697,6 +806,39 @@ class AdminController extends Controller
 
 
    
+   
+   public function delBlogs(REQUEST $request)
+   {
+
+       $Blogs = Blogs::find($request->id);
+
+       if ($Blogs) {
+          
+           // Get the full path to the public directory
+           $publicPath = public_path('/');
+           
+
+           // Construct the full path to the image using the 'img' attribute
+           $imagePath = $publicPath . $Blogs->img;
+
+           // Delete the image
+        //    if (File::exists($imagePath)) {
+        //        File::delete($imagePath);
+        //    }
+           $Blogs->delete();
+           // Check if the model instance no longer exists in the database after deletion
+           if (!$Blogs->exists) {
+               return response()->json(['success' => true]);
+           } else {
+               return response()->json(['success' => false]);
+           }
+       } else {
+           return response()->json(['success' => false]);
+       }
+
+
+   }
+
     
    public function EditRportDay(REQUEST $request)
    {
@@ -706,6 +848,14 @@ class AdminController extends Controller
    
    }
 
+ 
+   public function EditBlogs(REQUEST $request)
+   {
+     
+    $Blogs = Blogs::where('id',$request->id)->first();
+    return view('admin.edit-blogs',['Blogs'=>$Blogs]);
+   
+   }
 
    
 
@@ -731,7 +881,7 @@ class AdminController extends Controller
             $dir =  public_path('images/');
             $dir1 = 'images/';            
             $extension = strtolower($request['Img']->getClientOriginalExtension()); // get image extension
-            $fileName = bin2hex(random_bytes(20)).'.'. $extension; // rename image
+            $fileName = $request->slug.'.'. $extension; // rename image
             $request['Img']->move($dir, $fileName);
             $logos1 ="{$dir1}{$fileName}";
             $GoldRateByDay->img = $logos1;
@@ -746,6 +896,42 @@ class AdminController extends Controller
 
     }
 
+
+    
+    public function EditDayBlogs(REQUEST $request)
+    {
+
+
+        $id = $request->input('id'); 
+        $Blogs = Blogs::findOrFail($id);;
+        $Blogs->meta_title = $request->meta_title;
+        $Blogs->meta_description =  $request->meta_description;
+        $Blogs->meta_keyword =  $request->meta_keyword;
+        $Blogs->title =  $request->title;
+        $Blogs->slug =  $request->slug;
+        $Blogs->description_short =  $request->description_short;
+        $Blogs->alt_tag =  $request->alt_tag;
+        $Blogs->details =  $request->content;
+        
+        if($request->hasFile('Img'))
+        {
+            $dir =  public_path('images/');
+            $dir1 = 'images/';            
+            $extension = strtolower($request['Img']->getClientOriginalExtension()); // get image extension
+            $fileName = $request->slug.'.'. $extension; // rename image
+            $request['Img']->move($dir, $fileName);
+            $logos1 ="{$dir1}{$fileName}";
+            $Blogs->img = $logos1;
+                
+        }
+    
+        $Blogs->save();
+    
+        return redirect()->back()->with('success', 'Blogs Updated successfully.');
+
+
+
+    }
 
 
    // rate end by day
@@ -844,7 +1030,7 @@ class AdminController extends Controller
               $dir =  public_path('web-stories/');
               $dir1 = 'web-stories/';            
               $extension = strtolower($request['Img1']->getClientOriginalExtension()); // get image extension
-              $fileName = bin2hex(random_bytes(20)).'.'. $extension; // rename image
+              $fileName = $request->slug.'3.'. $extension; // rename image
               $request['Img1']->move($dir, $fileName);
               $logos1 ="{$dir1}{$fileName}";
               $WebStory->image_path_one = $logos1;
@@ -856,7 +1042,7 @@ class AdminController extends Controller
               $dir =  public_path('web-stories/');
               $dir1 = 'web-stories/';            
               $extension = strtolower($request['Img2']->getClientOriginalExtension()); // get image extension
-              $fileName = bin2hex(random_bytes(20)).'.'. $extension; // rename image
+              $fileName = $request->slug.'2.'. $extension; // rename image
               $request['Img2']->move($dir, $fileName);
               $logos1 ="{$dir1}{$fileName}";
               $WebStory->image_path_two = $logos1;
@@ -868,7 +1054,7 @@ class AdminController extends Controller
               $dir =  public_path('web-stories/');
               $dir1 = 'web-stories/';            
               $extension = strtolower($request['Img3']->getClientOriginalExtension()); // get image extension
-              $fileName = bin2hex(random_bytes(20)).'.'. $extension; // rename image
+              $fileName = $request->slug.'1.'. $extension; // rename image
               $request['Img3']->move($dir, $fileName);
               $logos1 ="{$dir1}{$fileName}";
               $WebStory->image_path_three = $logos1;

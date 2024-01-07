@@ -29,7 +29,7 @@
             <a class="nav-link">Gold Rate In karachi</a>
           </li>
           <li class="nav-item textLeft">
-            <a class="nav-link">Gold Rate In Multan</a>
+            <a class="nav-link"  href="{{ url('gold-rate-in-multan') }}">Gold Rate In Multan</a>
           </li>
        
         </ul>
