@@ -11,6 +11,8 @@ use App\Models\GoldRateByWeek;
 use App\Models\GoldRateByDay;
 use App\Models\UpdatedPrice;
 use App\Models\WebStory;
+use App\Models\Blogs;
+
 use App\Models\HomePageGoldRate;
 use Carbon\Carbon;
 
@@ -239,6 +241,16 @@ class HomeController extends Controller
           return view('gold-price-by-day-single-detail' ,['GoldRateByDay'=>$GoldRateByDay]);
 
         }
+
+
+        $Blogs=Blogs::where('slug',$request->slug)->first();
+        if($Blogs)
+        {
+            
+          return view('blog-single-detail' ,['GoldRateByDay'=>$Blogs]);
+
+        }
+
 
         return abort(404);
 

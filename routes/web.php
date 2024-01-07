@@ -36,6 +36,9 @@ Route::get('privacy-policy-for-silver-rate-in-pakistan/', function () {
 Route::get('/', [HomeController::class, 'index']);
 Route::get('gold-rate-in-pakistan', [HomeController::class, 'GoldPrice']);
 Route::get('gold-rate-in-lahore', [HomeController::class, 'GoldPricelahore']);
+Route::get('gold-rate-in-lahore', [HomeController::class, 'GoldPricelahore']);
+Route::get('gold-rate-in-multan', [HomeController::class, 'GoldPriceMultan']);
+
 Route::get('category/gold-price-history-by-month', [HomeController::class, 'GoldPriceByMonth']);
 Route::get('category/gold-price-history-by-week', [HomeController::class, 'GoldPriceByWeek']);
 Route::get('author/staff', [HomeController::class, 'ShowAuthor']);
@@ -96,13 +99,23 @@ Route::get('panel/admin/show-rate-by-week', [AdminController::class, 'ShowReport
 Route::get('panel/admin/del-report-by-week', [AdminController::class, 'delReportByWeek'])->name('del-report-by-week');
 Route::get('panel/admin/edit-week/{id}', [AdminController::class, 'EditRportWeekly']);
 Route::post('add-rate-report-by-week-update', [AdminController::class, 'EditWeekReport']);
-// rate by monlthy
+// rate by Day
 Route::get('panel/admin/add-rate-by-day', [AdminController::class, 'addRateByDay']);
 Route::post('add-rate-report-by-day', [AdminController::class, 'AddRateByDayInsert']);
 Route::get('panel/admin/show-rate-by-day', [AdminController::class, 'ShowReportByDay'])->name('show-report-by-day');
 Route::get('panel/admin/del-report-by-day', [AdminController::class, 'delReportByDay'])->name('del-report-by-day');
 Route::get('panel/admin/edit-day/{id}', [AdminController::class, 'EditRportDay']);
 Route::post('add-rate-report-by-day-update', [AdminController::class, 'EditDayReports']);
+
+
+// rate by monlthy
+Route::get('panel/admin/add-blogs', [AdminController::class, 'addRateByBlog']);
+Route::post('add-blogs', [AdminController::class, 'AddBlogs']);
+Route::get('panel/admin/show-blogs', [AdminController::class, 'ShowBlogs'])->name('show-blogs');
+Route::get('panel/admin/del-report-by-day', [AdminController::class, 'delReportByDay'])->name('del-blogs');
+Route::get('panel/admin/edit-blog/{id}', [AdminController::class, 'EditBlogs']);
+Route::post('add-rate-report-by-day-update', [AdminController::class, 'EditDayBlogs']);
+
 
 Route::get('panel/admin/add-web-stories', [AdminController::class, 'addWebStories']);
 Route::post('add-web-stories', [AdminController::class, 'AddWebStoriesInsert']);
