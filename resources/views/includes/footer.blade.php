@@ -19,17 +19,17 @@
         <ul class="nav footer-nav d-block" >
          
         <li class="nav-item textLeft">
-            <a class="nav-link" href="{{ url('gold-rate-in-lahore') }}">Gold Rate In Lahore</a>
+            <a class="nav-link" href="https://silvergoldrate.pk/gold-rate-in-lahore">Gold Rate In Lahore</a>
           </li>
 
           <li class="nav-item textLeft">
-            <a class="nav-link">Gold Rate In Islamabad</a>
+            <a class="nav-link"  href="https://silvergoldrate.pk/gold-rate-in-islamabad">Gold Rate In Islamabad</a>
           </li>
           <li class="nav-item textLeft">
             <a class="nav-link">Gold Rate In karachi</a>
           </li>
           <li class="nav-item textLeft">
-            <a class="nav-link"  href="{{ url('gold-rate-in-multan') }}">Gold Rate In Multan</a>
+            <a class="nav-link"  href="https://silvergoldrate.pk/gold-rate-in-multan">Gold Rate In Multan</a>
           </li>
        
         </ul>
@@ -40,16 +40,16 @@
         <h3 class="textLeft">Quick Links</h3>
         <ul class="nav footer-nav d-block">
           <li class="nav-item textLeft">
-            <a class="nav-link" href="{{ url('category/gold-price-history-by-month') }}">History by Month</a>
+            <a class="nav-link" href="https://silvergoldrate.pk/category/gold-price-history-by-month">History by Month</a>
           </li>
           <li class="nav-item textLeft">
-            <a class="nav-link" href="{{ url('category/gold-price-history-by-week') }}">History by Week</a>
+            <a class="nav-link" href="https://silvergoldrate.pk/category/gold-price-history-by-week">History by Week</a>
           </li>
           <li class="nav-item textLeft">
-            <a class="nav-link" href="{{ url('historial-gold-rate') }}">Historial Gold Rate</a>
+            <a class="nav-link" href="https://silvergoldrate.pk/historial-gold-rate">Historial Gold Rate</a>
           </li>
           <li class="nav-item textLeft">
-            <a class="nav-link" href="{{ url('gold-calculator') }}">Gold Calculator In Pakistan</a>
+            <a class="nav-link"  href="https://silvergoldrate.pk/gold-calculator">Gold Calculator In Pakistan</a>
           </li>
           
          
@@ -61,10 +61,10 @@
         <ul class="nav footer-nav d-block">
        
           <li class="nav-item textLeft">
-           <a class="nav-link" href="{{ url('privacy-policy-for-silver-rate-in-pakistan') }}">Privacy Policy</a>
+           <a class="nav-link"  href="https://silvergoldrate.pk/privacy-policy-for-silver-rate-in-pakistan">Privacy Policy</a>
           </li>
           <li class="nav-item textLeft">
-           <a class="nav-link" href="{{ url('contact-us') }}">Contact Us</a>
+           <a class="nav-link"  href="https://silvergoldrate.pk/contact-us">Contact Us</a>
            </li>
            <li class="nav-item textLeft">
            <a class="nav-link">About Us</a>
@@ -74,7 +74,7 @@
            </li>
            
           <li class="nav-item textLeft">
-            <a class="nav-link" href="{{ url('web-storie') }}">Web Stories</a>
+            <a class="nav-link"  href="https://silvergoldrate.pk/web-storie">Web Stories</a>
           </li>
         </ul>
       </div>

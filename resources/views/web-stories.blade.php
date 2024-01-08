@@ -92,7 +92,7 @@
                             <amp-story-page id='page1' auto-advance-after='4s'>
                         <amp-img src='{{asset($webStory->image_path_one)}}' width='720' height='1280' layout='responsive' alt='Gold Rate In Pakistan'></amp-img>
                         <amp-story-cta-layer>
-                            <a href='{{ url('gold-rate-in-pakistan') }}'>Continue to Next Section</a>
+                      <a href='https://silvergoldrate.pk/gold-rate-in-pakistan'>Continue to Next Section</a>
                         </amp-story-cta-layer>
                     </amp-story-page>
                     @endif
@@ -101,7 +101,7 @@
                     <amp-story-page id='page1' auto-advance-after='4s'>
                         <amp-img src='{{asset($webStory->image_path_two)}}' width='720' height='1280' layout='responsive' alt='Gold Rate In Pakistan'></amp-img>
                         <amp-story-cta-layer>
-                            <a href='{{ url('gold-rate-in-pakistan') }}'>Continue to Next Section</a>
+                        <a href='https://silvergoldrate.pk/gold-rate-in-pakistan'>Continue to Next Section</a>
                         </amp-story-cta-layer>
                     </amp-story-page>
                     @endif
@@ -110,7 +110,7 @@
                     <amp-story-page id='page1' auto-advance-after='4s'>
                         <amp-img src='{{asset($webStory->image_path_three)}}' width='720' height='1280' layout='responsive' alt='Gold Rate In Pakistan'></amp-img>
                         <amp-story-cta-layer>
-                            <a href='{{ url('gold-rate-in-pakistan') }}'>Continue to Next Section</a>
+                        <a href='https://silvergoldrate.pk/gold-rate-in-pakistan'>Continue to Next Section</a>
                         </amp-story-cta-layer>
                     </amp-story-page>
                     @endif
@@ -119,7 +119,7 @@
             </html>"
         ></iframe>
           <div class="text-center">
-            <a href="{{ url('web-storie/'.$webStory->slug) }}" class="text-black font-bold" style="font-weight:bold">
+            <a href="https://silvergoldrate.pk/web-storie/{{ $webStory->slug }}" class="text-black font-bold" style="font-weight:bold">
             <h2>{{ $webStory->title }}</h2></a>
         </div>
        

@@ -103,7 +103,7 @@
             <div class="updatSetting">
             <hr>By Staff ⏰ Updated <strong> 19 December 2023</strong>
             <hr>
-            <p>The privacy of our visitors is one of the primary priorities for SilvergoldRate.pk, which can be accessed from <a href="{{ url('/') }}">www.silvergoldrate.pk</a>. There are different types of information that Silvegoldrrate.pk has collected and stored, as well as the way we use them, in this privacy policy document. Please do not hesitate to ask us if you have any additional questions or need further information on our privacy policy.</p>
+            <p>The privacy of our visitors is one of the primary priorities for SilvergoldRate.pk, which can be accessed from <a href="https://silvergoldrate.pk">www.silvergoldrate.pk</a>. There are different types of information that Silvegoldrrate.pk has collected and stored, as well as the way we use them, in this privacy policy document. Please do not hesitate to ask us if you have any additional questions or need further information on our privacy policy.</p>
             <p>Only our online activities are covered by this privacy policy, which shall be valid for all visitors to the web pages of SilverGoldRate.pk as far as they share and collect information on Silvegoldrrate.pk is concerned. No information obtained in the form of offline or online channels other than this website shall be covered by this policy.</p>
             <h2>Consent</h2>
             <p>By using our website, you will consent to our privacy policy and agree to its terms.</p>
@@ -178,10 +178,10 @@
                         @if(\Carbon\Carbon::parse($result->created_at)->subDay()->dayOfWeek == Carbon\Carbon::SUNDAY)
                             @else
                             <div class="lastestNews" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);border-radius:10px">
-                               <a href="{{ url($result->slug) }}"> 
-                                 <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
-                                 <h2 class="mt-3 p-2">{{ $result->title }}</h2>
-                               </a>
+                            <a href="https://silvergoldrate.pk/{{ $result->slug }}">
+                                <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
+                                <h2 class="mt-3 p-2">{{ $result->title }}</h2>
+                            </a>
                             </div>
                             @endif
                         @endforeach

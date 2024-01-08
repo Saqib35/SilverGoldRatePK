@@ -510,6 +510,44 @@ class HomeController extends Controller
      }
      
 
+     
+     public function GoldPriceIslamabad(REQUEST $request)
+     {
+         
+       $currentUrl = $request->url();
+        
+        // Check for '/public' in the URL
+        if (strpos($currentUrl, '/public') !== false) {
+            // Remove trailing slash and perform a 301 redirect
+            if (rtrim($currentUrl, '/') !== $currentUrl) {
+                return redirect()->to(rtrim($currentUrl, '/'), 301);
+            } else {
+                // Remove '/public' and perform a redirect
+                return redirect(str_replace('/public', '', $currentUrl));
+            }
+        }
+        
+        // Check for a trailing slash and perform a 301 redirect
+        if (rtrim($currentUrl, '/') !== $currentUrl) {
+            return redirect()->to(rtrim($currentUrl, '/'), 301);
+        }
+
+        
+        $HomePageGoldRate=HomePageGoldRate::first();
+        $GoldRateByDay=GoldRateByDay::orderBy('created_at', 'desc')->get();
+        $rates = $this->calculateRates();
+        $rates22k = $this->calculateRates22K();
+        $rates21k = $this->calculateRates21K();
+        $rates20k = $this->calculateRates20K();
+        $rates18k = $this->calculateRates18K();
+        $table_all_type = $this->generateTable();
+        $table_Second_Table_24k_And_22k = $this->generateSecondTable24kAnd22k();
+        $updatedPrice=UpdatedPrice::first();
+
+        return view('today-gold-price-islamabad',['HomePageGoldRate'=>$HomePageGoldRate,'GoldRateByDay'=>$GoldRateByDay,'table_all_type'=>$table_all_type,'table_Second_Table_24k_And_22k'=>$table_Second_Table_24k_And_22k,'rates'=>$rates,'rates22k'=>$rates22k,'rates21k'=>$rates21k,'rates20k'=>$rates20k,'rates18k'=>$rates18k,'updatedPrice'=> $updatedPrice]);
+     }
+     
+
     //    contact us controller
     
     private function generateTable()
@@ -606,17 +644,17 @@ class HomeController extends Controller
                 <td class="text-center">'.$rates22k["ratePerTola"].'</td>
             </tr>
             <tr>
-                <td class="text-center" ><a href="'.url("gold-rate-in-pakistan").'">Lahore</a></td>
+                <td class="text-center" ><a href="https://silvergoldrate.pk/gold-rate-in-lahore">Lahore</a></td>
                 <td class="text-center">'.$rates["ratePerTola"] .'</td>
                 <td class="text-center">'.$rates22k["ratePerTola"].'</td>
             </tr>
             <tr>
-                <td class="text-center">Multan</td>
+                <td class="text-center"><a href="https://silvergoldrate.pk/gold-rate-in-multan">Multan</a></td>
                 <td class="text-center">'.$rates["ratePerTola"] .'</td>
                 <td class="text-center">'.$rates22k["ratePerTola"].'</td>
             </tr>
             <tr>
-                <td class="text-center">Islamabad</td>
+                <td class="text-center"><a href="https://silvergoldrate.pk/gold-rate-in-islamabad">Islamabad</a></td>
                 <td class="text-center">'.$rates["ratePerTola"] .'</td>
                 <td class="text-center">'.$rates22k["ratePerTola"].'</td>
             </tr>

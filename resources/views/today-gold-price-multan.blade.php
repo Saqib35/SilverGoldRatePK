@@ -90,7 +90,7 @@
             
             <div class="alert alert-warning">
                 <p class="mb-0">
-                    To get a more updated price of gold visit nearby Sarafa Market so that you may not find any loss in buying or purchasing Gold. These rates mentioned above are according to Pakistan Bullion Market also known as Sarafa Bazar of Pakistan. We update the price every few hours so users get fresh information from <a href="{{ url('gold-rate-in-pakistan') }}" >(Website Link)</a>.
+                    To get a more updated price of gold visit nearby Sarafa Market so that you may not find any loss in buying or purchasing Gold. These rates mentioned above are according to Pakistan Bullion Market also known as Sarafa Bazar of Pakistan. We update the price every few hours so users get fresh information from <a  href="https://silvergoldrate.pk/gold-rate-in-pakistan" >(Website Link)</a>.
                 </p>
             </div>
 
@@ -118,7 +118,7 @@
                                 
                             @else
                                  <tr>
-                                    <td  class="text-center"><a href="{{  url($GoldRateByDay->slug); }}">{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->format('j M Y') }}</a></td>
+                                    <td  class="text-center"><a href="https://silvergoldrate.pk/{{ $GoldRateByDay->slug }}">{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->format('j M Y') }}</a></td>
                                     <td  class="text-center">{{  $GoldRateByDay->First_rate }}</td>
                                     <td  class="text-center">{{  $GoldRateByDay->Second_rate }}</td>
                                 </tr>
@@ -181,10 +181,10 @@
                         @if(\Carbon\Carbon::parse($result->created_at)->subDay()->dayOfWeek == Carbon\Carbon::SUNDAY)
                             @else
                             <div class="lastestNews" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);border-radius:10px">
-                               <a href="{{ url($result->slug) }}"> 
-                                 <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
-                                 <h2 class="mt-3 p-2">{{ $result->title }}</h2>
-                               </a>
+                            <a href="https://silvergoldrate.pk/{{ $result->slug }}">
+                                <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
+                                <h2 class="mt-3 p-2">{{ $result->title }}</h2>
+                            </a>
                             </div>
                             @endif
                         @endforeach

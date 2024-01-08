@@ -151,7 +151,7 @@
                                 <tbody>
                                     @foreach($GoldRateByDay as $GoldRateByDay)
                                     <tr>
-                                        <td style="text-align:center"><a href="{{  url($GoldRateByDay->slug); }}">{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->format('d M Y') }}</a></td>
+                                        <td style="text-align:center"><a href="https://silvergoldrate.pk/{{ $GoldRateByDay->slug }}">{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->format('d M Y') }}</a></td>
                                         <td style="text-align:center">{{  $GoldRateByDay->First_rate }}</td>
                                         <td style="text-align:center">{{  $GoldRateByDay->Second_rate }}</td>
                                     </tr>
@@ -181,9 +181,10 @@
                         @if(\Carbon\Carbon::parse($result->created_at)->subDay()->dayOfWeek == Carbon\Carbon::SUNDAY)
                             @else
                             <div class="lastestNews" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);border-radius:10px">
-                               <a href="{{ url($result->slug) }}"> 
-                                 <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
-                                 <h2 class="mt-3 p-2">{{ $result->title }}</h2>                               </a>
+                            <a href="https://silvergoldrate.pk/{{ $result->slug }}">
+                                <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
+                                <h2 class="mt-3 p-2">{{ $result->title }}</h2>
+                            </a>
                             </div>
                             @endif
                         @endforeach

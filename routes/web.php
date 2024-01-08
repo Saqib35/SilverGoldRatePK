@@ -38,6 +38,8 @@ Route::get('gold-rate-in-pakistan', [HomeController::class, 'GoldPrice']);
 Route::get('gold-rate-in-lahore', [HomeController::class, 'GoldPricelahore']);
 Route::get('gold-rate-in-lahore', [HomeController::class, 'GoldPricelahore']);
 Route::get('gold-rate-in-multan', [HomeController::class, 'GoldPriceMultan']);
+Route::get('gold-rate-in-islamabad', [HomeController::class, 'GoldPriceIslamabad']);
+
 
 Route::get('category/gold-price-history-by-month', [HomeController::class, 'GoldPriceByMonth']);
 Route::get('category/gold-price-history-by-week', [HomeController::class, 'GoldPriceByWeek']);
@@ -112,9 +114,9 @@ Route::post('add-rate-report-by-day-update', [AdminController::class, 'EditDayRe
 Route::get('panel/admin/add-blogs', [AdminController::class, 'addRateByBlog']);
 Route::post('add-blogs', [AdminController::class, 'AddBlogs']);
 Route::get('panel/admin/show-blogs', [AdminController::class, 'ShowBlogs'])->name('show-blogs');
-Route::get('panel/admin/del-report-by-day', [AdminController::class, 'delReportByDay'])->name('del-blogs');
+Route::get('panel/admin/del-report-by-blog', [AdminController::class, 'delBlogs'])->name('del-blogs');
 Route::get('panel/admin/edit-blog/{id}', [AdminController::class, 'EditBlogs']);
-Route::post('add-rate-report-by-day-update', [AdminController::class, 'EditDayBlogs']);
+Route::post('add-rate-report-by-blogs-update', [AdminController::class, 'EditDayBlogs']);
 
 
 Route::get('panel/admin/add-web-stories', [AdminController::class, 'addWebStories']);

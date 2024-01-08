@@ -104,7 +104,7 @@
               <p>Thank you for coming to our website, we are here to give you the latest updates on gold and silver rates in Pakistan. We know how interesting it is for you to keep in touch with the variated rates of precious metals in Pakistan.</p>
               <p>Your interest in our platform is appreciated, and we need to hear from you. We will be more than happy to assist you with any questions, concerns, or suggestions concerning the price of gold and silver on our website. You will always be assisted by our expert team, making sure that you get a rapid and accurate response.</p>
               <p>We will be there to guide you through the complex world of gold and silver rates in Pakistan, whether you are a trader or an experienced investor looking for clues about metal prices. We are committed to making sure that your satisfaction is our main concern, and we will constantly improve the quality of our services to satisfy your needs.</p>
-              <p>You can reach out to us through the contact form on our website or by emailing us at <a href="mailto:silvergoldrate@gmail.com">silvergoldrate@gmail.com</a>. We're grateful to you for choosing us as your trusted source of gold and silver prices in Pakistan. We're looking forward to serving you with dedication and excellence.</p>
+              <p>You can reach out to us through the contact form on our website or by emailing us at <a href="mailto:silvergoldrate@gmail.com" rel="nofollow">silvergoldrate@gmail.com</a>. We're grateful to you for choosing us as your trusted source of gold and silver prices in Pakistan. We're looking forward to serving you with dedication and excellence.</p>
             </div>            
             </div>
             <div class="mb-5"></div>
@@ -123,9 +123,10 @@
                         @if(\Carbon\Carbon::parse($result->created_at)->subDay()->dayOfWeek == Carbon\Carbon::SUNDAY)
                             @else
                             <div class="lastestNews" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);border-radius:10px">
-                               <a href="{{ url($result->slug) }}"> 
-                                 <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
-                                 <h2 class="mt-3 p-2">{{ $result->title }}</h2>                               </a>
+                                <a href="https://silvergoldrate.pk/{{ $result->slug }}">
+                                    <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
+                                    <h2 class="mt-3 p-2">{{ $result->title }}</h2>
+                                </a>
                             </div>
                             @endif
                         @endforeach
