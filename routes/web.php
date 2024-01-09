@@ -39,6 +39,7 @@ Route::get('gold-rate-in-lahore', [HomeController::class, 'GoldPricelahore']);
 Route::get('gold-rate-in-lahore', [HomeController::class, 'GoldPricelahore']);
 Route::get('gold-rate-in-multan', [HomeController::class, 'GoldPriceMultan']);
 Route::get('gold-rate-in-islamabad', [HomeController::class, 'GoldPriceIslamabad']);
+Route::get('gold-rate-in-karachi', [HomeController::class, 'GoldPriceKarachi']);
 
 
 Route::get('category/gold-price-history-by-month', [HomeController::class, 'GoldPriceByMonth']);

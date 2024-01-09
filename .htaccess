@@ -5,3 +5,12 @@
     RewriteRule ^(.*)$ https://silvergoldrate.pk/$1 [L,R=301]
     RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>
+# Options +SymLinksIfOwnerMatch
+# RewriteEngine On
+
+# # Allow Installatron requests
+# RewriteCond %{REQUEST_FILENAME} !deleteme\.\w+\.php
+
+# RewriteRule (.*) - [L] 
+
+# RewriteRule ^ index.php [L]
