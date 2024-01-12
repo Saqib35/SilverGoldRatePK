@@ -135,7 +135,7 @@
 
                 <div class="updateSetting pt-3">
                     <div>
-                        <img src="{{ asset($GoldRateByWeek->img) }}" class="img-fluid" />
+                        <img src="{{ asset($GoldRateByWeek->img) }}"  alt="{{ $GoldRateByWeek->alt_tag }}"   class="img-fluid" />
                         <p class="mt-4">{!! $GoldRateByWeek->details;  !!} </p>
                             <table border="1" cellpadding="1" cellspacing="1" style="width:100%" class="table table-bordered table-hover mt-3">
                                 <thead>

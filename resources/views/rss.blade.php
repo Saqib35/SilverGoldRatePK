@@ -18,7 +18,7 @@
                 <guid>{{ $post->id }}</guid>
                 <pubDate>{{ $post->updated_at->toRssString() }}</pubDate>
                 <media:content url="{{ asset('images/gold-rate-in-pakistan-today.webp') }}" medium="image">
-                    <media:description><![CDATA[{{ $post->alt_tag }}]]></media:description>
+                    <media:description><![CDATA[{{ $post->description_short }}]]></media:description>
                     <media:credit><![CDATA[Gold Rate In pakistan]]></media:credit>
                 </media:content>
             </item>

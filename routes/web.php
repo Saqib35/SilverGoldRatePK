@@ -36,10 +36,11 @@ Route::get('privacy-policy-for-silver-rate-in-pakistan/', function () {
 Route::get('/', [HomeController::class, 'index']);
 Route::get('gold-rate-in-pakistan', [HomeController::class, 'GoldPrice']);
 Route::get('gold-rate-in-lahore', [HomeController::class, 'GoldPricelahore']);
-Route::get('gold-rate-in-lahore', [HomeController::class, 'GoldPricelahore']);
 Route::get('gold-rate-in-multan', [HomeController::class, 'GoldPriceMultan']);
 Route::get('gold-rate-in-islamabad', [HomeController::class, 'GoldPriceIslamabad']);
 Route::get('gold-rate-in-karachi', [HomeController::class, 'GoldPriceKarachi']);
+Route::get('gold-rate-in-faisalabad', [HomeController::class, 'GoldPriceFaisalabad']);
+
 
 
 Route::get('category/gold-price-history-by-month', [HomeController::class, 'GoldPriceByMonth']);

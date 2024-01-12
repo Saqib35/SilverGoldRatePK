@@ -77,7 +77,7 @@
 
                 <div class="updateSetting pt-3">
                     <div>
-                        <img src="{{ asset($GoldRateByWeek->img) }}" class="img-fluid" />
+                        <img src="{{ asset($GoldRateByWeek->img) }}"  alt="{{ $GoldRateByWeek->alt_tag }}"  class="img-fluid" />
                         <p class="mt-4">{{ $GoldRateByWeek->description_short;  }} </p>
                         <a href="https://silvergoldrate.pk/{{ $GoldRateByWeek->slug }}" class="btn btn-success">Read More</a>
                         <p class="mt-3">

@@ -60,7 +60,7 @@
 
                 <div class="updateSetting pt-3">
                     <div>
-                        <img src="{{ asset($GoldRateByDay->img) }}" class="img-fluid" />
+                        <img src="{{ asset($GoldRateByDay->img) }}" alt="{{ $GoldRateByDay->alt_tag }}" class="img-fluid" />
                         <p class="mt-4">{!! $GoldRateByDay->details;  !!} </p>
                        
                     </div>

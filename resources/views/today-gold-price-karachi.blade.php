@@ -27,7 +27,7 @@
         <meta property="article:modified_time" content="{{  $HomePageGoldRate->updated_at }}" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Gold Rate in Karachi Today – {{ now()->format('j F Y') }}" />
-        <meta name="twitter:description" content="1 tola gold rate in v today, {{ now()->format('j F Y') }}, stands at Rs. {{ $rates['ratePerTola'] }} per tola for 24-karat gold, and Rs. {{ $rates['ratePer10Grams'] }} for 10 grams." />
+        <meta name="twitter:description" content="1 tola gold rate in Karachi today, {{ now()->format('j F Y') }}, stands at Rs. {{ $rates['ratePerTola'] }} per tola for 24-karat gold, and Rs. {{ $rates['ratePer10Grams'] }} for 10 grams." />
         <meta name="twitter:image" content="{{  asset($HomePageGoldRate->img) }}" />
         <meta name="twitter:label1" content="Time to read" />
         <meta name="twitter:data1" content="5 minutes" />

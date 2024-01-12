@@ -75,7 +75,7 @@
 
                 <div class="updateSetting pt-3">
                     <div>
-                        <img src="{{ asset($GoldRateByMonth->img) }}" class="img-fluid" />
+                        <img src="{{ asset($GoldRateByMonth->img) }}" alt="{{ $GoldRateByMonth->alt_tag }}"  class="img-fluid" />
                         <p class="mt-4">{{ $GoldRateByMonth->description_short;  }} </p>
                         <a href="https://silvergoldrate.pk/{{ $GoldRateByMonth->slug }}" class="btn btn-success">Read More</a>
                         <p class="mt-3">

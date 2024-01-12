@@ -25,7 +25,8 @@
                   <div class="dropdown-menu w-100 topHeader" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="https://silvergoldrate.pk/gold-rate-in-lahore">Gold Rate In Lahore</a>
                     <a class="dropdown-item" href="https://silvergoldrate.pk/gold-rate-in-islamabad">Gold Rate In Islamabad</a>
-                    <a class="dropdown-item">Gold Rate In Karachi</a>
+                    <a class="dropdown-item" href="https://silvergoldrate.pk/gold-rate-in-faisalabad">Gold Rate In Faisalabad</a>
+                    <a class="dropdown-item" href="https://silvergoldrate.pk/gold-rate-in-karachi">Gold Rate In Karachi</a>
                     <a class="dropdown-item" href="https://silvergoldrate.pk/gold-rate-in-multan">Gold Rate In Multan</a>
                     
                   </div>

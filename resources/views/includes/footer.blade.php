@@ -26,7 +26,7 @@
             <a class="nav-link"  href="https://silvergoldrate.pk/gold-rate-in-islamabad">Gold Rate In Islamabad</a>
           </li>
           <li class="nav-item textLeft">
-            <a class="nav-link">Gold Rate In karachi</a>
+            <a class="nav-link"  href="https://silvergoldrate.pk/gold-rate-in-karachi">Gold Rate In karachi</a>
           </li>
           <li class="nav-item textLeft">
             <a class="nav-link"  href="https://silvergoldrate.pk/gold-rate-in-multan">Gold Rate In Multan</a>
