@@ -72,19 +72,15 @@
              <br>
           
             <div class="bg-bf9109 text-white p-2">
-              <h2 class="text-center">Price According to purity ({{ now()->format('j F Y') }})</h2>
+              <h2 class="text-center">Current Rates In karachi ({{ now()->format('j F Y') }})</h2>
             </div>
+ 
 
             <div id="gold_all_detail_table" class="mt-2"></div>
 
-            
-            <div class="alert alert-warning">
-                <p class="mb-0">
-                Keep in touch with the website for fundamental concepts behind the gold rate in Karachi. From karats to purity, this portion mentions the important terms that shape the gold market.Keep in touch with the website for fundamental concepts behind the gold rate in Karachi. From karats to purity, this portion mentions the important terms that shape the gold market. <a  href="https://silvergoldrate.pk/gold-rate-in-pakistan">(Website Link)</a>.
-                </p>
-            </div>
+            <p>As you know the value of Gold for all the people around, gold is always the best and most precious metal to invest and to buy. So, it is necessary to know the accurate rates for gold before investing in gold or buying any gold items.</p>
 
-           
+          
             <div class="text-center text-white p-2 bg-bf9109"><h2>Gold Rate Karachi For the Last 30 Days<h2></div>
 
                 <table border="1" cellpadding="1" cellspacing="1" style="width:100%" class="table table-bordered table-hover mt-3">
@@ -119,10 +115,15 @@
                 </table>
             </div>
             
-             <p>Demand, interest rates, state taxes, gold traders, bullion associations, transportation costs, manufacturing costs, and other factors can all influence the price of gold in Karachi.</p>
+             <p class="p-2">Stay active to know the actual gold rates if you are going to buy gold items in Karachi or want to invest in Gold here. Before taking any decision, knowing the gold rate is your right.</p>
             
-
-            
+             <div class="alert alert-warning">
+                <p class="mb-0">
+                Keep in touch with the website for fundamental concepts behind the gold rate in Karachi. From karats to purity, this portion mentions the important terms that shape the gold market.Keep in touch with the website for fundamental concepts behind the gold rate in Karachi. From karats to purity, this portion mentions the important terms that shape the gold market. <a  href="https://silvergoldrate.pk/gold-rate-in-pakistan">(Website Link)</a>.
+                </p>
+            </div>
+            <h2>Factors Affecting the Gold Rate</h2>
+            <p>Several factors such as gold demand, central banks, seasonal changes, economics, market trends and many others can affect the gold rate at any time. Gold rates can change within 24 hours or after several days. You just need to check the rates regularly if you are a gold trader or investor.</p>
             <div class="bg-bf9109 text-white p-2">
               <h2 class="text-center">Price Difference in 1 Tola In Other Big Cities</h2>
             </div>
@@ -134,15 +135,38 @@
             <p>The price of gold is set by the Sarafa Market Pakistan. The slight difference in price (of few hundred) is due to distance from main market.</p>
 
             <h2>Main Markets of Gold in Karachi</h2>
-            <p>The main gold market in Karachi, Pakistan, is often referred to as "Sarafa Bazaar" or "Sarafa Market." It is a prominent area where numerous jewelry shops and goldsmiths are located. One well-known location within Sarafa Bazaar is "Zainab Market," which is recognized for its concentration of gold and jewelry shops.</p> 
-            <p>Gold Queen Jewelers, is also the main market for gold in Karachi. Boat Basin, This area is known for its concentration of jewelry shops, providing a range of options for those looking for gold jewelry.</p>           
-            <p>Note: The price of gold is not fixed in Karachi, it is changing daily, time to time. The change is because of various reasons like festivals. Because Pakistani rupees are the cheapest currency ever as compared to other currencies, the gold rate in Karachi is always higher.</p> 
+            <p>One of the main markets of gold in Karachi is Sarafa Bazaar, also known as Sarafa Market. It is a popular area where there are many gold shops around. You can find many jewelry shops here and you can buy any gold items from here.</p>
+            <p>Gold Queen Jewelers, another famous market for gold in Karachi. This place is also best for investing in Gold. </p>
+            <p>One more place for jewellery in Karachi is Boat Basin. This place is well known because of the best jewellery here. You can find many jewelry items here or you can invest in gold here.</p>
+            <p><strong>Note:</strong> The price of gold is not fixed in Karachi, it is changing daily, time to time. The change is because of various reasons like festivals. Because Pakistani rupees are the cheapest currency ever as compared to other currencies, the gold rate in Karachi is always higher.</p>
+            
             <h2>Best Time to Sell or Buy Gold in Karachi</h2>
             <p>If you are planning to buy low and sell high, the annual lowest price of gold mostly occurs around the second week of January. From there, the price often makes a constant rise through to the end of the year, with a summer break in price between April and June.</p>
-            <h2>Is it better to Invest in Gold or Gold Stocks in Karachi?</h2>
-            <p>Investing in physical gold and gold stocks each has its merits. Gold offers a tangible asset, while gold stocks provide a showing to the industry without the need for physical ownership. Consider your tolerance and investment goals before deciding.</p>
-           
-    
+            <h2>The best time to Invest in Gold or Gold Stocks in Karachi</h2>
+            <p>The investment for Gold or Gold stocks depends on the timing. If you are looking that there is decrement in gold rates, then it is the best time to invest in gold or gold stocks. On the other hand, if you feel that there is a constant increase in gold rates, then you should wait for the right time to invest in gold.</p>           
+            <h2>What are the things to check while buying Gold?</h2>
+            <ul>
+                <li>The purity level needs to be checked when buying gold. 24K Gold is pure gold but contains a small number of other metals too.</li>
+                <li>The gold rates are changing throughout the whole day and across locations. Like, you need to check the rate/gram of gold in Karachi before buying.</li>
+                <li>Buy-back terms should also be considered when buying gold.</li>
+                <li>Certification of metal is also an important step to check before investing in Gold.</li>
+                <li>Quality and colour of gold that it is yellow, white, or rose-coloured.</li>
+            </ul>
+            <h2>FAQs</h2>
+            <h3>What is today’s gold rate in Karachi? </h3>
+            <p>
+                    The current gold rate in Karachi today stands at  <strong>PKR {{ $rates['ratePerTola'] }}</strong> for 24 karat per tola, as per the updated Karachi gold market on {{ now()->format('j F Y') }}.
+            </p>
+            <h3>What is the best time to invest in gold?</h3>
+            <p>When the prices go down from average rates, this is the best time for investment.</p>
+            <h3>How do you test the gold?</h3>
+            <p>By applying the float method, you can test the gold easily. Put your gold in pure water. If the gold sinks, it is real but if it floats above the water, it is not real.</p>
+            <h3>Does gold go down in rate ever?</h3>
+            <p>Due to some factors like lack of demand, gold can go down. And this is the best time to invest in gold or buy gold items.</p>
+            <h3>What is the most trending gold in Karachi nowadays?</h3>
+            <p>There is no specific kind of gold that is mostly used but people in jewellery or investment use all kinds of gold.</p>
+            <h3>Does Karachi have high rates of gold as compared to other cities in Pakistan?</h3>
+            <p>The rates for gold are almost the same across cities but sometimes there occur minor differences in gold rate values. It is due to some specific conditions.</p>
         </div>
 
         <div class="col-md-3" style="border-left: 5px solid #e7ecef;">

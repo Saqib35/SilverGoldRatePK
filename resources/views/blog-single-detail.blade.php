@@ -106,6 +106,30 @@
 
 @section('js')
 
+<script>
+    var contentSet = false;
+
+    function setTableContent() {
+        if (contentSet) {
+           
+            return;
+        }
+
+        var table_Second_Table_24k_And_22k = {!! json_encode($table_Second_Table_24k_And_22k) !!};
+        var goldDetailContainer = document.getElementById('table_Second_Table_24k_And_22k1');
+
+        if (goldDetailContainer) {
+            goldDetailContainer.innerHTML = table_Second_Table_24k_And_22k;
+            contentSet = true; 
+        } else {
+            setTimeout(setTableContent, 1000); 
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', setTableContent);
+</script>
+
+
 @endsection
 
 

@@ -247,7 +247,18 @@ class HomeController extends Controller
         if($Blogs)
         {
             
-          return view('blog-single-detail' ,['GoldRateByDay'=>$Blogs]);
+       
+            
+            $rates = $this->calculateRates();
+            $rates22k = $this->calculateRates22K();
+            $rates21k = $this->calculateRates21K();
+            $rates20k = $this->calculateRates20K();
+            $rates18k = $this->calculateRates18K();
+            $table_all_type = $this->generateTable();
+            $table_Second_Table_24k_And_22k = $this->generateSecondTable24kAnd22k();
+            
+            
+          return view('blog-single-detail' ,['GoldRateByDay'=>$Blogs,'table_all_type'=>$table_all_type,'table_Second_Table_24k_And_22k'=>$table_Second_Table_24k_And_22k,'rates'=>$rates,'rates22k'=>$rates22k,'rates21k'=>$rates21k,'rates20k'=>$rates20k,'rates18k'=>$rates18k]);
 
         }
 
