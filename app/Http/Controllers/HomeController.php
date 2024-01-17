@@ -192,6 +192,23 @@ class HomeController extends Controller
         return view('gold-price-by-month' ,['GoldRateByMonth'=>$GoldRateByMonth]);
     }
 
+
+        
+        public function allBlogs(REQUEST $request)
+        {
+                $currentUrl = $request->url();
+
+            if (strpos($currentUrl, '/public') !== false) {
+            
+                return redirect(str_replace('/public', '', $currentUrl));
+            } 
+            $Blogs=Blogs::get();
+            return view('all-blogs' ,['Blogs'=>$Blogs]);
+        }
+
+
+
+
       public function GoldPriceByMonthDetail(REQUEST $request)
      {
             $currentUrl = $request->url();

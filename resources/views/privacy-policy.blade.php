@@ -94,7 +94,7 @@
     <!-- Main Content -->
 <div class="container mt-3 bg-white">
     <div class="row">
-        <div class="col-md-9" style="border-right: 5px solid #e7ecef;">
+        <div class="col-md-12" style="border-right: 5px solid #e7ecef;">
             <div class="text-center mt-5">
                 <h1 class="h1-size">Privacy Policy for Silver Rate in Pakistan</h1>
             </div>
@@ -165,32 +165,7 @@
             <div class="mb-5"></div>
         </div>
 
-        <div class="col-md-3" style="border-left: 5px solid #e7ecef;">
-            <div class="container">
-                <div class="row">
-                    <h6 class="col-12 text-center mt-5 mb-4"><strong>Latest Posts</strong></h6>
-                    @php
-                        $results = DB::table('gold_rates_by_day')->orderBy('created_at', 'desc')->take(7)->get();
-                    @endphp
-
-                    <div class="col-12 mb-2">
-                        @foreach($results as $result)
-                        @if(\Carbon\Carbon::parse($result->created_at)->subDay()->dayOfWeek == Carbon\Carbon::SUNDAY)
-                            @else
-                            <div class="lastestNews" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);border-radius:10px">
-                            <a href="https://silvergoldrate.pk/{{ $result->slug }}">
-                                <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
-                                <h2 class="mt-3 p-2">{{ $result->title }}</h2>
-                            </a>
-                            </div>
-                            @endif
-                        @endforeach
-                    </div>
-
-                </div>
-                <div></div>
-            </div>
-        </div>
+      
     </div>
 </div>
 
