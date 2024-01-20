@@ -112,7 +112,6 @@
 @endsection
 
 @section('main')
-  
 
 
  <!-- Main Content -->
@@ -120,7 +119,7 @@
     <div class="row">
         <div class="col-md-9" style="border-right: 5px solid #e7ecef;">
             
-            <div style="border-bottom: 10px solid #e7ecef;" class="mt-5">
+            <div  class="mt-5">
                 <div class="text-center mt-5">
                     <h1 class="h1-size">{{ $GoldRateByDay->title;  }}</h1>
                 </div>
@@ -139,6 +138,35 @@
                        
                     </div>
                 </div>
+            </div>
+           <div class="container mb-3">
+            <div class="row p-3   border border-1">
+
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex align-items-center justify-content-center">
+                    <div class="img-left text-center mb-3 mb-sm-0" style="width:100px; margin-right:auto; margin-left:auto;">
+                        <img src="https://silvergoldrate.pk/assets/staff.webp" class="rounded-circle img-fluid" alt="staff" />
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-9 col-md-9 col-xs-12 col-sm-12">
+                    <a href="https://silvergoldrate.pk/author/staff" class="text-decoration-none text-goldenrod"><strong>Staff</strong></a>
+                    <p>
+                        We keep you updated on the latest gold rates in Pakistan. Stay informed with our real-time updates on gold prices, market trends, and more. Your trusted source for all things gold in Pakistan.
+                    </p>
+                </div>
+
+                <div class="col-12 mt-2 p-2 topHeader">
+                    <div class="right-icon d-flex justify-content-end">
+                        <span class="px-3 py-2">
+                            <i class="fab fa-facebook"></i> 1
+                        </span>
+                        <span class="px-3 py-2">
+                            <i class="fab fa-twitter"></i> 2
+                        </span>
+                    </div>
+                </div>
+
+            </div>
             </div>
 
 
@@ -173,6 +201,7 @@
             </div>
         </div>
     </div>
+    
 </div>
 
 

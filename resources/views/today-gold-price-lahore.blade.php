@@ -119,26 +119,16 @@
                         @endforeach
                     </tbody>
                 </table>
-            </div>
-            
-            
-            
-            <div class="bg-bf9109 text-white p-2">
-              <h2 class="text-center">Price Difference In Other Cities</h2>
-            </div>
-
-              <div id="table_Second_Table_24k_And_22k" class="mt-2"></div>
-
-            </div>
-            
-            <p>The price of gold is set by the Sarafa Market Pakistan. The slight difference in price (of few hundred) is due to distance from main market.</p>
+                <div class="bg-bf9109 text-white p-2">
+                   <h2 class="text-center">Price Difference In Other Cities</h2>
+                </div>
+                <div id="table_Second_Table_24k_And_22k" class="mt-2"></div>
+                <p>The price of gold is set by the Sarafa Market Pakistan. The slight difference in price (of few hundred) is due to distance from main market.</p>
             <h2>Brief information about Lahore.</h2>
             <p>Lahore is located in north eastern region of Punjab.It is Pakistan s major industrial hub. It has historical background too.people off different regions come here to reside and to work.thats why it has healthy culture and tradition.it has major bazar like Anaarkali market Ichhra Bazar Kashmiri bazar etc .Gold Palace Al Raheem Jewellarsand Sharif Jewellers are Lahore s major gold merchants.</p>
             <h2>Conclusion.</h2>
             <p>To get latest price of gold you should visit your nearby sarafa market before making any deal or purchase so you may not find any lose.The rates mentioned above are according to Pakistan sarafa market .there is up and down of price after every few minutes so we update prices continuously.User can get fresh 
                 updates by visiting our website <a  href="https://silvergoldrate.pk/gold-rate-in-pakistan">link</a></p>
-
-
                 <h2>
                    <strong><u>FAQs:</u></strong>
                 </h2>
@@ -159,6 +149,14 @@
                     The current 22-carat gold rate in Lahore stands at   <strong>PKR {{ $rates22k['ratePerGram'] }}</strong>  per 10 grams as of {{ now()->format('j F Y') }}.
                 </p>
        
+            </div>
+            
+        
+            </div>
+            
+          
+
+              
         </div>
 
         <div class="col-md-3" style="border-left: 5px solid #e7ecef;">

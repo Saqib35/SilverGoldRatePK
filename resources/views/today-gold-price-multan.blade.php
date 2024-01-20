@@ -128,19 +128,12 @@
                         @endforeach
                     </tbody>
                 </table>
-            </div>
-            
-            
-            
-            <div class="bg-bf9109 text-white p-2">
+                <div class="bg-bf9109 text-white p-2">
               <h2 class="text-center">Price Difference in 1 Tola In Other Big Cities</h2>
             </div>
 
               <div id="table_Second_Table_24k_And_22k" class="mt-2"></div>
-
-            </div>
-            
-            <p>The price of gold is set by the Sarafa Market Pakistan. The slight difference in price (of few hundred) is due to distance from main market.</p>
+              <p>The price of gold is set by the Sarafa Market Pakistan. The slight difference in price (of few hundred) is due to distance from main market.</p>
             <h2>Brief Information about Multan:</h2>
             <p>Multan is the city of Punjab, Pakistan located on the back of Chenab River. Multan is one of the five largest urban centers of Pakistan in 2024. It has a rich religious ancient heritage and historic landmarks...(Wikipedia)</p>
            
@@ -165,6 +158,14 @@
                 <p>
                     The current 22-carat gold rate in Multan stands at   <strong>PKR {{ $rates22k['ratePerGram'] }}</strong>  per 10 grams as of {{ now()->format('j F Y') }}.
                 </p>
+            </div>
+            
+            
+            
+         
+            </div>
+            
+           
        
         </div>
 

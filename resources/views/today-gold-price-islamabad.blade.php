@@ -113,102 +113,110 @@
                         @endforeach
                     </tbody>
                 </table>
-            </div>
-            
-             <p>
+
+                <p>
              Keep in touch with the Gold rate in Islamabad if you are going to buy gold in Islamabad or want to invest in Gold here. The basic concepts will cover the terms that are important in making the gold market.
              </p>            
 
              <h2>Factors affecting the gold rate</h2>
              <p>
              Several factors affect the gold prices in Islamabad or any other city. The economics, gold demands, geopolitical events, central banks, and market dynamics are the key factors that are the reason behind variations in gold rates. The gold rate can change suddenly or after days.
-             </p> 
-           
-
-            <div class="bg-bf9109 text-white p-2">
+             </p>   
+              <div class="bg-bf9109 text-white p-2">
               <h2 class="text-center">Price Difference in 1 Tola In Other Big Cities</h2>
             </div>
 
               <div id="table_Second_Table_24k_And_22k" class="mt-2"></div>
-              </div>
+
               <div class="alert alert-warning">
                 <p class="mb-0">
                     To get a more updated price of gold visit nearby Sarafa Market so that you may not find any loss in buying or purchasing Gold. These rates mentioned above are according to Pakistan Bullion Market also known as Sarafa Bazar of Pakistan. We update the price every few hours so users get fresh information from <a  href="https://silvergoldrate.pk/gold-rate-in-pakistan">(Website Link)</a>.
                 </p>
-            </div>            
+              </div> 
+              <p>The price of gold is set by the Sarafa Market Pakistan. The slight difference in price (of few hundred) is due to distance from main market.</p>
 
+<h2>Main Market of Gold in Islamabad</h2>
+<ul>
+
+    <li>A famous market for gold in Islamabad is the Jinnah Super Market. Its location in Islamabad is F-7 sector. It is a popular shopping place where you can buy the best gold items.</li>
+    <li>One more popular place for jewellery is the Blue Area in Islamabad. Here, you can find many gold shops. You can buy any jewellery item from here.</li>
+    <li>
+    Another Bazar is well-known in Islamabad for gold shops. Sadda Bazar is one of the best markets in Islamabad for buying gold items. You can invest in gold here.
+    </li>
+    
+</ul>
+
+<h2>How often do Gold rates change in Islamabad?</h2>
+<p>In Islamabad or any other city, the Gold rate can change multiple times within a day due to some conditions. Change in gold rate is also due to some global factors. There may be minor changes in Gold rates within cities.</p>
+<h2>What are the things to check while buying Gold?</h2>  
+ <ul>
+ <li>The purity level needs to be checked when buying gold. 24K Gold is pure gold but contains a small number of other metals too.</li>
+ <li>The gold rates are changing throughout the whole day and across locations. Like, you need to check the rate/gram of gold in Islamabad before buying.</li>
+ <li>Buy-back terms should also be considered when buying gold.</li>
+ <li>Certification of metal is also an important step to check before investing in Gold.</li>
+ <li>Quality and colour of gold that it is yellow, white, or rose-coloured.</li>
+ 
+    
+ </ul>
+
+
+    <h2>
+       <strong><u>FAQs:</u></strong>
+    </h2>
+
+    <h3>
+       <strong>What is today’s gold rate in Islamabad? </strong>
+    </h3>
+
+    <p>
+        The current gold rate in Karachi today stands at  <strong>PKR {{ $rates['ratePerTola'] }}</strong> for 24 karat per tola, as per the updated Karachi gold market on {{ now()->format('j F Y') }}.
+    </p>
+
+    
+    <h3>
+       <strong>What is the best time to invest in gold? </strong>
+    </h3>
+
+    <p>
+    When the prices go down from average rates, this is the best time for investment.               
+   </p>
+
+
+   <h3>
+       <strong>List down the important checklist while buying gold in Islamabad. </strong>
+    </h3>
+    <ul>
+        <li>Confirm the gold price per gram.</li>
+        <li>Check the various purity levels.</li>
+        <li>Consider buy-back terms.</li>
+        <li>Check certification.</li>
+        <li>Sum up the bill.</li>
+        
             
-            <p>The price of gold is set by the Sarafa Market Pakistan. The slight difference in price (of few hundred) is due to distance from main market.</p>
-
-            <h2>Main Market of Gold in Islamabad</h2>
-            <ul>
-
-                <li>A famous market for gold in Islamabad is the Jinnah Super Market. Its location in Islamabad is F-7 sector. It is a popular shopping place where you can buy the best gold items.</li>
-                <li>One more popular place for jewellery is the Blue Area in Islamabad. Here, you can find many gold shops. You can buy any jewellery item from here.</li>
-                <li>
-                Another Bazar is well-known in Islamabad for gold shops. Sadda Bazar is one of the best markets in Islamabad for buying gold items. You can invest in gold here.
-                </li>
-                
-            </ul>
-
-            <h2>How often do Gold rates change in Islamabad?</h2>
-            <p>In Islamabad or any other city, the Gold rate can change multiple times within a day due to some conditions. Change in gold rate is also due to some global factors. There may be minor changes in Gold rates within cities.</p>
-            <h2>What are the things to check while buying Gold?</h2>  
-             <ul>
-             <li>The purity level needs to be checked when buying gold. 24K Gold is pure gold but contains a small number of other metals too.</li>
-             <li>The gold rates are changing throughout the whole day and across locations. Like, you need to check the rate/gram of gold in Islamabad before buying.</li>
-             <li>Buy-back terms should also be considered when buying gold.</li>
-             <li>Certification of metal is also an important step to check before investing in Gold.</li>
-             <li>Quality and colour of gold that it is yellow, white, or rose-coloured.</li>
-             
-                
-             </ul>
+    </ul>
+    <h3>How do you test the gold?</h3>
+    <p>By applying the float method, you can test the gold easily. Put your gold in pure water. If the gold sinks, it is real but if it floats above the water, it is not real.</p>
+    <h3>Does gold go down in rate ever?</h3>
+    <p>Due to some factors like lack of demand, gold can go down. And this is the best time to invest in gold or buy gold items.</p>
+    <h3>What is the most trending gold in Islamabad nowadays?</h3>
+    <p>There is no specific kind of gold that is mostly used but people in jewellery or investment use all kinds of gold.</p>
+    <h3>Does Islamabad have high rates of gold as compared to other cities in Pakistan?</h3>
+    <p>The rates for gold are almost the same across cities but sometimes there occur minor differences in gold rate values. It is due to some specific conditions.</p>
 
 
-                <h2>
-                   <strong><u>FAQs:</u></strong>
-                </h2>
 
-                <h3>
-                   <strong>What is today’s gold rate in Islamabad? </strong>
-                </h3>
-
-                <p>
-                    The current gold rate in Karachi today stands at  <strong>PKR {{ $rates['ratePerTola'] }}</strong> for 24 karat per tola, as per the updated Karachi gold market on {{ now()->format('j F Y') }}.
-                </p>
-
-                
-                <h3>
-                   <strong>What is the best time to invest in gold? </strong>
-                </h3>
-
-                <p>
-                When the prices go down from average rates, this is the best time for investment.               
-               </p>
-
-
-               <h3>
-                   <strong>List down the important checklist while buying gold in Islamabad. </strong>
-                </h3>
-                <ul>
-                    <li>Confirm the gold price per gram.</li>
-                    <li>Check the various purity levels.</li>
-                    <li>Consider buy-back terms.</li>
-                    <li>Check certification.</li>
-                    <li>Sum up the bill.</li>
-                    
+              </div>
                         
-                </ul>
-                <h3>How do you test the gold?</h3>
-                <p>By applying the float method, you can test the gold easily. Put your gold in pure water. If the gold sinks, it is real but if it floats above the water, it is not real.</p>
-                <h3>Does gold go down in rate ever?</h3>
-                <p>Due to some factors like lack of demand, gold can go down. And this is the best time to invest in gold or buy gold items.</p>
-                <h3>What is the most trending gold in Islamabad nowadays?</h3>
-                <p>There is no specific kind of gold that is mostly used but people in jewellery or investment use all kinds of gold.</p>
-                <h3>Does Islamabad have high rates of gold as compared to other cities in Pakistan?</h3>
-                <p>The rates for gold are almost the same across cities but sometimes there occur minor differences in gold rate values. It is due to some specific conditions.</p>
 
-       
+
+            </div>
+            
+           
+           
+
+         
+            
+                 
         </div>
        
         <div class="col-md-3" style="border-left: 5px solid #e7ecef;">

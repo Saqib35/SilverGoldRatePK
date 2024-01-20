@@ -37,7 +37,7 @@
                   <a class="nav-link"  href="https://silvergoldrate.pk/gold-calculator">Gold Calculator</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link"  href="https://silvergoldrate.pk/blogs">Blogs</a>
+                  <a class="nav-link"  href="https://silvergoldrate.pk/all-blogs">Blogs</a>
                 </li>
               
               </ul>

@@ -123,33 +123,21 @@
                         @endforeach
                     </tbody>
                 </table>
-            </div>
-
-           <p>
+                <p>
            Stay active for the basic concepts behind the gold rate in Faisalabad. The basic concepts will cover the terms that are important in making the gold market.
            </p>
-
-            
-            <h2>Factors affecting the gold rate</h2>
+           <h2>Factors affecting the gold rate</h2>
               <p>Many factors affect the gold prices in Faisalabad or any other city. The economics, gold demands, geopolitical events, central banks, and market dynamics are the key factors that are the reason behind fluctuations in gold rates.</p>
             
-            
-
-
-
-            <div class="bg-bf9109 text-white p-2">
+              <div class="bg-bf9109 text-white p-2">
               <h2 class="text-center">Price Difference in 1 Tola In Other Big Cities</h2>
             </div>
-
-              <div id="table_Second_Table_24k_And_22k" class="mt-2"></div>
-
-            </div>
+            <div id="table_Second_Table_24k_And_22k" class="mt-2"></div>
             <div class="alert alert-warning">
                 <p class="mb-0">
                     To get a more updated price of gold visit nearby Sarafa Market so that you may not find any loss in buying or purchasing Gold. These rates mentioned above are according to Pakistan Bullion Market also known as Sarafa Bazar of Pakistan. We update the price every few hours so users get fresh information from <a  href="https://silvergoldrate.pk/gold-rate-in-pakistan" >(Website Link)</a>.
                 </p>
             </div>
-
             <p class="p-2">The price of gold is set by the Sarafa Market Pakistan. The slight difference in price (of few hundred) is due to distance from main market.</p>
             <h2>Gold Price in Faisalabad- General Discussion</h2>
             <p>People in Faisalabad love to buy gold for various purposes. When discussing gold, is a precious metal and is always considered as expensive as compared to silver. </p>
@@ -205,7 +193,22 @@
                 <p>There is no specific kind of gold that is mostly used but people in jewelry or investment use all kinds of gold.</p>
                 <h2>Does Faisalabad have high rates of gold as compared to other cities in Pakistan?</h2>
                 <p>The rates for gold are almost the same across cities but sometimes there occur minor differences in gold rate values. It is due to some specific conditions.</p>
-       
+    
+
+            </div>
+
+         
+            
+        
+
+
+
+        
+
+
+            </div>
+          
+              
         </div>
 
         <div class="col-md-3" style="border-left: 5px solid #e7ecef;">

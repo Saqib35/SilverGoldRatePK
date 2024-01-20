@@ -113,16 +113,16 @@
                         @endforeach
                     </tbody>
                 </table>
-            </div>
+
+                <p class="p-2">Stay active to know the actual gold rates if you are going to buy gold items in Karachi or want to invest in Gold here. Before taking any decision, knowing the gold rate is your right.</p>
             
-             <p class="p-2">Stay active to know the actual gold rates if you are going to buy gold items in Karachi or want to invest in Gold here. Before taking any decision, knowing the gold rate is your right.</p>
-            
-             <div class="alert alert-warning">
-                <p class="mb-0">
-                Keep in touch with the website for fundamental concepts behind the gold rate in Karachi. From karats to purity, this portion mentions the important terms that shape the gold market.Keep in touch with the website for fundamental concepts behind the gold rate in Karachi. From karats to purity, this portion mentions the important terms that shape the gold market. <a  href="https://silvergoldrate.pk/gold-rate-in-pakistan">(Website Link)</a>.
-                </p>
-            </div>
-            <h2>Factors Affecting the Gold Rate</h2>
+            <div class="alert alert-warning">
+               <p class="mb-0">
+               Keep in touch with the website for fundamental concepts behind the gold rate in Karachi. From karats to purity, this portion mentions the important terms that shape the gold market.Keep in touch with the website for fundamental concepts behind the gold rate in Karachi. From karats to purity, this portion mentions the important terms that shape the gold market. <a  href="https://silvergoldrate.pk/gold-rate-in-pakistan">(Website Link)</a>.
+               </p>
+           </div>
+  
+           <h2>Factors Affecting the Gold Rate</h2>
             <p>Several factors such as gold demand, central banks, seasonal changes, economics, market trends and many others can affect the gold rate at any time. Gold rates can change within 24 hours or after several days. You just need to check the rates regularly if you are a gold trader or investor.</p>
             <div class="bg-bf9109 text-white p-2">
               <h2 class="text-center">Price Difference in 1 Tola In Other Big Cities</h2>
@@ -130,11 +130,9 @@
 
               <div id="table_Second_Table_24k_And_22k" class="mt-2"></div>
 
-            </div>
-            
-            <p>The price of gold is set by the Sarafa Market Pakistan. The slight difference in price (of few hundred) is due to distance from main market.</p>
+              <p>The price of gold is set by the Sarafa Market Pakistan. The slight difference in price (of few hundred) is due to distance from main market.</p>
 
-            <h2>Main Markets of Gold in Karachi</h2>
+              <h2>Main Markets of Gold in Karachi</h2>
             <p>One of the main markets of gold in Karachi is Sarafa Bazaar, also known as Sarafa Market. It is a popular area where there are many gold shops around. You can find many jewelry shops here and you can buy any gold items from here.</p>
             <p>Gold Queen Jewelers, another famous market for gold in Karachi. This place is also best for investing in Gold. </p>
             <p>One more place for jewellery in Karachi is Boat Basin. This place is well known because of the best jewellery here. You can find many jewelry items here or you can invest in gold here.</p>
@@ -167,7 +165,15 @@
             <p>There is no specific kind of gold that is mostly used but people in jewellery or investment use all kinds of gold.</p>
             <h3>Does Karachi have high rates of gold as compared to other cities in Pakistan?</h3>
             <p>The rates for gold are almost the same across cities but sometimes there occur minor differences in gold rate values. It is due to some specific conditions.</p>
-        </div>
+   
+
+            </div>
+            
+          
+
+            </div>
+            
+      </div>
 
         <div class="col-md-3" style="border-left: 5px solid #e7ecef;">
             <div class="container">
