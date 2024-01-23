@@ -158,10 +158,10 @@
                 <div class="col-12 mt-2 p-2 topHeader">
                     <div class="right-icon d-flex justify-content-end">
                         <span class="px-3 py-2">
-                            <i class="fab fa-facebook"></i> 1
+                            <i class="fa text-white fa-facebook"></i> 
                         </span>
                         <span class="px-3 py-2">
-                            <i class="fab fa-twitter"></i> 2
+                            <i class="fa text-white fa-twitter"></i>
                         </span>
                     </div>
                 </div>

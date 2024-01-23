@@ -6,9 +6,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>gold rate in pakistan - SilverGoldRate.PK</title>
-        <meta name="robots" content="follow, noindex" />
+        <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="gold rate in Pakistan - SilverGoldRate.PK" />
         <meta property="og:url" content="{{ Request::fullUrl() }}" />
         <meta property="og:site_name" content="SilverGoldRate.pk" />
@@ -34,8 +34,8 @@
                     },
                     {
                         "@type": "SearchResultsPage",
-                        "@id": "https://silvergoldrate.pk/search/gold+rate+in+pakistan#webpage",
-                        "url": "https://silvergoldrate.pk/search/gold+rate+in+pakistan",
+                        "@id": "https://silvergoldrate.pk/?s=gold+rate+in+pakistan#webpage",
+                        "url": "https://silvergoldrate.pk/?s=gold+rate+in+pakistan",
                         "name": "gold rate in Pakistan- SilverGoldRate.PK",
                         "isPartOf": { "@id": "https://silvergoldrate.pk#website" },
                         "inLanguage": "en-US"
