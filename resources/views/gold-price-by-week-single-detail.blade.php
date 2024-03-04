@@ -135,7 +135,7 @@
 
                 <div class="updateSetting pt-3">
                     <div>
-                        <img src="{{ asset($GoldRateByWeek->img) }}"  alt="{{ $GoldRateByWeek->alt_tag }}"   class="img-fluid" />
+                        <img src="{{ asset($GoldRateByWeek->img) }}"  loading="lazy" alt="{{ $GoldRateByWeek->alt_tag }}"   class="img-fluid" />
                         <p class="mt-4">{!! $GoldRateByWeek->details;  !!} </p>
                             <table border="1" cellpadding="1" cellspacing="1" style="width:100%" class="table table-bordered table-hover mt-3">
                                 <thead>
@@ -180,7 +180,7 @@
                             @else
                             <div class="lastestNews" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);border-radius:10px">
                             <a href="https://silvergoldrate.pk/{{ $result->slug }}">
-                                <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
+                                <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" loading="lazy" class="img-fluid" />
                                 <h2 class="mt-3 p-2">{{ $result->title }}</h2>
                             </a>
                             </div>

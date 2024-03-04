@@ -133,7 +133,7 @@
 
                 <div class="updateSetting pt-3">
                     <div>
-                        <img src="{{ asset($GoldRateByDay->img) }}" alt="{{ $GoldRateByDay->alt_tag }}" class="img-fluid" />
+                        <img src="{{ asset($GoldRateByDay->img) }}" loading="lazy" alt="{{ $GoldRateByDay->alt_tag }}" class="img-fluid" />
                         <p class="mt-4">{!! $GoldRateByDay->details;  !!} </p>
                        
                     </div>
@@ -144,7 +144,7 @@
 
                 <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex align-items-center justify-content-center">
                     <div class="img-left text-center mb-3 mb-sm-0" style="width:100px; margin-right:auto; margin-left:auto;">
-                        <img src="https://silvergoldrate.pk/assets/staff.webp" class="rounded-circle img-fluid" alt="staff" />
+                        <img src="https://silvergoldrate.pk/assets/staff.webp" loading="lazy" class="rounded-circle img-fluid" alt="staff" />
                     </div>
                 </div>
 
@@ -187,7 +187,7 @@
                             @else
                             <div class="lastestNews" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);border-radius:10px">
                             <a href="https://silvergoldrate.pk/{{ $result->slug }}">
-                                <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
+                                <img src="{{ asset($result->img) }}" loading="lazy" alt="{{ $result->alt_tag }}" class="img-fluid" />
                                 <h2 class="mt-3 p-2">{{ $result->title }}</h2>
                             </a>
                             </div>

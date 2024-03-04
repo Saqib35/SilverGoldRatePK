@@ -135,7 +135,7 @@
 
                 <div class="updateSetting pt-3">
                     <div>
-                        <img src="{{ asset($GoldRateByMonth->img) }}" alt="{{ $GoldRateByMonth->alt_tag }}" class="img-fluid" />
+                        <img src="{{ asset($GoldRateByMonth->img) }}" alt="{{ $GoldRateByMonth->alt_tag }}" loading="lazy" class="img-fluid" />
                         <p class="mt-4">{!! $GoldRateByMonth->details;  !!} </p>
                         
                         <div style="background-color:#bf9109; color:white; padding:10px 20px; text-align:center"><h2>Gold Price History in {{ucfirst($secondToLastValue)}} 2023<h2></div>
@@ -150,11 +150,14 @@
                                 </thead>
                                 <tbody>
                                     @foreach($GoldRateByDay as $GoldRateByDay)
+                                     @if(\Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->dayOfWeek == Carbon\Carbon::SUNDAY)
+                                    @else
                                     <tr>
                                         <td style="text-align:center"><a href="https://silvergoldrate.pk/{{ $GoldRateByDay->slug }}">{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->format('d M Y') }}</a></td>
                                         <td style="text-align:center">{{  $GoldRateByDay->First_rate }}</td>
                                         <td style="text-align:center">{{  $GoldRateByDay->Second_rate }}</td>
                                     </tr>
+                                     @endif
                                     @endforeach
                                 
                                 
@@ -182,7 +185,7 @@
                             @else
                             <div class="lastestNews" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);border-radius:10px">
                             <a href="https://silvergoldrate.pk/{{ $result->slug }}">
-                                <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
+                                <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" loading="lazy" class="img-fluid" />
                                 <h2 class="mt-3 p-2">{{ $result->title }}</h2>
                             </a>
                             </div>

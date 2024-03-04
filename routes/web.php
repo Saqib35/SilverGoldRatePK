@@ -15,12 +15,19 @@ Route::get('/clear', function () {
   });
   
 
+
 Route::get('index.php', function () {
     return redirect('/', 301);
 });
 Route::get('gold-calcultor', function () {
     return redirect('/gold-calculator', 301);
 });
+
+
+Route::get('historical-gold-rate', function () {
+    return redirect('/historial-gold-rate', 301);
+});
+
 
 Route::get('contact-us/', function () {
     return redirect('/contact-us', 301);

@@ -3,6 +3,7 @@ Disallow: /public/*/
 Disallow: */public/
 Disallow: */public
 Disallow: */public/*
+Disallow: */www/
 
 
 Sitemap: https://silvergoldrate.pk/sitemap.xml

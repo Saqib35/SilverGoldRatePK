@@ -58,10 +58,10 @@
 
              @foreach($posts as $result)
              @if($result->slug!='')
-                <div class="col-3 mb-2">
+                <div class="col-md-3 mb-2">
                     <div class="lastestNews" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);border-radius:10px">
                         <a href="https://silvergoldrate.pk/{{ $result->slug }}">
-                            <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" class="img-fluid" />
+                            <img src="{{ asset($result->img) }}" alt="{{ $result->alt_tag }}" loading="lazy" class="img-fluid" />
                             <h2 class="mt-3 p-2">{{ $result->title }}</h2>
                         </a>
                     </div>

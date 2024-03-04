@@ -24,11 +24,13 @@ class HomeController extends Controller
      *
      * @return void
      */
+    
     public function __construct()
     {
-        // $this->middleware('auth');
+        // Apply cache headers middleware to all methods in this controller
+        // $this->middleware('cache.headers:public;max_age=2628000;etag');
     }
-
+    
     /**
      * Show the application dashboard.
      *
@@ -223,15 +225,20 @@ class HomeController extends Controller
         {
            $goldPriceHistoryString = $GoldRateByMonth->slug;
            // Split the string by "-"
-           $priceSegments = explode('-', $goldPriceHistoryString);
-           // Get the second-to-last value
-           $secondToLastValue = isset($priceSegments[count($priceSegments) - 2]) ? $priceSegments[count($priceSegments) - 2] : null;
+          $priceSegments = explode('-', $goldPriceHistoryString);
         
-           $year = end($priceSegments);
+           // Get the second-to-last value
+           $secondToLastValue = $priceSegments[3];
+        
+          $year =  $priceSegments[4];
+          
            // Create Carbon instances for the start and end of the month
            $startDate = Carbon::createFromDate($year, Carbon::parse($secondToLastValue)->month, 1)->startOfMonth();
+        
            $endDate = Carbon::createFromDate($year, Carbon::parse($secondToLastValue)->month, 1)->endOfMonth();
+          
           $GoldRateByDay=GoldRateByDay::whereBetween('created_at', [$startDate, $endDate])->get();
+
 
           return view('gold-price-by-month-single-detail' ,['GoldRateByMonth'=>$GoldRateByMonth,'GoldRateByDay'=>$GoldRateByDay,'secondToLastValue'=>$secondToLastValue]);
 
