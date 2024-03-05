@@ -71,21 +71,21 @@
   }
   
   h1{
-    font-size:24px !important;
+    font-size:26px !important;
 
   }
   h2{
-    font-size:22px !important;
+    font-size:24px !important;
   }
   h3{
-    font-size:18px !important;
+    font-size:20px !important;
   }
   /* body{
     background-color: #f5f5dc !important;
   } */
   body {
     font-family: 'Roboto' !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
     line-height: 1.6;
     color: #2c2c2c; 
     background-color: #f5f5dc; 

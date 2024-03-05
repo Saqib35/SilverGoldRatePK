@@ -138,7 +138,7 @@
                         <img src="{{ asset($GoldRateByMonth->img) }}" alt="{{ $GoldRateByMonth->alt_tag }}" loading="lazy" class="img-fluid" />
                         <p class="mt-4">{!! $GoldRateByMonth->details;  !!} </p>
                         
-                        <div style="background-color:#bf9109; color:white; padding:10px 20px; text-align:center"><h2>Gold Price History in {{ucfirst($secondToLastValue)}} 2023<h2></div>
+                        <div style="background-color:#bf9109; color:white; padding:10px 20px; text-align:center"><h2>Gold Price History in {{ucfirst($secondToLastValue)}} 2024<h2></div>
                             
                             <table border="1" cellpadding="1" cellspacing="1" style="width:100%" class="table table-bordered table-hover mt-3">
                                 <thead>
@@ -150,14 +150,20 @@
                                 </thead>
                                 <tbody>
                                     @foreach($GoldRateByDay as $GoldRateByDay)
-                                     @if(\Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->dayOfWeek == Carbon\Carbon::SUNDAY)
-                                    @else
+                                    <!-- @if(\Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->dayOfWeek == Carbon\Carbon::SUNDAY)-->
+                                    <!--@else-->
                                     <tr>
-                                        <td style="text-align:center"><a href="https://silvergoldrate.pk/{{ $GoldRateByDay->slug }}">{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->format('d M Y') }}</a></td>
+                                        <td style="text-align:center">
+                                            <a href="https://silvergoldrate.pk/{{ $GoldRateByDay->slug }}">
+                                    
+{{ \Carbon\Carbon::parse($GoldRateByDay->created_at)->subDay()->format('j M Y') }}
+                                    
+                                           </a>
+                                         </td>
                                         <td style="text-align:center">{{  $GoldRateByDay->First_rate }}</td>
                                         <td style="text-align:center">{{  $GoldRateByDay->Second_rate }}</td>
                                     </tr>
-                                     @endif
+                                     <!--@endif-->
                                     @endforeach
                                 
                                 

@@ -68,10 +68,20 @@
                     Today, {{ now()->format('jS F Y') }}, the price of  <strong class="gold-rate">24 karat is Rs {{  $rates['ratePerTola'] }}</strong>, and for 10 grams, the price is <strong class="gold-rate">Rs {{  $rates['ratePer10Grams'] }}</strong>, and for 1 gram, the price is <strong class="gold-rate">Rs {{  $rates['ratePerGram'] }}</strong>. 
                 </p>
             </div>
-             <br>
+             
+            <br>
+             <h2><strong>Today's 24K Gold Prices in Lahore  ({{ now()->format('j F Y') }}):</strong></h2>
+
+            <ul>
+                <li class="text-justify"><strong>1 gram:<span class="gold-rate">{{  $rates['ratePerGram'] }}</span></strong></li>
+                <li class="text-justify"><strong>10 grams:<span class="gold-rate">{{  $rates['ratePer10Grams'] }}</span></strong></li>
+                <li class="text-justify"><strong>1 tola:<span class="gold-rate">{{  $rates['ratePerTola'] }}</span></strong></li>
+                <li class="text-justify"><strong>1 ounce:<span class="gold-rate">{{  $rates['ratePerTroyOunce'] }}</span></strong></li>
+                <li class="text-justify"><strong>1 kilogram:<span class="gold-rate">{{  $rates['ratePerKilogram'] }}</span></strong></li>
+            </ul>
           
             <div class="bg-bf9109 text-white p-2">
-              <h2 class="text-center">Current Gold Price In Lahore Today ({{ now()->format('j F Y') }})</h2>
+              <h2 class="text-center">Price According to purity ({{ now()->format('j F Y') }})</h2>
             </div>
 
             <div id="gold_all_detail_table" class="mt-2"></div>
@@ -124,11 +134,14 @@
                 </div>
                 <div id="table_Second_Table_24k_And_22k" class="mt-2"></div>
                 <p>The price of gold is set by the Sarafa Market Pakistan. The slight difference in price (of few hundred) is due to distance from main market.</p>
-            <h2>Brief information about Lahore.</h2>
-            <p>Lahore is located in north eastern region of Punjab.It is Pakistan s major industrial hub. It has historical background too.people off different regions come here to reside and to work.thats why it has healthy culture and tradition.it has major bazar like Anaarkali market Ichhra Bazar Kashmiri bazar etc .Gold Palace Al Raheem Jewellarsand Sharif Jewellers are Lahore s major gold merchants.</p>
-            <h2>Conclusion.</h2>
-            <p>To get latest price of gold you should visit your nearby sarafa market before making any deal or purchase so you may not find any lose.The rates mentioned above are according to Pakistan sarafa market .there is up and down of price after every few minutes so we update prices continuously.User can get fresh 
-                updates by visiting our website <a  href="https://silvergoldrate.pk/gold-rate-in-pakistan">link</a></p>
+
+                <img src="{{ asset('blogs/gold-rate-in-lahore.webp') }}" alt="Gol rate in Lahore" loading="lazy" class="img-fluid mb-4" />
+                    
+                <h2>Brief information about Lahore.</h2>
+                <p>Lahore is located in north eastern region of Punjab.It is Pakistan s major industrial hub. It has historical background too.people off different regions come here to reside and to work.thats why it has healthy culture and tradition.it has major bazar like Anaarkali market Ichhra Bazar Kashmiri bazar etc .Gold Palace Al Raheem Jewellarsand Sharif Jewellers are Lahore s major gold merchants.</p>
+                <h2>Conclusion.</h2>
+                <p>To get latest price of gold you should visit your nearby sarafa market before making any deal or purchase so you may not find any lose.The rates mentioned above are according to Pakistan sarafa market .there is up and down of price after every few minutes so we update prices continuously.User can get fresh 
+                    updates by visiting our website <a  href="https://silvergoldrate.pk/gold-rate-in-pakistan">link</a></p>
                 <h2>
                    <strong><u>FAQs:</u></strong>
                 </h2>

@@ -206,7 +206,7 @@
               By Staff ⏰ Updated <strong> {{ now()->format('j F Y') }}</strong>
             <hr />
 
-            <div class="alert alert-info">
+            <div>
                 <p class="mb-0">
                     1 Tola Gold rate in Pakistan today, {{ now()->format('jS F Y') }} announced for
                     <strong class="gold-rate">24 karat Rs {{  $rates['ratePerTola'] }}</strong> tola for 22k <strong>Rs. {{  $rates22k['ratePerTola'] }}</strong> for 21 karat <strong>Rs. {{  $rates21k['ratePerTola'] }}</strong> and for 18 karat gold <strong>Rs {{  $rates18k['ratePerTola'] }}.</strong>
@@ -239,6 +239,91 @@
                     Please Note: All these Rates Mentioned Here are Just to Get an Idea of what could be the Price in Bullion Markets. Please Visit Your City's Gold Market for the Actual Gold Rate.
                 </p>
             </div>
+
+
+
+            <div class="bg-bf9109 text-white p-2">
+                <h2 class="text-center">Live Gold and Silver Rate in Pakistan</h2>
+            </div>
+
+
+
+
+            <table align="center" border="1" cellpadding="1" class="mt-3" cellspacing="1" style="width:100%">
+                <thead>
+                    <tr>
+                        <th colspan="2" scope="col">Gold 24K Rawa/Pathoor Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td  class="text-center">Buy</td>
+                        <td  class="text-center">Sell</td>
+                    </tr>
+                    <tr>
+                        <td  class="text-center">0</td>
+                        <td  class="text-center">0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+            <table align="center" border="1" cellpadding="1"  class="mt-3" cellspacing="1" style="width:100%">
+                <thead>
+                    <tr>
+                        <th colspan="2" scope="col">Gold 24K Price Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">Buy</td>
+                        <td class="text-center">Sell</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">0</td>
+                        <td class="text-center">0</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">0</td>
+                        <td class="text-center">0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            
+            <table align="center" border="1" cellpadding="1"  class="mt-3" cellspacing="1" style="width:100%">
+                <thead>
+                    <tr>
+                        <th colspan="2" scope="col">International Gold Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">2086</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+            <table align="center" border="1" cellpadding="1"  class="mt-3" cellspacing="1" style="width:100%">
+            <thead>
+                <tr>
+                    <th colspan="2" scope="col">International Silver Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td  class="text-center">23</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
 
             @if($HomePageGoldRate)
                 {!! $HomePageGoldRate->content !!}
@@ -292,6 +377,37 @@
             <div id="gold_all_detail_table" class="mt-2"></div>
 
          
+
+            
+            <div class="bg-bf9109 text-white p-2">
+              <h2 class="text-center">Check Gold History By Month</h2>
+            </div>
+
+
+               <table border="1" cellpadding="1" cellspacing="1" style="width:100%" class="table table-bordered table-hover mt-3">
+                    <thead>
+                        <tr>
+                            <th class="theadClor text-center">Month</th>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach($GoldRateByMonth as $GoldRateByMonths)
+                          <tr>
+                            <td class="text-center">
+                                @php 
+                                   $date=\Carbon\Carbon::parse($GoldRateByMonths->created_at);
+                                   $date->subMonth();
+                                @endphp    
+                                <a href="https://silvergoldrate.pk/{{ $GoldRateByMonths->slug }}">{{ $date->format('F Y') }}</a>
+                            </td>
+                          </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+
+
+
+
             <div class="bg-bf9109 text-white p-2">
               <h2 class="text-center">Gold Price Today In Major Cities Of Pakistan</h2>
             </div>

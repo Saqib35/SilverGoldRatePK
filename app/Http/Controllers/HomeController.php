@@ -227,23 +227,28 @@ class HomeController extends Controller
            // Split the string by "-"
           $priceSegments = explode('-', $goldPriceHistoryString);
         
+       
            // Get the second-to-last value
            $secondToLastValue = $priceSegments[3];
         
           $year =  $priceSegments[4];
+          
+            $final =  $priceSegments[3].'-'.$priceSegments[4];
           
            // Create Carbon instances for the start and end of the month
            $startDate = Carbon::createFromDate($year, Carbon::parse($secondToLastValue)->month, 1)->startOfMonth();
         
            $endDate = Carbon::createFromDate($year, Carbon::parse($secondToLastValue)->month, 1)->endOfMonth();
           
-          $GoldRateByDay=GoldRateByDay::whereBetween('created_at', [$startDate, $endDate])->get();
+        //   $GoldRateByDay=GoldRateByDay::whereBetween('created_at', [$startDate, $endDate])->get();
+
+          $GoldRateByDay=GoldRateByDay::where('which_month',$final)->get();
 
 
           return view('gold-price-by-month-single-detail' ,['GoldRateByMonth'=>$GoldRateByMonth,'GoldRateByDay'=>$GoldRateByDay,'secondToLastValue'=>$secondToLastValue]);
 
         }
-
+        
         $GoldRateByWeek=GoldRateByWeek::where('slug',$request->slug)->first();
         if($GoldRateByWeek)
         {
@@ -463,7 +468,10 @@ class HomeController extends Controller
         $table_Second_Table_24k_And_22k = $this->generateSecondTable24kAnd22k();
         $updatedPrice=UpdatedPrice::first();
 
-        return view('today-gold-price',['HomePageGoldRate'=>$HomePageGoldRate,'GoldRateByDay'=>$GoldRateByDay,'table_all_type'=>$table_all_type,'table_Second_Table_24k_And_22k'=>$table_Second_Table_24k_And_22k,'rates'=>$rates,'rates22k'=>$rates22k,'rates21k'=>$rates21k,'rates20k'=>$rates20k,'rates18k'=>$rates18k,'updatedPrice'=> $updatedPrice]);
+        $GoldRateByMonth=GoldRateByMonth::orderBy('created_at', 'desc')->get();
+
+
+        return view('today-gold-price',['HomePageGoldRate'=>$HomePageGoldRate,'GoldRateByDay'=>$GoldRateByDay,'table_all_type'=>$table_all_type,'table_Second_Table_24k_And_22k'=>$table_Second_Table_24k_And_22k,'rates'=>$rates,'rates22k'=>$rates22k,'rates21k'=>$rates21k,'rates20k'=>$rates20k,'rates18k'=>$rates18k,'updatedPrice'=> $updatedPrice,'GoldRateByMonth'=>$GoldRateByMonth]);
      }
      
           public function GoldPriceKarachi(REQUEST $request)
