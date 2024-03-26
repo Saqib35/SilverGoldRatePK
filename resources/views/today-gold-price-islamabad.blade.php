@@ -70,20 +70,9 @@
             </div>
 
              <br>
-
-             <h2><strong>Today's 24K Gold Prices in Islamabad  ({{ now()->format('j F Y') }}):</strong></h2>
-
-            <ul>
-                <li class="text-justify"><strong>1 gram:<span class="gold-rate">{{  $rates['ratePerGram'] }}</span></strong></li>
-                <li class="text-justify"><strong>10 grams:<span class="gold-rate">{{  $rates['ratePer10Grams'] }}</span></strong></li>
-                <li class="text-justify"><strong>1 tola:<span class="gold-rate">{{  $rates['ratePerTola'] }}</span></strong></li>
-                <li class="text-justify"><strong>1 ounce:<span class="gold-rate">{{  $rates['ratePerTroyOunce'] }}</span></strong></li>
-                <li class="text-justify"><strong>1 kilogram:<span class="gold-rate">{{  $rates['ratePerKilogram'] }}</span></strong></li>
-            </ul>
-
           
             <div class="bg-bf9109 text-white p-2">
-              <h2 class="text-center">Price According to purity ({{ now()->format('j F Y') }})</h2>
+              <h2 class="text-center">Current Gold Rate in Islamabad ({{ now()->format('j F Y') }})</h2>
             </div>
 
             <div id="gold_all_detail_table" class="mt-2"></div>
@@ -145,12 +134,6 @@
                 </p>
               </div> 
               <p>The price of gold is set by the Sarafa Market Pakistan. The slight difference in price (of few hundred) is due to distance from main market.</p>
-
-
-              <img src="{{ asset('blogs/gold-rate-in-islamabad.webp') }}" alt="Gol rate in Islamabad" loading="lazy" class="img-fluid mb-4" />
-
-
-
 
 <h2>Main Market of Gold in Islamabad</h2>
 <ul>

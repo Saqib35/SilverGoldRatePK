@@ -139,10 +139,7 @@
                 </p>
             </div>
             <p class="p-2">The price of gold is set by the Sarafa Market Pakistan. The slight difference in price (of few hundred) is due to distance from main market.</p>
-            
-            <img src="{{ asset('blogs/gold-rate-in-faisalabad.webp') }}" alt="Gol rate in Faisalabad" loading="lazy" class="img-fluid mb-4" />
-
-            <h2>Gold Price in Faisalabad - General Discussion</h2>
+            <h2>Gold Price in Faisalabad- General Discussion</h2>
             <p>People in Faisalabad love to buy gold for various purposes. When discussing gold, is a precious metal and is always considered as expensive as compared to silver. </p>
             <p>In Faisalabad, the gold rate has been increasing in the past few years. The increment in gold rates was due to financial and economic conditions. </p>
             <h2>Main Markets of Gold in Faisalabad</h2>

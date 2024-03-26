@@ -52,7 +52,7 @@
                                  @csrf
                                      
 
-                                       <!-- <div class="col-md-12">
+                                       <div class="col-md-12">
                                             <div class="mb-3">
                                                 <label for="metaTitle">Meta Title</label>
                                                 <input id="metaTitle" required="" value="{{ @$HomePageGoldRate->meta_title }}" name="meta_title" type="text" class="form-control">
@@ -68,8 +68,7 @@
                                                 <input id="metaDescription" required=""  value="{{ @$HomePageGoldRate->meta_description }}" name="meta_description" type="text" class="form-control">
                                             </div>
                                             
-                                        </div> -->
-
+                                        </div>
                                         <div class="col-md-12">
                                             <div class="mb-3">
                                                 <label for="Img">Meta Img</label>
@@ -90,12 +89,12 @@
                                                 <textarea name="content" id="editor1" class="form-control">{{ @$HomePageGoldRate->content }}</textarea>
                                             </div>
                                         </div>
-<!-- 
+
                                         <div class="col-md-12">
                                             <div class="mb-3">
                                                 <textarea name="schmea_today" required=""  class="form-control" style="height:1000px">{{ @$HomePageGoldRate->schmea_today }}</textarea>
                                             </div>
-                                        </div> -->
+                                        </div>
 
                                         <div class="d-flex flex-wrap gap-2">
                                             <button type="submit" name="add-category" class="btn btn-primary waves-effect waves-light">Save Changes</button>

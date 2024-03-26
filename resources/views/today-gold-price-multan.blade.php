@@ -61,6 +61,7 @@
               By Staff ⏰ Updated <strong> {{ now()->format('j F Y') }}</strong>
             <hr />
 
+            
 
             <div>
                 <p class="mb-0">
@@ -133,10 +134,6 @@
 
               <div id="table_Second_Table_24k_And_22k" class="mt-2"></div>
               <p>The price of gold is set by the Sarafa Market Pakistan. The slight difference in price (of few hundred) is due to distance from main market.</p>
-
-              <img src="{{ asset('blogs/gold-rate-in-multan.webp') }}" alt="Gol rate in Multan" loading="lazy" class="img-fluid mb-4" />
-
-
             <h2>Brief Information about Multan:</h2>
             <p>Multan is the city of Punjab, Pakistan located on the back of Chenab River. Multan is one of the five largest urban centers of Pakistan in 2024. It has a rich religious ancient heritage and historic landmarks...(Wikipedia)</p>
            

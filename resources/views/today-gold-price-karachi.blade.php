@@ -69,19 +69,10 @@
                 </p>
             </div>
 
-            <br>
-             <h2><strong>Today's 24K Gold Prices in karachi  ({{ now()->format('j F Y') }}):</strong></h2>
-
-            <ul>
-                <li class="text-justify"><strong>1 gram:<span class="gold-rate">{{  $rates['ratePerGram'] }}</span></strong></li>
-                <li class="text-justify"><strong>10 grams:<span class="gold-rate">{{  $rates['ratePer10Grams'] }}</span></strong></li>
-                <li class="text-justify"><strong>1 tola:<span class="gold-rate">{{  $rates['ratePerTola'] }}</span></strong></li>
-                <li class="text-justify"><strong>1 ounce:<span class="gold-rate">{{  $rates['ratePerTroyOunce'] }}</span></strong></li>
-                <li class="text-justify"><strong>1 kilogram:<span class="gold-rate">{{  $rates['ratePerKilogram'] }}</span></strong></li>
-            </ul>
+             <br>
           
             <div class="bg-bf9109 text-white p-2">
-              <h2 class="text-center">Gold Price According to purity ({{ now()->format('j F Y') }})</h2>
+              <h2 class="text-center">Current Rates In karachi ({{ now()->format('j F Y') }})</h2>
             </div>
  
 
@@ -140,11 +131,6 @@
               <div id="table_Second_Table_24k_And_22k" class="mt-2"></div>
 
               <p>The price of gold is set by the Sarafa Market Pakistan. The slight difference in price (of few hundred) is due to distance from main market.</p>
-
-              <img src="{{ asset('blogs/gold-rate-in-karachi.webp') }}" alt="Gol rate in Karachi" loading="lazy" class="img-fluid mb-4" />
-
-
-
 
               <h2>Main Markets of Gold in Karachi</h2>
             <p>One of the main markets of gold in Karachi is Sarafa Bazaar, also known as Sarafa Market. It is a popular area where there are many gold shops around. You can find many jewelry shops here and you can buy any gold items from here.</p>
